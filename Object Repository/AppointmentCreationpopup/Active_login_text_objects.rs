@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='modal-dialog modal-dialog-centered']</value>
+         <value>//div[@class='modal-content']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
