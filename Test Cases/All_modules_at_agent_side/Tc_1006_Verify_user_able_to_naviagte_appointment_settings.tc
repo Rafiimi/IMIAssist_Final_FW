@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify user able to modify appointment settings under appointment mnagement tab</description>
+   <name>Tc_1006_Verify_user_able_to_naviagte_appointment_settings</name>
+   <tag>Test cases</tag>
+   <comment></comment>
+   <testCaseGuid>5713ce0d-0a15-486e-9da2-3b9872eab43f</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Check whether appointment date format as per profile page settings under select and time assignee section on schedule an appointment popup</description>
+   <name>ATC_AP_1041_Verify_dateformate_as_per_profile_settings_under_appointment_creation_popup</name>
+   <tag>Test Cases</tag>
+   <comment></comment>
+   <testCaseGuid>df78d3e6-066f-4671-82f0-84ffc36edea0</testCaseGuid>
+</TestCaseEntity>

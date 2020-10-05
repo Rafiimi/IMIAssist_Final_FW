@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Check whether agent able to fill the fields under select time and assignee page on schedule appointment popup</description>
+   <name>ATC_AP_1042_ATC_AP_1043_Appointment_Creation_Verify_agent_able_to_fill_all_the_details_in_select_time_and_assigne_section</name>
+   <tag>Test cases</tag>
+   <comment></comment>
+   <testCaseGuid>f1210b72-bb54-450b-8536-776714243c56</testCaseGuid>
+</TestCaseEntity>

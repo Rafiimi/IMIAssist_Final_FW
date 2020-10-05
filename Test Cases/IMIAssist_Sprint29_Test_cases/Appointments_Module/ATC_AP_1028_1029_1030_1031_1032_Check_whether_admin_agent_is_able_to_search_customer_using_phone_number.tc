@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Check whether admin/ agent is able to search customer using phone number</description>
+   <name>ATC_AP_1028_1029_1030_1031_1032_Check_whether_admin_agent_is_able_to_search_customer_using_phone_number</name>
+   <tag>Test cases</tag>
+   <comment></comment>
+   <testCaseGuid>a1e794f3-4f34-4384-b787-08e805264d7f</testCaseGuid>
+</TestCaseEntity>

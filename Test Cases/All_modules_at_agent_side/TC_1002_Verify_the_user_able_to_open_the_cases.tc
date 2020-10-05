@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify user able to navigate the cases</description>
+   <name>TC_1002_Verify_the_user_able_to_open_the_cases</name>
+   <tag>Test cases</tag>
+   <comment></comment>
+   <testCaseGuid>1243c135-be80-45a5-9bcd-3b5018f564a6</testCaseGuid>
+</TestCaseEntity>

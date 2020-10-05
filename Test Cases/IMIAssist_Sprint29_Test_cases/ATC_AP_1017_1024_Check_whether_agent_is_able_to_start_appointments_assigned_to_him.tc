@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Check whether agent is able to start appointments assigned to him</description>
+   <name>ATC_AP_1017_1024_Check_whether_agent_is_able_to_start_appointments_assigned_to_him</name>
+   <tag>Test cases</tag>
+   <comment></comment>
+   <testCaseGuid>4e961d9c-354d-4552-8cc4-a60728ce5402</testCaseGuid>
+</TestCaseEntity>

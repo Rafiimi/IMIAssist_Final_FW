@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>check whether the following are displaying  in a popup on clicking on Schedule an Appointment option 
+A dropdown filter option   
+Search Customer option 
+Add customer option</description>
+   <name>ATC_AP_1048_1049Appointment_Creation _Schedule_an_appointment_popup</name>
+   <tag>Test cases</tag>
+   <comment></comment>
+   <testCaseGuid>a5ee347b-a18c-4527-9999-b89d4a7128c6</testCaseGuid>
+</TestCaseEntity>

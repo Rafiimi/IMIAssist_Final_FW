@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Check whether custom attributes icon is displaying for  Department admin</description>
+   <name>TC_1135_Check_whether_custom_attributes_icon_is_displaying_for_Department_admin</name>
+   <tag>Test cases</tag>
+   <comment></comment>
+   <testCaseGuid>ec1e2469-95f5-4e57-be59-9285aca58d3b</testCaseGuid>
+</TestCaseEntity>

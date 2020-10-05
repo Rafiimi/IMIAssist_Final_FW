@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Check whether the proper error message is displaying  on uploading more than 2MB Image</description>
+   <name>TC_01_Check_whether_the_proper_error_message_is_displaying_on_uploading_more_than_2MB_Image</name>
+   <tag>Test cases</tag>
+   <comment></comment>
+   <testCaseGuid>670fa9cb-7092-492f-bec4-644425fa462b</testCaseGuid>
+</TestCaseEntity>

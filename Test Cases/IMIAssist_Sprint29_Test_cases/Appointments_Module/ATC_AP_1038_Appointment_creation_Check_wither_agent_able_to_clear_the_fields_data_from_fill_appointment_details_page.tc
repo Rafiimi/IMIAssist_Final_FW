@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Check wither agent able to clear the fields data from fill appointment details page</description>
+   <name>ATC_AP_1038_Appointment_creation_Check_wither_agent_able_to_clear_the_fields_data_from_fill_appointment_details_page</name>
+   <tag>Test cases</tag>
+   <comment></comment>
+   <testCaseGuid>ab2c86c0-ad15-40c4-a1d4-99a527576ab0</testCaseGuid>
+</TestCaseEntity>

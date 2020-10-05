@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Check wither user able to create new customer under Schedule an Appointment popup</description>
+   <name>ATC_AP_1033_1034_Appointment_Creation_Check_wether_user_able_to_create_new_customer_under_Schedule_an_Appointment_popup</name>
+   <tag>Test cases</tag>
+   <comment></comment>
+   <testCaseGuid>dcf64973-8047-4af5-a967-c94be79e9d96</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Check wither agent able to add the customer with only mandatory fields</description>
+   <name>ATC_WP_1001_ add_the_customer_with_only_mandatory_fields</name>
+   <tag>Test cases</tag>
+   <comment></comment>
+   <testCaseGuid>1967011b-f28e-4297-8669-3e1adc81b8bc</testCaseGuid>
+</TestCaseEntity>

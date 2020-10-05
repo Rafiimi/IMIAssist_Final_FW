@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify uasr able to create the new team</description>
+   <name>TC_1008_Verify_user_able_to_create_the_new_team</name>
+   <tag>Test cases</tag>
+   <comment></comment>
+   <testCaseGuid>c956f570-5d97-4572-8ca1-e00876b6200a</testCaseGuid>
+</TestCaseEntity>

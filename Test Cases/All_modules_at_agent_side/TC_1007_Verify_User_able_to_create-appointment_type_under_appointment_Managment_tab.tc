@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>verify user able to create appointment type under appointment management tab</description>
+   <name>TC_1007_Verify_User_able_to_create-appointment_type_under_appointment_Managment_tab</name>
+   <tag>Test cases</tag>
+   <comment></comment>
+   <testCaseGuid>c751b23d-771f-44c1-be7b-ddde7ded4936</testCaseGuid>
+</TestCaseEntity>

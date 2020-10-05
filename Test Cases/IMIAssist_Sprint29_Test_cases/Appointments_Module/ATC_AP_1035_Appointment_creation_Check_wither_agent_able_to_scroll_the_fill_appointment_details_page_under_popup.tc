@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Check wither agent able to scroll the fill appointment details page under schedule an appointment popup</description>
+   <name>ATC_AP_1035_Appointment_creation_Check_wither_agent_able_to_scroll_the_fill_appointment_details_page_under_popup</name>
+   <tag>Test cases</tag>
+   <comment></comment>
+   <testCaseGuid>e6610c93-47e5-4213-b00d-0d37450627e0</testCaseGuid>
+</TestCaseEntity>

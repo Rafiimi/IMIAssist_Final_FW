@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataFileEntity>
+   <description>Appointment creation with ui</description>
+   <name>Appointmentcreation_UI</name>
+   <tag></tag>
+   <containsHeaders>true</containsHeaders>
+   <csvSeperator></csvSeperator>
+   <dataFileGUID>fc0174b5-1394-4638-9d72-d27a6d1282b9</dataFileGUID>
+   <dataSourceUrl>D:\IMI_Automation\IMI_Automation_files\Staging_IMIAssist_Automation\IMIAssist_Automtion\TestData\IMIassist_Automation_TestData (1).xlsx</dataSourceUrl>
+   <driver>ExcelFile</driver>
+   <isInternalPath>false</isInternalPath>
+   <query></query>
+   <secureUserAccount>false</secureUserAccount>
+   <sheetName>Sprint-29-appointment-creation</sheetName>
+   <usingGlobalDBSetting>false</usingGlobalDBSetting>
+</DataFileEntity>

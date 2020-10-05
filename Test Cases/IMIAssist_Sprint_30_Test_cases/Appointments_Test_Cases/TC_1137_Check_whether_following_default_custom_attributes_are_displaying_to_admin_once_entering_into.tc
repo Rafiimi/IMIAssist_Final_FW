@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Check whether following default custom attributes are displaying to admin once  entering into &quot; Attributes to Display&quot; popup
+Appointment ID
+Appointment Type
+Description
+Due Time
+Priority
+Created on Time</description>
+   <name>TC_1137_Check_whether_following_default_custom_attributes_are_displaying_to_admin_once_entering_into</name>
+   <tag>Test cases</tag>
+   <comment></comment>
+   <testCaseGuid>3d230ad1-a585-4120-8ad9-5f77ec9149c9</testCaseGuid>
+</TestCaseEntity>

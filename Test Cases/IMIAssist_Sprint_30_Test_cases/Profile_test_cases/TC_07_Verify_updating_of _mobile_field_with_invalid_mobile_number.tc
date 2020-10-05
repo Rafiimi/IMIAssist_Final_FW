@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify updating of  mobile field with invalid mobile number</description>
+   <name>TC_07_Verify_updating_of _mobile_field_with_invalid_mobile_number</name>
+   <tag>Test cases</tag>
+   <comment></comment>
+   <testCaseGuid>3c8b764b-c51c-4686-8d9f-b6ef3f1b432b</testCaseGuid>
+</TestCaseEntity>

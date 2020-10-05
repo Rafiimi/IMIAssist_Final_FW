@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Check whether pages are dynamically changing properly on swapping the departments</description>
+   <name>TC_03_Check_whether_pages_are_dynamically_changing_properly_on_swapping_the_departments</name>
+   <tag>Test cases</tag>
+   <comment></comment>
+   <testCaseGuid>a5d662b2-3bb4-4e83-a472-bc651e6274df</testCaseGuid>
+</TestCaseEntity>

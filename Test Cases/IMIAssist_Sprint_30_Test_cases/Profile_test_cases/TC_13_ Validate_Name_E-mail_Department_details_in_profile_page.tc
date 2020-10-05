@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Validate Name, E-mail, Department details in profile page</description>
+   <name>TC_13_ Validate_Name_E-mail_Department_details_in_profile_page</name>
+   <tag>Test cases</tag>
+   <comment></comment>
+   <testCaseGuid>4d3205bc-1686-41c8-81a0-69e0a3c0c2b5</testCaseGuid>
+</TestCaseEntity>

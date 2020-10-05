@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Check the functionality of &quot;Time Period&quot; Dropdown on dash bord</description>
+   <name>ATC_DP_1012_Check_the_functionality_of_TimePeriod_Dropdown</name>
+   <tag>Test cases</tag>
+   <comment></comment>
+   <testCaseGuid>8ac61b78-5d41-49ed-8fc9-b560e3d03e9e</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Check wither agent able to add the customer with only mandatory fields</description>
+   <name>ATC_AP_1037_TC_1170_1176_Appointment_creation_with_manditory_details</name>
+   <tag>Test cases</tag>
+   <comment></comment>
+   <testCaseGuid>bd980970-8117-418f-a5ba-1cb887ce140b</testCaseGuid>
+</TestCaseEntity>

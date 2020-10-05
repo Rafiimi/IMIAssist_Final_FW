@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify whether Other Details is saving successfully by selecting  time Format</description>
+   <name>TC_10_Verify_whether_Other_Details_is_saving_successfully_by_selecting _time_Format</name>
+   <tag>Test cases</tag>
+   <comment></comment>
+   <testCaseGuid>face41d4-10a2-4804-9ce4-e697a6b721e6</testCaseGuid>
+</TestCaseEntity>

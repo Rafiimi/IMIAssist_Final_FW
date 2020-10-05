@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Check whether If a new assigned appointment is created it should be added to the UI in real-time (without having to refresh the UI) under the assigned appointments section</description>
+   <name>TC_1131_TC_1120_A_new_assigned_appointment_is_created_it_should_be_added_to_the_UI_in_real_time_without_doing_refresh</name>
+   <tag>Test cases</tag>
+   <comment></comment>
+   <testCaseGuid>72c72fde-2da3-408d-89bb-2d99e6034d90</testCaseGuid>
+</TestCaseEntity>

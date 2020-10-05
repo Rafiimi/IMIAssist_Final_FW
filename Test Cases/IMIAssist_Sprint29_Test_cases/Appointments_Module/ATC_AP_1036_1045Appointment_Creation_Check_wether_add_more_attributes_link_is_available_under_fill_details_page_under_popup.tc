@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Check wither add more attributes link is available under fill details page under schedule an appointment popup</description>
+   <name>ATC_AP_1036_1045Appointment_Creation_Check_wether_add_more_attributes_link_is_available_under_fill_details_page_under_popup</name>
+   <tag>Test cases</tag>
+   <comment></comment>
+   <testCaseGuid>66dfadcc-435b-4532-af4d-9ce42e7603ea</testCaseGuid>
+</TestCaseEntity>

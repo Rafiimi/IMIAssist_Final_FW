@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify whether the agent is able to select schedule an appointment  option</description>
+   <name>ATC_AP_1027_Verify_whether_the_agent_is_able_to_select_schedule_an_appointment_option</name>
+   <tag>Test Cases</tag>
+   <comment></comment>
+   <testCaseGuid>45542f9e-22dc-4632-9633-66a484266a6d</testCaseGuid>
+</TestCaseEntity>

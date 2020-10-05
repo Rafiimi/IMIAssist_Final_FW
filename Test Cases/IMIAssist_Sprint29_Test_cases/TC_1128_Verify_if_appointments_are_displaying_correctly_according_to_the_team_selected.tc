@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify if appointments are displaying correctly according to the team selected</description>
+   <name>TC_1128_Verify_if_appointments_are_displaying_correctly_according_to_the_team_selected</name>
+   <tag>Test cases</tag>
+   <comment></comment>
+   <testCaseGuid>ad7255d0-4bfd-4864-afa8-0918b923541b</testCaseGuid>
+</TestCaseEntity>

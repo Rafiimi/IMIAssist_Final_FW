@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Check If user is part of multiple departments, then  list them under profile section</description>
+   <name>TC_14_Check_If_user_is_part_of_multiple_departments_then _list_them_under_profile_section</name>
+   <tag>Test cases</tag>
+   <comment></comment>
+   <testCaseGuid>b26c1342-fce8-4634-8d0b-b8aca55f4567</testCaseGuid>
+</TestCaseEntity>

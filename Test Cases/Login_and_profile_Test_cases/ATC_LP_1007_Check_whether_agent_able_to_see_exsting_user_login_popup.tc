@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Check whether agent able to see exsting user login popup</description>
+   <name>ATC_LP_1007_Check_whether_agent_able_to_see_exsting_user_login_popup</name>
+   <tag>Test cases</tag>
+   <comment></comment>
+   <testCaseGuid>cfe978f6-e073-4a42-83ab-e39d4decfa1b</testCaseGuid>
+</TestCaseEntity>

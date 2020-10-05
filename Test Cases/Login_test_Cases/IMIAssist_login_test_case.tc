@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Login test case</description>
+   <name>IMIAssist_login_test_case</name>
+   <tag>Test cases</tag>
+   <comment></comment>
+   <testCaseGuid>bb253b5c-e935-471e-b951-14bca9321849</testCaseGuid>
+</TestCaseEntity>

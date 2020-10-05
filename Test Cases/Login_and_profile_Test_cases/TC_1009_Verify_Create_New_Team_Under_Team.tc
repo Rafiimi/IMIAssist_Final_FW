@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify user able to create team under team settings</description>
+   <name>TC_1009_Verify_Create_New_Team_Under_Team</name>
+   <tag>Test Cases</tag>
+   <comment></comment>
+   <testCaseGuid>a4e7b9a1-1e07-4383-991a-4f92418562f5</testCaseGuid>
+</TestCaseEntity>

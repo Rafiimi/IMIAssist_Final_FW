@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Check wither agent able to cancel the customer creation</description>
+   <name>ATC_AP_1039_Appoi_Creation_Verify_agent_able_to_cancel_the_appointment_while_creation</name>
+   <tag>Test cases</tag>
+   <comment></comment>
+   <testCaseGuid>c322a4a1-cbdb-4a06-bcfe-a43617194ff2</testCaseGuid>
+</TestCaseEntity>

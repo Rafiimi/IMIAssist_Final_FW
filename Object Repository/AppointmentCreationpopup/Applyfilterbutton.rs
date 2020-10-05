@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description>ApplyFilterButton</description>
+   <name>Applyfilterbutton</name>
+   <tag></tag>
+   <elementGuidId>9cbfcb1b-b9e9-4afe-87c7-e46cf9f0a7ed</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='unassigned-content']//button[@id='applyAppFilter']</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+</WebElementEntity>

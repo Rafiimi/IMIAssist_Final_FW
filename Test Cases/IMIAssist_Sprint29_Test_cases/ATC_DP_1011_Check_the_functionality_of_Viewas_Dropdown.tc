@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Check_the_functionality_of_Viewas_Dropdown</description>
+   <name>ATC_DP_1011_Check_the_functionality_of_Viewas_Dropdown</name>
+   <tag>Test cases</tag>
+   <comment></comment>
+   <testCaseGuid>a71d644e-13b2-4876-91c2-af117c7fac96</testCaseGuid>
+</TestCaseEntity>

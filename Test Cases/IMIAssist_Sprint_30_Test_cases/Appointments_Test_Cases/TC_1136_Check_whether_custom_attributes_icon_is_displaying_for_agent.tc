@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Check whether custom attributes icon is displaying for agent</description>
+   <name>TC_1136_Check_whether_custom_attributes_icon_is_displaying_for_agent</name>
+   <tag>Test Cases</tag>
+   <comment></comment>
+   <testCaseGuid>ab2abfee-f61f-4cf1-ba1f-a436fff43d2c</testCaseGuid>
+</TestCaseEntity>

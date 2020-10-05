@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Check whether the appointment time (due/overdue in x minutes) is updating in real-time</description>
+   <name>TC_1179_Appointment_creation_Verify_appointment_time_due_overdue_in_x_minutes_is_updating_in_real_time</name>
+   <tag>Test cases</tag>
+   <comment></comment>
+   <testCaseGuid>541391d7-00ea-4059-b359-209e2f53945d</testCaseGuid>
+</TestCaseEntity>

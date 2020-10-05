@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Check whether default attributes should be priority in starting and  due time is at ending for each appointment</description>
+   <name>TC_1146_Check_whether_default_attributes_should_be_priority_in_starting_and _due_time_is_at_ending_for_each_appointment</name>
+   <tag>Test cases</tag>
+   <comment></comment>
+   <testCaseGuid>365d79c7-e18e-445b-88cf-4a2efb16a266</testCaseGuid>
+</TestCaseEntity>

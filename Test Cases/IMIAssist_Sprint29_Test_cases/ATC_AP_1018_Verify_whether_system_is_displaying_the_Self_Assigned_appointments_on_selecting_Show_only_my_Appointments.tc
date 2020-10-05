@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify whether system is displaying the Self Assigned appointments on selecting Show only my Appointments</description>
+   <name>ATC_AP_1018_Verify_whether_system_is_displaying_the_Self_Assigned_appointments_on_selecting_Show_only_my_Appointments</name>
+   <tag>Test cases</tag>
+   <comment></comment>
+   <testCaseGuid>42f28a62-8291-46ee-9284-78fe5cb7a8cc</testCaseGuid>
+</TestCaseEntity>

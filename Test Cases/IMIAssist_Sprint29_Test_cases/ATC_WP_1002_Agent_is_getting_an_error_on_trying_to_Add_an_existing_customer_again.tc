@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Check whether agent is getting an error on trying to Add an existing customer again</description>
+   <name>ATC_WP_1002_Agent_is_getting_an_error_on_trying_to_Add_an_existing_customer_again</name>
+   <tag>Test cases</tag>
+   <comment></comment>
+   <testCaseGuid>354f8514-794a-4fbc-8202-34404d4993c8</testCaseGuid>
+</TestCaseEntity>

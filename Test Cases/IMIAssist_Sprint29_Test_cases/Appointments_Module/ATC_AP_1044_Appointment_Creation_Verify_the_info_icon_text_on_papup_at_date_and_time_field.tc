@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Check whether information icons under select time and assignee</description>
+   <name>ATC_AP_1044_Appointment_Creation_Verify_the_info_icon_text_on_papup_at_date_and_time_field</name>
+   <tag>Test Cases</tag>
+   <comment></comment>
+   <testCaseGuid>00dc0cc1-078c-48fb-bda4-c41613ad285a</testCaseGuid>
+</TestCaseEntity>

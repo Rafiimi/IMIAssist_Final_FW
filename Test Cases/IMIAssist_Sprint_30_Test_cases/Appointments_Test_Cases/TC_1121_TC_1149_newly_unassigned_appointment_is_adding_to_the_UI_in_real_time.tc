@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Check whether newly unassigned appointment is adding to the UI in real-time (without having to refresh the UI) under the in-queue appointments section on creating it</description>
+   <name>TC_1121_TC_1149_newly_unassigned_appointment_is_adding_to_the_UI_in_real_time</name>
+   <tag>Test Cases</tag>
+   <comment></comment>
+   <testCaseGuid>11aedcf2-92b8-4e7e-afa0-e9f1e2d956a9</testCaseGuid>
+</TestCaseEntity>

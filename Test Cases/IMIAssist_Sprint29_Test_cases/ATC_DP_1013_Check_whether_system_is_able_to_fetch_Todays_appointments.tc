@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Check whether system is able to fetch &quot;Today's&quot; appointments</description>
+   <name>ATC_DP_1013_Check_whether_system_is_able_to_fetch_Todays_appointments</name>
+   <tag>Test cases</tag>
+   <comment></comment>
+   <testCaseGuid>7d6a2556-7ea4-4065-83d5-6074f5ea0c42</testCaseGuid>
+</TestCaseEntity>

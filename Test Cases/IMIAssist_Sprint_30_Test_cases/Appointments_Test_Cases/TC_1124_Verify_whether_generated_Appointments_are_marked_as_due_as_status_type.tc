@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify whether generated Appointments are marked as due as status type in the UI when start time >= Current time</description>
+   <name>TC_1124_Verify_whether_generated_Appointments_are_marked_as_due_as_status_type</name>
+   <tag>Test cases</tag>
+   <comment></comment>
+   <testCaseGuid>eed6efcc-bd0c-49a5-8619-a2b36a73db18</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify user able to modify other details like Phone number,Time zone,Date and time formate.</description>
+   <name>ATC_PP_1009_1011_Verify_User_Profile_Other_Settings_with_date_formate</name>
+   <tag>Test cases</tag>
+   <comment></comment>
+   <testCaseGuid>d1a50f01-dd6a-4ad9-bb43-f9e6b7e616d2</testCaseGuid>
+</TestCaseEntity>

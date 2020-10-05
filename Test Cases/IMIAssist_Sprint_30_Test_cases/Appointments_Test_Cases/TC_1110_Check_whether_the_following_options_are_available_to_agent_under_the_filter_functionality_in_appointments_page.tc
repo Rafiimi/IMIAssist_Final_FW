@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify whether system is displaying all appointments for all teams in the active Department under profile 
+User role - Company  Admin</description>
+   <name>TC_1110_Check_whether_the_following_options_are_available_to_agent_under_the_filter_functionality_in_appointments_page</name>
+   <tag>Test cases</tag>
+   <comment></comment>
+   <testCaseGuid>71e77e2e-f30f-4e89-90fc-30f19f4208d4</testCaseGuid>
+</TestCaseEntity>

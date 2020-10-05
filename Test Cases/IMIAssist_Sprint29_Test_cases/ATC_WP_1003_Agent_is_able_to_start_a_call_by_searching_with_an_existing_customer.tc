@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Check whether agent is getting an error on trying to Add an existing customer again</description>
+   <name>ATC_WP_1003_Agent_is_able_to_start_a_call_by_searching_with_an_existing_customer</name>
+   <tag>Test cases</tag>
+   <comment></comment>
+   <testCaseGuid>a577985d-0bb2-45ce-8594-dc6a6ffbd04c</testCaseGuid>
+</TestCaseEntity>

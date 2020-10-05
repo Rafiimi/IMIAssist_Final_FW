@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify user able to create appointment management tab</description>
+   <name>TC-1011_Verify_user_able_create_tagname_under_appointmentManagementTab</name>
+   <tag>Test cases</tag>
+   <comment></comment>
+   <testCaseGuid>c5f1b924-fa7d-403b-b291-db6c9b8ed262</testCaseGuid>
+</TestCaseEntity>

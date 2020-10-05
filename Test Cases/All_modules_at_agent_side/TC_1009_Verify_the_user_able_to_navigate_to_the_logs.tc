@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify user able to navigate to the logs</description>
+   <name>TC_1009_Verify_the_user_able_to_navigate_to_the_logs</name>
+   <tag>Test cases</tag>
+   <comment></comment>
+   <testCaseGuid>11263e16-75c5-4bda-919f-c30f5c01637a</testCaseGuid>
+</TestCaseEntity>

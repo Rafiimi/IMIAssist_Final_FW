@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Check whether the admin is able to discard the changes made in the attributes popup on clicking at cancel button</description>
+   <name>TC_1148_Check_whether_the_admin_is_able_to_discard_the_changes_made_in_the_attributes_popup_on_clicking_at_cancel_button</name>
+   <tag>Test cases</tag>
+   <comment></comment>
+   <testCaseGuid>38279750-5bbb-460e-9cb1-a8dd124284ca</testCaseGuid>
+</TestCaseEntity>

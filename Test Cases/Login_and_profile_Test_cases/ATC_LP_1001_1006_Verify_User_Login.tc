@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify user can able to login the application with valid data</description>
+   <name>ATC_LP_1001_1006_Verify_User_Login</name>
+   <tag>Test cases</tag>
+   <comment></comment>
+   <testCaseGuid>87f6d1c1-c00f-4d47-ad8e-ce402d068edc</testCaseGuid>
+</TestCaseEntity>

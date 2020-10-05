@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Check whether the attribute is adding successfully into visible attributes from available attributes on clicking at + icon</description>
+   <name>TC_1139_1143_Check_whether_the_saved_attributes_are_displaying_for_all_the_appointments</name>
+   <tag>Test cases</tag>
+   <comment></comment>
+   <testCaseGuid>c007f604-a7a2-4c85-bbfc-c507075b2e97</testCaseGuid>
+</TestCaseEntity>

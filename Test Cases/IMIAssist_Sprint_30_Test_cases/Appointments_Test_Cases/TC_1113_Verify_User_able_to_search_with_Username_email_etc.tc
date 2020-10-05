@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Check whether Search functionality is working fine under filter option in appointments page</description>
+   <name>TC_1113_Verify_User_able_to_search_with_Username_email_etc</name>
+   <tag>Test cases</tag>
+   <comment></comment>
+   <testCaseGuid>cec3d8bb-1059-4578-a4ec-0d17ee663e62</testCaseGuid>
+</TestCaseEntity>

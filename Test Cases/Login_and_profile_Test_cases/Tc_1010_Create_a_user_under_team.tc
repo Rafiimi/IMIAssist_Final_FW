@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify user able to create team member under a team</description>
+   <name>Tc_1010_Create_a_user_under_team</name>
+   <tag>Test cases</tag>
+   <comment></comment>
+   <testCaseGuid>675ab499-9603-4e47-8c0f-9611a611a43f</testCaseGuid>
+</TestCaseEntity>

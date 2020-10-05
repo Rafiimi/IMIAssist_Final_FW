@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify user able to naviagte defortment page</description>
+   <name>Tc_1003_Verify_the_user_able_navigate_the_deportment_page</name>
+   <tag>Test cases</tag>
+   <comment></comment>
+   <testCaseGuid>e6323e12-a7b4-4b76-a3a0-96fdaeb592d1</testCaseGuid>
+</TestCaseEntity>

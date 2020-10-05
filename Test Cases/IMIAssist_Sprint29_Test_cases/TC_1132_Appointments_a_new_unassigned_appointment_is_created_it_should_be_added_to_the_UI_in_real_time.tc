@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Check If a new unassigned appointment is created it should be added to the UI in real-time (without having to refresh the Ui) under the unassigned appointments section</description>
+   <name>TC_1132_Appointments_a_new_unassigned_appointment_is_created_it_should_be_added_to_the_UI_in_real_time</name>
+   <tag>Test cases</tag>
+   <comment></comment>
+   <testCaseGuid>76ec65c6-54d2-4734-885a-5ec098f6e355</testCaseGuid>
+</TestCaseEntity>

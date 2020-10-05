@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify whether the following options are available in popup on</description>
+   <name>ATC_AP_1026_Appointment_Creation_ Verify_whether_the_following_options_are_available_in_popup_on</name>
+   <tag>Test cases</tag>
+   <comment></comment>
+   <testCaseGuid>b747dbc0-b98f-4a5b-9186-55a9a915196c</testCaseGuid>
+</TestCaseEntity>

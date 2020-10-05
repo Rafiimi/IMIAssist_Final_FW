@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Check whether admin is able to add more than 10 attributes under visible attributes from available attributes</description>
+   <name>TC_1140_Check_whether_admin_is_able_add_more_than_10_attributes</name>
+   <tag>Test cases</tag>
+   <comment></comment>
+   <testCaseGuid>abc2b90e-b530-4251-92e1-422e70765a14</testCaseGuid>
+</TestCaseEntity>
