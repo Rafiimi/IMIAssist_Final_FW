@@ -21,8 +21,8 @@ viewasdropdownexplabeltext = 'View As'
 
 try {
 	
-  try
-{
+//  try
+//{
 	
 WebUI.openBrowser('')
 
@@ -36,15 +36,15 @@ WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please e
 WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-_90355e'), findTestData("TestDataforLogin").getValue(3,1))
 WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/button_LOGIN'))
 WebUI.delay(3)
-Activelogin=WebUI.verifyElementVisible(findTestObject('Object Repository/AppointmentCreationpopup/Active_login_text_objects'), 5)
+//Activelogin=WebUI.verifyElementVisible(findTestObject('Object Repository/AppointmentCreationpopup/Active_login_text_objects'), 5)
 //Activelogin=WebUI.verifyElementVisible('Object Repository/AppointmentCreationpopup/Active_login_text_objects')
 
-if(Activelogin==true)
-{
-	WebUI.click(findTestObject('Object Repository/AppointmentCreationpopup/ProceedButtononactivelogin'))
-	KeywordUtil.markPassed('SUCCESS:All options are avilable in view as drop down field')
-	
-}
+//if(Activelogin==true)
+//{
+//	WebUI.click(findTestObject('Object Repository/AppointmentCreationpopup/ProceedButtononactivelogin'))
+//	KeywordUtil.markPassed('SUCCESS:All options are avilable in view as drop down field')
+//	
+//}
 
 //else if(Activelogin==false)
 //{
@@ -57,12 +57,12 @@ if(Activelogin==true)
 //	
 //}
 
-}
-catch(Exception e)
-{
-	KeywordUtil.markPassed('ERROR:User unable to login:'+e.getMessage())
-	
-}
+//}
+//catch(Exception e)
+//{
+//	KeywordUtil.markPassed('ERROR:User unable to login:'+e.getMessage())
+//	
+//}
     WebUI.delay(2)
 
     WebUI.click(findTestObject('Page_eClinic - Video Consultations/div_Select Role  Specialty Admin'))
@@ -83,10 +83,10 @@ catch(Exception e)
 }*/
     WebUI.delay(5)
 
-    //	viewasoptioncount=WebUI.getNumberOfTotalOption(findTestObject('Page_eClinic - Video Consultations/div_Select Role  Specialty Admin'))
-    //	println('View as drop down options :'+viewasoptioncount)
-    //    WebUI.verifyOptionsPresent(findTestObject('Page_eClinic - Video Consultations/div_Select Role  Specialty Admin'), [' Specialty Admin '
-    //            , ' Team View ', ' User '])
+    	viewasoptioncount=WebUI.getNumberOfTotalOption(findTestObject('Page_eClinic - Video Consultations/div_Select Role  Specialty Admin'))
+    	println('View as drop down options :'+viewasoptioncount)
+        WebUI.verifyOptionsPresent(findTestObject('Page_eClinic - Video Consultations/div_Select Role  Specialty Admin'), [' Specialty Admin '
+                , ' Team View ', ' User '])
     KeywordUtil.markPassed('SUCCESS:All options are avilable in view as drop down field')
 
     WebUI.takeScreenshot('Test Cases\\IMIAssist_Automation_Test_Snapshots\\Dashboard/TC_1029_Check_the_functionality_of_Viewas_Dropdown.png')

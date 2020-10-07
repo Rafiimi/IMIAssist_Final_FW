@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Check whether system is able to fetch&quot;Yesturday's&quot; appointments data on selecting &quot;Yesterday&quot; from Time Period dropdown</description>
+   <name>TC_Dashboard_1008_V_agentabletseeyesterday_app</name>
+   <tag>Test cases</tag>
+   <comment></comment>
+   <testCaseGuid>234e0fae-8ef8-4a7e-ba9a-4f17571735b2</testCaseGuid>
+</TestCaseEntity>
