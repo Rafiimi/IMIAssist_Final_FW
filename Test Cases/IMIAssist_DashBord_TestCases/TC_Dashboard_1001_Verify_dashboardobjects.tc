@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify the objects in Dashboard</description>
+   <name>TC_Dashboard_1001_Verify_dashboardobjects</name>
+   <tag>Test Cases</tag>
+   <comment></comment>
+   <testCaseGuid>e40fb4e5-542e-4673-b14e-21a513906d48</testCaseGuid>
+</TestCaseEntity>
