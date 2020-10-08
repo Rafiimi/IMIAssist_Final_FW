@@ -209,3 +209,16 @@ catch(Exception e)
 	KeywordUtil.markFailed('ERROR:Agent able to see the Customer_Satisfacion_chat section:'+e.getMessage())
 	
 }
+try
+{
+WebUI.delay(5)
+
+WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/a_Finance_navProfileDropdown'))
+
+WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/li_Logout'))
+}
+catch(Exception e)
+{
+	KeywordUtil.markFailed('ERROR:Agent unable to logouted the application:'+e.getMessage())
+	
+}

@@ -38,6 +38,7 @@ try
 {
 	
 WebUI.click(findTestObject('Object Repository/DashBoard_Objects/Viewasdropdown'))
+WebUI.delay(3)
 WebUI.click(findTestObject('Object Repository/DashBoard_Objects/Departmentadmin_object'))
 
 }
@@ -88,5 +89,18 @@ try
 catch(Exception e)
 {
 	KeywordUtil.markFailed('ERROR:Inqueappointment Count is updated successfully:'+e.getMessage())
+	
+}
+try
+{
+WebUI.delay(5)
+
+WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/a_Finance_navProfileDropdown'))
+
+WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/li_Logout'))
+}
+catch(Exception e)
+{
+	KeywordUtil.markFailed('ERROR:Agent unable to logouted the application:'+e.getMessage())
 	
 }

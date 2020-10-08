@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='left-view']/div/div[3]/div[2]/div/div[2]/div/div/div[7]/div</value>
+         <value>//div[normalize-space(text())='Last 90 Days']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

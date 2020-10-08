@@ -6,12 +6,11 @@
    <elementGuidId>abda2b02-ce9d-46b6-a786-bb4dc60628a9</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@ng-model='selectedViewAsLabel']</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>(//div[@class='left-view-header-dropdown-container'])[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
