@@ -38,13 +38,13 @@ try
 {
 	
 WebUI.click(findTestObject('Object Repository/DashBoard_Objects/Selecttimeperiod_dd'))
-WebUI.click(findTestObject('Object Repository/DashBoard_Objects/Last7days_option'))
+WebUI.click(findTestObject('Object Repository/DashBoard_Objects/Last60days_option'))
 
 }
 
 catch(Exception e)
 {
-	KeywordUtil.markFailed('ERROR:Agent unable to Last30days from view as drop down :'+e.getMessage())
+	KeywordUtil.markFailed('ERROR:Agent unable to Last60days from view as drop down :'+e.getMessage())
 	
 }
 WebUI.delay(5)
