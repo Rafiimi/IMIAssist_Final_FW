@@ -6,7 +6,7 @@
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>fc0174b5-1394-4638-9d72-d27a6d1282b9</dataFileGUID>
-   <dataSourceUrl>D:\IMI_Automation\IMI_Automation_files\Staging_IMIAssist_Automation\IMIAssist_Automtion\TestData\IMIassist_Automation_TestData (1).xlsx</dataSourceUrl>
+   <dataSourceUrl>D:\IMI_Automation\IMIAssist_Automtion\TestData\IMIassist_Automation_TestData.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
    <isInternalPath>false</isInternalPath>
    <query></query>
