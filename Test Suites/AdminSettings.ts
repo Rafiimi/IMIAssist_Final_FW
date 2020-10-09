@@ -13,7 +13,7 @@
    <testCaseLink>
       <guid>7c7c84c9-4896-41f5-a9a8-6c31283448c3</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Admin_Settings/Dept/ATC_AS_0001_UserCreation_InvalidData</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -25,25 +25,25 @@
    <testCaseLink>
       <guid>bb456ba6-e133-447a-b0b6-284011f242fc</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Admin_Settings/Dept/ATC_AS_0003_ResendMail_CreateWithExistingData</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>f8fd3bdb-b209-4f51-9a18-1627993c1d26</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Admin_Settings/Dept/ATC_AS_0004_DeleteUser</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>473188c1-3b8c-4a33-b1dd-465909699c66</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Admin_Settings/Dept/ATC_AS_0005_Pagination</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>d31c2c10-1b5b-401f-9d99-b06164f5d51a</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Admin_Settings/Dept/ATC_AS_0006_BulkUploadUsers_Valid_Invalid</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

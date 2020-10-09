@@ -86,7 +86,7 @@ for (int i = 1; i <= 5; i++) {
                     ' ') + ',') + 'Expected is: ') + expectedMsg)
             }
         }
-        
+       
         if ((findTestData('AdminSettings_User').getValue('Success_or_Error?', i) == 'Error') && (findTestData('AdminSettings_User').getValue(
             'Expected_Msg_Header', i) != '')) {
             actualMsg = WebUI.getText(findTestObject('Admin_Settings/Dept/UserCreation/ErrorMsg_Header'))
