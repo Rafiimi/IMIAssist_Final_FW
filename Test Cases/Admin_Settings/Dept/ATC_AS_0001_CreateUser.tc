@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description>User creation in Dept</description>
-   <name>ATC_AS_0002_UserCreation_ValidData</name>
+   <name>ATC_AS_0001_CreateUser</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>8bdb14e5-c48b-44ed-abc0-18c9738d2395</testCaseGuid>
+   <testCaseGuid>4af6cee4-c548-45a0-be3a-88c002cd6191</testCaseGuid>
 </TestCaseEntity>

@@ -19,9 +19,4 @@
       <initValue>'Assist1234'</initValue>
       <name>Password</name>
    </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>''</initValue>
-      <name>TCname</name>
-   </GlobalVariableEntity>
 </GlobalVariableEntities>
