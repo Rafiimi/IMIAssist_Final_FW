@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Resend mail check and delete user</description>
+   <name>ATC_AS_0003_ResendMail_CreateWithExistingData</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>6644efc7-2d31-4140-a37b-d3680e3619bd</testCaseGuid>
+</TestCaseEntity>
