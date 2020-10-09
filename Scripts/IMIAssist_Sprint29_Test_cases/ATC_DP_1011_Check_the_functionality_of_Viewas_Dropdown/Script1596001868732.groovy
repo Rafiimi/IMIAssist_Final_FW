@@ -20,7 +20,7 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 viewasdropdownexplabeltext = 'View As'
 
 	
-try
+/*try
 {
 	WebUI.openBrowser('')
 	WebUI.navigateToUrl(findTestData('IMIA_Dashboard').getValue(1, 1))
@@ -35,7 +35,7 @@ try
 catch(Exception e)
 {
 	KeywordUtil.markFailed('ERROR:Agent unable to login the application :'+e.getMessage())
-}
+}*/
 WebUI.delay(3)
 
 try {

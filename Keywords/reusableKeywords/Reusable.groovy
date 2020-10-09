@@ -22,7 +22,7 @@ import com.kms.katalon.core.util.KeywordUtil
 import internal.GlobalVariable
 
 public class Reusable {
-
+//Login Resusable method
 	@Keyword
 	def Login(){
 		try{
@@ -43,9 +43,28 @@ public class Reusable {
 			WebUI.click(findTestObject('Object Repository/LoginPage_TestCases_Objects/Login_button'))
 
 			WebUI.delay(8)
-		} catch (Exception e) {
+		} 
+		catch (Exception e) {
 			KeywordUtil.markFailed("Unable to login")
 		}
 	}
+	//Logout Resusable Method
+	@Keyword
+	def Logout()
+	{
+		
+			try
+			 {
+			 WebUI.delay(5)
+			 
+			 WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/a_Finance_navProfileDropdown'))
+			 
+			 WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/li_Logout'))
+			 }
+			 catch(Exception e)
+			 {
+				 KeywordUtil.markFailed('ERROR:Agent unable to logouted the application:'+e.getMessage())
+				 
+			 }
+	}
 }
-

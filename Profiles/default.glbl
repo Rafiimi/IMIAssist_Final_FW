@@ -6,13 +6,13 @@
    <defaultProfile>true</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://devqa.imiassist.ai/agent/#!/registration/login'</initValue>
-      <name>TestEnvironment</name>
+      <initValue>'https://stg.imiassist.ai/agent/#!/registration/login'</initValue>
+      <name>Url</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'rafishaik.m@imimobile.com'</initValue>
-      <name>Userid</name>
+      <initValue>'cofyuperzu@enayu.com\r\n'</initValue>
+      <name>Username</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>

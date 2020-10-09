@@ -16,7 +16,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
-try
+/*try
 {
 	WebUI.openBrowser('')
 	WebUI.navigateToUrl(findTestData('IMIA_Dashboard').getValue(1, 1))
@@ -31,7 +31,7 @@ try
 catch(Exception e)
 {
 	KeywordUtil.markFailed('ERROR:Agent unable to login the application :'+e.getMessage())
-}
+}*/
 WebUI.delay(5)
 //Department admin selection from view as drop down
 try
@@ -107,7 +107,7 @@ catch(Exception e)
 	
 }
 
-try
+/*try
 {
 WebUI.delay(5)
 
@@ -119,4 +119,4 @@ catch(Exception e)
 {
 	KeywordUtil.markFailed('ERROR:Agent unable to logouted the application:'+e.getMessage())
 	
-}
+}*/

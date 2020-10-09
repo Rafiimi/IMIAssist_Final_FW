@@ -19,7 +19,7 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 try
 {
-try
+/*try
 {
 	WebUI.openBrowser('')
 	WebUI.navigateToUrl(findTestData('IMIA_Dashboard').getValue(1, 1))
@@ -34,7 +34,7 @@ try
 catch(Exception e)
 {
 	KeywordUtil.markFailed('ERROR:Agent unable to login the application :'+e.getMessage())
-}
+}*/
 WebUI.delay(5)
 try
 {
@@ -90,24 +90,13 @@ catch(Exception e)
 	KeywordUtil.markFailed('ERROR:Inqueappointment Count is updated successfully:'+e.getMessage())
 	
 }
-try
+/*try
 {
-WebUI.delay(5)
-
-WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/a_Finance_navProfileDropdown'))
-
-WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/li_Logout'))
-}
-catch(Exception e)
-{
-	KeywordUtil.markFailed('ERROR:Agent unable to logouted the application:'+e.getMessage())
-	
-}
-closedappointmentscount=WebUI.getText(findTestObject('Page_eClinic - Video Consultations/closedappointmentscount'))
+closedappointmentscount=WebUI.getText(findTestObject('Object Repository/DashBoard_Objects/Closedappointments'))
 WebUI.delay(3)
 WebUI.takeScreenshot('Test Cases\\IMIAssist_Automation_Test_Snapshots\\Dashboard/ATC_DP_1013_Check_whether_system_is_able_to_fetch_Todays_appointments.png')
 
-if(!closedappointmentscount.equals('0'))
+if(closedappointmentscount>=0)
 {
 	KeywordUtil.markPassed('SUCCESS:Closed appointments is updated successfully')
 	
@@ -117,7 +106,13 @@ else
 	KeywordUtil.markFailed('ERROR:Closed appointments is not updated successfully')
 	
 }
-try
+}
+catch(Exception e)
+{
+	KeywordUtil.markFailed('ERROR:Closed appointments is not updated successfully:'+e.getMessage())
+	
+}*/
+/*try
 {
 WebUI.delay(5)
 
@@ -129,7 +124,7 @@ catch(Exception e)
 {
 	KeywordUtil.markFailed('ERROR:Agent unable to logouted the application:'+e.getMessage())
 	
-}
+}*/
 }
 catch(Exception e)
 {
