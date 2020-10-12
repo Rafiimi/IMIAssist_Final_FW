@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataFileEntity>
+   <description></description>
+   <name>Team_PageDesign_Onboarding</name>
+   <tag></tag>
+   <containsHeaders>true</containsHeaders>
+   <csvSeperator></csvSeperator>
+   <dataFileGUID>57120d23-2b6c-4b10-b82b-1606f3a30891</dataFileGUID>
+   <dataSourceUrl>TestData/IMIassist_Automation_TestData.xlsx</dataSourceUrl>
+   <driver>ExcelFile</driver>
+   <isInternalPath>true</isInternalPath>
+   <query></query>
+   <secureUserAccount>false</secureUserAccount>
+   <sheetName>Team_PageDesign_Onboarding</sheetName>
+   <usingGlobalDBSetting>false</usingGlobalDBSetting>
+</DataFileEntity>

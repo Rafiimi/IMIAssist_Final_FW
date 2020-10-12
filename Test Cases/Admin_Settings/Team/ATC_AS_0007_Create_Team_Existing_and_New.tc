@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Create a team with existing data and new team creation</description>
+   <name>ATC_AS_0007_Create_Team_Existing_and_New</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3123ca41-aa4c-45ef-b08e-2a380a527c0c</testCaseGuid>
+</TestCaseEntity>
