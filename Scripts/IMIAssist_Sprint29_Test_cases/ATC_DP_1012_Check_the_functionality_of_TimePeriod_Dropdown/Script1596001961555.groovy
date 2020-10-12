@@ -14,62 +14,77 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
+
+//CustomKeywords.'reusableKeywords.Reusable.Login'()
+
+WebUI.delay(3)
+
 try {
- /*  try
-{
-	WebUI.openBrowser('')
-	WebUI.navigateToUrl(findTestData('IMIA_Dashboard').getValue(1, 1))
-	WebUI.delay(3)
-	WebUI.maximizeWindow()
-	WebUI.setText(findTestObject('Object Repository/LoginPage_TestCases_Objects/User_Email'),
-		findTestData('IMIA_Dashboard').getValue(2, 1))
-	WebUI.setText(findTestObject('Object Repository/LoginPage_TestCases_Objects/PasswordTextfiled'),
-		findTestData('IMIA_Dashboard').getValue(3, 1))
-	WebUI.click(findTestObject('Object Repository/LoginPage_TestCases_Objects/Login_button'))
-}
-catch(Exception e)
-{
-	KeywordUtil.markFailed('ERROR:Agent unable to login the application :'+e.getMessage())
-}*/
-
-    WebUI.delay(3)
-
-    WebUI.click(findTestObject('Object Repository/Page_eClinic - Video Consultations/div_Select time period  Today'))
-
-    WebUI.delay(3)
-/*try{
-WebUI.click(findTestObject('Page_eClinic - Video Consultations/div_Select time period  Today'))
-	//    WebUI.verifyOptionsPresent(findTestObject('Page_eClinic - Video Consultations/div_Select time period  Today'), [' Today '
-//            , ' Yesterday ', ' Last 7 Days ', ' Last 30 Days ', ' Last 60 Days ', ' Last 90 Days '])
-   
+	SelectTimePeriod=WebUI.verifyElementVisible(findTestObject('Object Repository/DashBoard_Objects/Selecttimeperiod_dd'))
 	
-	 KeywordUtil.markPassed('ERROR:All options are avilable in Time period drop down field')
+if (SelectTimePeriod == true) {
+	KeywordUtil.markPassed('SUCCESS:Agent able to see the Select Time Period')
+	WebUI.click(findTestObject('Object Repository/DashBoard_Objects/Selecttimeperiod_dd'))
+	
+}
+
+else 
+{
+KeywordUtil.markFailed('ERROR:Agent Unable to see the Select Time Period Drop Down:')
+}
 	}
-catch(Exception e)
-{
-	KeywordUtil.markFailed('ERROR:All options are avilable in Time period drop down field')
-	
-}
-*/    KeywordUtil.markPassed('SUCCESS:All options are avilable in Time period drop down field')
-	WebUI.takeScreenshot('Test Cases\\IMIAssist_Automation_Test_Snapshots\\Dashboard/ATC_DP_1012_Check_the_functionality_of_TimePeriod_Dropdown.png')
-	WebUI.delay(3)
-	/*try
-{
-WebUI.delay(5)
 
-WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/a_Finance_navProfileDropdown'))
-
-WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/li_Logout'))
-}
-catch(Exception e)
-{
-	KeywordUtil.markFailed('ERROR:Agent unable to logouted the application:'+e.getMessage())
-	
-}*/
-}
 catch (Exception e) {
-    KeywordUtil.markFailed('ERROR:All options are not avilable in Time period drop down field')
+    KeywordUtil.markFailed('ERROR:All options are avilable in view as drop down field')
 } 
+
+//First option
+try
+{
+	TodayOption=WebUI.getText(findTestObject('Object Repository/DashBoard_Objects/Today_option_fdd'))
+	if(TodayOption.equals('Today'))
+	{
+		KeywordUtil.markPassed('Sucess:Today option is available under view as drop down')
+	}
+}
+
+catch(Exception e)
+{
+	KeywordUtil.markFailed('Failure:Today option is not available under view as drop down')
+}
+try
+{
+	Yesterdaytext=WebUI.getText(findTestObject('Object Repository/DashBoard_Objects/Yesterday_option_STDD'))
+	if(Yesterdaytext.equals('Yesterday'))
+	{
+		KeywordUtil.markPassed('Sucess:Yesterday option is available under view as drop down')
+	}
+}
+
+catch(Exception e)
+{
+	KeywordUtil.markFailed('Failure:Yesterday option is not available under view as drop down')
+}
+
+try
+{
+	Last_7_DaysText=WebUI.getText(findTestObject('Object Repository/DashBoard_Objects/Last7days_option'))
+	if(Last_7_DaysText.equals('Last 7 Days'))
+	{
+		KeywordUtil.markPassed('Sucess:Last 7 Days option is available under view as drop down')
+	}
+
+}
+catch(Exception e)
+{
+	KeywordUtil.markFailed('Failure:Last 7 Days option is not available under view as drop down')
+}
+//CustomKeywords.'reusableKeywords.Reusable.Logout'()
+
+
+
+
 

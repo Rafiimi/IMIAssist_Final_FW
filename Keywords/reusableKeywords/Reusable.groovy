@@ -14,11 +14,14 @@ import com.kms.katalon.core.testcase.TestCase
 import com.kms.katalon.core.testdata.TestData
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.common.WebUiCommonHelper
+import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.logging.KeywordLogger as KeywordLogger
+
 
 
 import internal.GlobalVariable
@@ -43,7 +46,7 @@ public class Reusable {
 			WebUI.setText(findTestObject('Object Repository/LoginPage_TestCases_Objects/PasswordTextfiled'), loginPassword)
 
 			WebUI.click(findTestObject('Object Repository/LoginPage_TestCases_Objects/Login_button'))
-		
+
 			/*		try {
 			 boolean AlreadyLoggedIn = WebUI.verifyElementPresent(findTestObject('Admin_Settings/Dept/UserCreation/button_Login_PROCEED'), 2, FailureHandling.OPTIONAL)
 			 if (AlreadyLoggedIn==true) {
@@ -55,16 +58,16 @@ public class Reusable {
 			 }*/
 			WebUI.delay(5)
 		} catch (Exception e) {
-		
+
 
 			WebUI.delay(8)
 		}
 		catch (Exception e) {
-			
+
 			KeywordUtil.markFailed("Unable to login")
 		}
 	}
-	
+
 
 	@Keyword
 	def ClickDynamicObject(String dynamicName) {
@@ -162,6 +165,24 @@ public class Reusable {
 			KeywordUtil.markFailed('ERROR:Agent unable to logouted the application:'+e.getMessage())
 
 		}
+	}
+
+	//Cases Tab Selection reusable method
+	@Keyword
+	def Selectcasestab()
+	{
+		try
+		{
+			WebUI.click(findTestObject('Object Repository/Cases_Module_objects/Reports_Tab'))
+			WebUI.click(findTestObject('Object Repository/Cases_Module_objects/Cases_subTab_icon'))
+			WebUI.setText(findTestObject('Object Repository/Cases_Module_objects/Searchtextfieldincases'), findTestData('IMIA_cases_testData').getValue(1, 1))
+		}
+		catch(Exception e)
+		{
+			KeywordUtil.markFailed('ERROR:Agent unable to search case id from cases:'+e.getMessage())
+
+		}
+		
 	}
 
 }
