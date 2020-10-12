@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ATC_AS_0006_BulkUploadUsers_Valid_Invalid</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>da427977-9be1-4608-b781-6d1b8cff1dae</testCaseGuid>
+</TestCaseEntity>
