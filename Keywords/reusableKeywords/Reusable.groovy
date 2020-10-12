@@ -14,15 +14,18 @@ import com.kms.katalon.core.testcase.TestCase
 import com.kms.katalon.core.testdata.TestData
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.common.WebUiCommonHelper
+import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import com.kms.katalon.core.util.KeywordUtil
 
 
+
 import internal.GlobalVariable
 
 public class Reusable {
-//Login Resusable method
+	//Login Resusable method
 	@Keyword
 	def Login(){
 		try{
@@ -43,7 +46,7 @@ public class Reusable {
 			WebUI.click(findTestObject('Object Repository/LoginPage_TestCases_Objects/Login_button'))
 
 			WebUI.delay(8)
-		} 
+		}
 		catch (Exception e) {
 			KeywordUtil.markFailed("Unable to login")
 		}
@@ -52,19 +55,36 @@ public class Reusable {
 	@Keyword
 	def Logout()
 	{
-		
-			try
-			 {
-			 WebUI.delay(5)
-			 
-			 WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/a_Finance_navProfileDropdown'))
-			 
-			 WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/li_Logout'))
-			 }
-			 catch(Exception e)
-			 {
-				 KeywordUtil.markFailed('ERROR:Agent unable to logouted the application:'+e.getMessage())
-				 
-			 }
+
+		try
+		{
+			WebUI.delay(5)
+
+			WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/a_Finance_navProfileDropdown'))
+
+			WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/li_Logout'))
+		}
+		catch(Exception e)
+		{
+			KeywordUtil.markFailed('ERROR:Agent unable to logouted the application:'+e.getMessage())
+
+		}
+	}
+
+//Cases Tab Selection reusable method
+	@Keyword
+	def Selectcasestab()
+	{
+		try
+		{
+		WebUI.click(findTestObject('Object Repository/Cases_Module_objects/Reports_Tab'))
+		WebUI.click(findTestObject('Object Repository/Cases_Module_objects/Cases_subTab_icon'))
+		WebUI.setText(findTestObject('Object Repository/Cases_Module_objects/Searchtextfieldincases'), findTestData('IMIA_cases_testData').getValue(1, 1))
+		}
+		catch(Exception e)
+		{
+			KeywordUtil.markFailed('ERROR:Agent unable to search case id from cases:'+e.getMessage())
+			
+		}
 	}
 }

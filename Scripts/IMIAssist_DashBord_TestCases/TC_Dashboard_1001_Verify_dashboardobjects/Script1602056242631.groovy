@@ -154,5 +154,5 @@ catch (Exception e) {
     KeywordUtil.markFailed('ERROR:Agent able to see the Customer_Satisfacion_chat section:' + e.getMessage())
 
 } 
-CustomKeywords.'reusableKeywords.Reusable.Logout'()
+//CustomKeywords.'reusableKeywords.Reusable.Logout'()
 

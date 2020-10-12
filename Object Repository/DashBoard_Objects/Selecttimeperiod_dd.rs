@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='left-view-header-dropdown-container mt-0']</value>
+         <value>(//div[@on-select='setTimePeriod($item)'])[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
