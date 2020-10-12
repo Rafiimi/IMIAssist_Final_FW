@@ -24,7 +24,7 @@ import com.kms.katalon.core.logging.KeywordLogger as KeywordLogger
 import internal.GlobalVariable
 
 public class Reusable {
-
+//Login Resusable method
 	@Keyword
 	def Login(){
 		try{
@@ -43,6 +43,7 @@ public class Reusable {
 			WebUI.setText(findTestObject('Object Repository/LoginPage_TestCases_Objects/PasswordTextfiled'), loginPassword)
 
 			WebUI.click(findTestObject('Object Repository/LoginPage_TestCases_Objects/Login_button'))
+<<<<<<< HEAD
 			/*		try {
 			 boolean AlreadyLoggedIn = WebUI.verifyElementPresent(findTestObject('Admin_Settings/Dept/UserCreation/button_Login_PROCEED'), 2, FailureHandling.OPTIONAL)
 			 if (AlreadyLoggedIn==true) {
@@ -54,9 +55,16 @@ public class Reusable {
 			 }*/
 			WebUI.delay(5)
 		} catch (Exception e) {
+=======
+
+			WebUI.delay(8)
+		} 
+		catch (Exception e) {
+>>>>>>> branch 'master' of https://github.com/Rafiimi/IMIAssist_Final_FW
 			KeywordUtil.markFailed("Unable to login")
 		}
 	}
+<<<<<<< HEAD
 
 	@Keyword
 	def ClickDynamicObject(String dynamicName) {
@@ -135,4 +143,25 @@ public class Reusable {
 		}
 	}
 
+=======
+	//Logout Resusable Method
+	@Keyword
+	def Logout()
+	{
+		
+			try
+			 {
+			 WebUI.delay(5)
+			 
+			 WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/a_Finance_navProfileDropdown'))
+			 
+			 WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/li_Logout'))
+			 }
+			 catch(Exception e)
+			 {
+				 KeywordUtil.markFailed('ERROR:Agent unable to logouted the application:'+e.getMessage())
+				 
+			 }
+	}
+>>>>>>> branch 'master' of https://github.com/Rafiimi/IMIAssist_Final_FW
 }

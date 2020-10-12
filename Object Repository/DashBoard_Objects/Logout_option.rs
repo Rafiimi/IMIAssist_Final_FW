@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>Object</description>
-   <name>Departmentadmin_object</name>
+   <description>Logout option object</description>
+   <name>Logout_option</name>
    <tag></tag>
-   <elementGuidId>7558cfc3-262f-4add-8112-f33bd56b121e</elementGuidId>
+   <elementGuidId>c60186b5-618d-4627-b799-b16990fcf1a3</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//div[@class='option ui-select-choices-row-inner'])[1]</value>
+         <value>//li[@ng-click='userSignout()']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

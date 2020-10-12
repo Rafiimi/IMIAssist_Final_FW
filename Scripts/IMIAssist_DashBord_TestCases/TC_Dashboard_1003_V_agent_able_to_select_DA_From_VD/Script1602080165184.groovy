@@ -16,7 +16,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
-try
+/*try
 {
 	WebUI.openBrowser('')
 	WebUI.navigateToUrl(findTestData('IMIA_Dashboard').getValue(1, 1))
@@ -32,12 +32,13 @@ catch(Exception e)
 {
 	KeywordUtil.markFailed('ERROR:Agent unable to login the application :'+e.getMessage())
 }
-WebUI.delay(5)
+WebUI.delay(3)
 //Department admin selection from view as drop down
 try
 {
 	
 WebUI.click(findTestObject('Object Repository/DashBoard_Objects/Viewasdropdown'))
+WebUI.delay(3)
 WebUI.click(findTestObject('Object Repository/DashBoard_Objects/Departmentadmin_object'))
 
 }
@@ -46,7 +47,7 @@ catch(Exception e)
 {
 	KeywordUtil.markFailed('ERROR:Agent unable to department admin from view as drop down :'+e.getMessage())
 	
-}
+}*/
 WebUI.delay(5)
 //  appointment's Count validation
 try
@@ -90,3 +91,16 @@ catch(Exception e)
 	KeywordUtil.markFailed('ERROR:Inqueappointment Count is updated successfully:'+e.getMessage())
 	
 }
+/*try
+{
+WebUI.delay(5)
+
+WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/a_Finance_navProfileDropdown'))
+
+WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/li_Logout'))
+}
+catch(Exception e)
+{
+	KeywordUtil.markFailed('ERROR:Agent unable to logouted the application:'+e.getMessage())
+	
+}*/

@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>Object</description>
-   <name>Departmentadmin_object</name>
+   <description>Today tab object on dash board</description>
+   <name>Today_Tab</name>
    <tag></tag>
-   <elementGuidId>7558cfc3-262f-4add-8112-f33bd56b121e</elementGuidId>
+   <elementGuidId>2aaa1950-0b30-4e8e-9444-475c4a07bb5c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//div[@class='option ui-select-choices-row-inner'])[1]</value>
+         <value>//button[normalize-space(text())='Today']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

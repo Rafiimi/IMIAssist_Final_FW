@@ -6,12 +6,11 @@
    <elementGuidId>63d7dd3f-c7b7-4307-9b38-5fca2238dd5d</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[normalize-space(text())='Team View']</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>(//div[@class='option ui-select-choices-row-inner'])[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

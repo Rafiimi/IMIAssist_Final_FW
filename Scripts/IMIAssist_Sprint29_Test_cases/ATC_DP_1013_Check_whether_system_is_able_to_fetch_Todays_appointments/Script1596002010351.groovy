@@ -19,31 +19,84 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 try
 {
-WebUI.openBrowser('')
-
-
-    WebUI.navigateToUrl(findTestData('IMiAsssist_dashbord').getValue(1, 1))
+/*try
+{
+	WebUI.openBrowser('')
+	WebUI.navigateToUrl(findTestData('IMIA_Dashboard').getValue(1, 1))
 	WebUI.delay(3)
 	WebUI.maximizeWindow()
-	
-    WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-email'), 
-        findTestData('IMiAsssist_dashbord').getValue(4, 1))
-
-    WebUI.setText(findTestObject('Page_eClinic - Video Consultations/input_Please enter your details below_user-_90355e'), 
-        findTestData('IMiAsssist_dashbord').getValue(5, 1))
-
-    WebUI.click(findTestObject('Page_eClinic - Video Consultations/button_LOGIN'))
-
+	WebUI.setText(findTestObject('Object Repository/LoginPage_TestCases_Objects/User_Email'),
+		findTestData('IMIA_Dashboard').getValue(2, 1))
+	WebUI.setText(findTestObject('Object Repository/LoginPage_TestCases_Objects/PasswordTextfiled'),
+		findTestData('IMIA_Dashboard').getValue(3, 1))
+	WebUI.click(findTestObject('Object Repository/LoginPage_TestCases_Objects/Login_button'))
+}
+catch(Exception e)
+{
+	KeywordUtil.markFailed('ERROR:Agent unable to login the application :'+e.getMessage())
+}*/
 WebUI.delay(5)
-WebUI.click(findTestObject('Page_eClinic - Video Consultations/div_Select time period  Today'))
+try
+{
+WebUI.click(findTestObject('Object Repository/DashBoard_Objects/Selecttimeperiod_dd'))
 
 WebUI.click(findTestObject('Object Repository/Page_eClinic - Video Consultations/div_Last 90 Days'))
 
-closedappointmentscount=WebUI.getText(findTestObject('Page_eClinic - Video Consultations/closedappointmentscount'))
+}
+
+catch(Exception e)
+{
+	KeywordUtil.markFailed('ERROR:Agent unable to Last 90 Days from view as drop down :'+e.getMessage())
+	
+}
+try
+{
+	Apcount=WebUI.getText(findTestObject('Object Repository/DashBoard_Objects/Assignedappointmentcountobject')).trim()
+	if(Apcount>=0)
+	{
+	KeywordUtil.markPassed('SUCCESS:Appointment Count is updated successfully')
+	}
+	else
+	{
+		KeywordUtil.markFailed('ERROR:Appointment Count is not updated successfully')
+		
+	}
+}
+
+catch(Exception e)
+{
+	KeywordUtil.markFailed('ERROR:Appointment Count is updated successfully:'+e.getMessage())
+	
+}
+
+WebUI.delay(3)
+//  appointment's Count validation
+try
+{
+	Inquecount=WebUI.getText(findTestObject('Object Repository/DashBoard_Objects/In_que_appointmentCount')).trim()
+	if(Inquecount>=0)
+	{
+	KeywordUtil.markPassed('SUCCESS:Inqueappointment Count is updated successfully')
+	}
+	else
+	{
+		KeywordUtil.markFailed('ERROR:Inqueappointment Count is updated successfully')
+		
+	}
+}
+
+catch(Exception e)
+{
+	KeywordUtil.markFailed('ERROR:Inqueappointment Count is updated successfully:'+e.getMessage())
+	
+}
+/*try
+{
+closedappointmentscount=WebUI.getText(findTestObject('Object Repository/DashBoard_Objects/Closedappointments'))
 WebUI.delay(3)
 WebUI.takeScreenshot('Test Cases\\IMIAssist_Automation_Test_Snapshots\\Dashboard/ATC_DP_1013_Check_whether_system_is_able_to_fetch_Todays_appointments.png')
 
-if(!closedappointmentscount.equals('0'))
+if(closedappointmentscount>=0)
 {
 	KeywordUtil.markPassed('SUCCESS:Closed appointments is updated successfully')
 	
@@ -53,10 +106,25 @@ else
 	KeywordUtil.markFailed('ERROR:Closed appointments is not updated successfully')
 	
 }
-WebUI.delay(3)
-WebUI.click(findTestObject('Page_eClinic - Video Consultations/a_Support_navProfileDropdown'))
+}
+catch(Exception e)
+{
+	KeywordUtil.markFailed('ERROR:Closed appointments is not updated successfully:'+e.getMessage())
+	
+}*/
+/*try
+{
+WebUI.delay(5)
 
-WebUI.click(findTestObject('Page_eClinic - Video Consultations/li_Logout'))
+WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/a_Finance_navProfileDropdown'))
+
+WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/li_Logout'))
+}
+catch(Exception e)
+{
+	KeywordUtil.markFailed('ERROR:Agent unable to logouted the application:'+e.getMessage())
+	
+}*/
 }
 catch(Exception e)
 {

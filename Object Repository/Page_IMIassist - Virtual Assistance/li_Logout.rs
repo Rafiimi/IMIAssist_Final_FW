@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//li[@id='navDropdown']/ul/li[3]</value>
+         <value>//li[@ng-click='userSignout()']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
