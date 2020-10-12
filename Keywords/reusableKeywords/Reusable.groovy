@@ -46,7 +46,7 @@ public class Reusable {
 			WebUI.setText(findTestObject('Object Repository/LoginPage_TestCases_Objects/PasswordTextfiled'), loginPassword)
 
 			WebUI.click(findTestObject('Object Repository/LoginPage_TestCases_Objects/Login_button'))
-		
+
 			/*		try {
 			 boolean AlreadyLoggedIn = WebUI.verifyElementPresent(findTestObject('Admin_Settings/Dept/UserCreation/button_Login_PROCEED'), 2, FailureHandling.OPTIONAL)
 			 if (AlreadyLoggedIn==true) {
@@ -58,16 +58,16 @@ public class Reusable {
 			 }*/
 			WebUI.delay(5)
 		} catch (Exception e) {
-		
+
 
 			WebUI.delay(8)
 		}
 		catch (Exception e) {
-			
+
 			KeywordUtil.markFailed("Unable to login")
 		}
 	}
-	
+
 
 	@Keyword
 	def ClickDynamicObject(String dynamicName) {
@@ -165,26 +165,24 @@ public class Reusable {
 			KeywordUtil.markFailed('ERROR:Agent unable to logouted the application:'+e.getMessage())
 
 		}
-<<<<<<< HEAD
 	}
 
-//Cases Tab Selection reusable method
+	//Cases Tab Selection reusable method
 	@Keyword
 	def Selectcasestab()
 	{
 		try
 		{
-		WebUI.click(findTestObject('Object Repository/Cases_Module_objects/Reports_Tab'))
-		WebUI.click(findTestObject('Object Repository/Cases_Module_objects/Cases_subTab_icon'))
-		WebUI.setText(findTestObject('Object Repository/Cases_Module_objects/Searchtextfieldincases'), findTestData('IMIA_cases_testData').getValue(1, 1))
+			WebUI.click(findTestObject('Object Repository/Cases_Module_objects/Reports_Tab'))
+			WebUI.click(findTestObject('Object Repository/Cases_Module_objects/Cases_subTab_icon'))
+			WebUI.setText(findTestObject('Object Repository/Cases_Module_objects/Searchtextfieldincases'), findTestData('IMIA_cases_testData').getValue(1, 1))
 		}
 		catch(Exception e)
 		{
 			KeywordUtil.markFailed('ERROR:Agent unable to search case id from cases:'+e.getMessage())
-			
+
 		}
-=======
->>>>>>> branch 'master' of https://github.com/Rafiimi/IMIAssist_Final_FW
+		
 	}
 
 }
