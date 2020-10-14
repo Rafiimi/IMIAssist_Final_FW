@@ -173,16 +173,28 @@ public class Reusable {
 	{
 		try
 		{
-			WebUI.click(findTestObject('Object Repository/Cases_Module_objects/Reports_Tab'))
+			WebUI.delay(3)
+			WebUI.click(findTestObject('Cases_Module_objects/Reports_Tab_icon'))
+			WebUI.delay(3)
+			WebUI.click(findTestObject('Object Repository/Cases_Module_objects/ReportsTab'))
+			WebUI.delay(3)
 			WebUI.click(findTestObject('Object Repository/Cases_Module_objects/Cases_subTab_icon'))
+			WebUI.delay(3)
+			WebUI.click(findTestObject('Object Repository/Cases_Module_objects/CasesDropdown'))
+			WebUI.delay(3)
+			WebUI.click(findTestObject('Object Repository/Cases_Module_objects/Appointmentidoption'))
+			//			WebUI.selectOptionByValue(findTestObject('Object Repository/Cases_Module_objects/CasesDropdown'), 'Appointment ID', false)
+			WebUI.delay(3)
 			WebUI.setText(findTestObject('Object Repository/Cases_Module_objects/Searchtextfieldincases'), findTestData('IMIA_cases_testData').getValue(1, 1))
+			WebUI.delay(3)
+			WebUI.click(findTestObject('Object Repository/Cases_Module_objects/Caseselectiononfirstrow'))
 		}
 		catch(Exception e)
 		{
 			KeywordUtil.markFailed('ERROR:Agent unable to search case id from cases:'+e.getMessage())
 
 		}
-		
+
 	}
 
 }
