@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>Reports Tab object</description>
-   <name>Reports_Tab</name>
+   <description>Appointment closed status object</description>
+   <name>Appointmentstatus</name>
    <tag></tag>
-   <elementGuidId>ce729028-0130-477f-b765-02f3ed495213</elementGuidId>
+   <elementGuidId>121825d9-ae39-4b08-bd8f-5d2a9d2655c5</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//span[normalize-space(text())='Reports']</value>
+         <value>//table//tbody//tr[2]//td[6]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
