@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_Admin Settings_32</description>
+   <name>ATC_AS_0017_DepartmentSettings_VisibleOptions</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5387175a-cdf6-41d9-8d4b-8c41fc701f5f</testCaseGuid>
+</TestCaseEntity>

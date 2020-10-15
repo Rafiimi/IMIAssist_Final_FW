@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Theme_ButtonColour_colorbox</name>
+   <tag></tag>
+   <elementGuidId>d76ff493-7666-4e0a-be6f-549919c2b27d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='theme-tab']/div/form/div[4]/div/div[2]/div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>color-box</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ng-style</name>
+      <type>Main</type>
+      <value>{'background-color':  brandSettings.buttonColour }</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;theme-tab&quot;)/div[@class=&quot;admin-settings-view-theme-container&quot;]/form[@class=&quot;ng-pristine ng-valid-pattern ng-valid-maxlength ng-valid ng-valid-required&quot;]/div[@class=&quot;col-xs-12 col-md-12 mb-4&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;input-group mb-3 col-md-8 position-relative&quot;]/div[@class=&quot;color-box&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <value>//div[@id='theme-tab']/div/form/div[4]/div/div[2]/div</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <value>//form/div[4]/div/div[2]/div</value>
+   </webElementXpaths>
+</WebElementEntity>
