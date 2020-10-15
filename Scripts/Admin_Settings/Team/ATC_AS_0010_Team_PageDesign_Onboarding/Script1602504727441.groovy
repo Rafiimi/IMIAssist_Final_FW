@@ -15,7 +15,7 @@ import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 import com.kms.katalon.core.logging.KeywordLogger as KeywordLogger
 
-//try {
+try {
     TCname = findTestData('Team_PageDesign_Onboarding').getValue('Description', 1)
 
     KeywordLogger logger = new KeywordLogger()
@@ -45,9 +45,8 @@ import com.kms.katalon.core.logging.KeywordLogger as KeywordLogger
     }
     
     logger.logInfo('***END Of TEST CASE: ' + TCname)
-/*}
+}
 catch (Exception e) {
     KeywordUtil.markFailed('ERROR: ' + e.getMessage())
 } 
 
-*/
