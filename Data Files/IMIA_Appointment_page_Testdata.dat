@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataFileEntity>
+   <description>Appointment page test data</description>
+   <name>IMIA_Appointment_page_Testdata</name>
+   <tag></tag>
+   <containsHeaders>true</containsHeaders>
+   <csvSeperator></csvSeperator>
+   <dataFileGUID>44fd7360-8ef7-45d9-99a4-95ba47bccbb5</dataFileGUID>
+   <dataSourceUrl>D:\IMI_Automation\IMIAssist_Automtion\TestData\IMIassist_Automation_TestData.xlsx</dataSourceUrl>
+   <driver>ExcelFile</driver>
+   <isInternalPath>false</isInternalPath>
+   <query></query>
+   <secureUserAccount>false</secureUserAccount>
+   <sheetName>IMI_Workspace_TestData</sheetName>
+   <usingGlobalDBSetting>false</usingGlobalDBSetting>
+</DataFileEntity>

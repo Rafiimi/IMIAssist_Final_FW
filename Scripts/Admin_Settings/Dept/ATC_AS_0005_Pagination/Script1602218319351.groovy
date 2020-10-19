@@ -48,7 +48,7 @@ try {
         KeywordUtil.markFailed('Previous and Next buttons are NOT displaying in Pagination')
     }
     
-    WebUI.setText(findTestObject('Admin_Settings/Dept/UserCreation/Search_User'), GlobalVariable.Username, FailureHandling.OPTIONAL)
+    WebUI.setText(findTestObject('Admin_Settings/Dept/UserCreation/Search_User'), GlobalVariable.CAUsername, FailureHandling.OPTIONAL)
 
     WebUI.delay(2)
 

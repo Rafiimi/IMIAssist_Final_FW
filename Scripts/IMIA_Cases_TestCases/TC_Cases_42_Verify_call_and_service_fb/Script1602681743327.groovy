@@ -16,6 +16,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
+
 CustomKeywords.'reusableKeywords.Reusable.Login'()
 
 'In same script added below cases\'s\r\nTC_Cases_4'
@@ -83,4 +84,6 @@ catch (Exception e) {
 
     WebUI.click(findTestObject('Object Repository/Cases_Module_objects/Agentfeedabckpopclose'))
 } 
+
+//CustomKeywords.'reusableKeywords.Reusable.Logout'()
 

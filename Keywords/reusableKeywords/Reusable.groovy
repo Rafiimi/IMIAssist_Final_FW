@@ -57,10 +57,10 @@ public class Reusable {
 			 KeywordUtil.markFailed('MESSAGE: Proceed button not displayed')
 			 }*/
 			WebUI.delay(5)
-		} catch (Exception e) {
-
-
-			WebUI.delay(8)
+//		} catch (Exception e) {
+//
+//
+//			WebUI.delay(8)
 		}
 		catch (Exception e) {
 
@@ -196,5 +196,63 @@ public class Reusable {
 		}
 
 	}
+	@Keyword
+	def Naviagateappointmentpage()
+	{
+		try
+		{
+			WebUI.delay(3)
+			WebUI.click(findTestObject('Object Repository/Workspace_Objects/Appointmenticon_on_DB'))
+			WebUI.delay(3)
+			WebUI.click(findTestObject('Object Repository/Workspace_Objects/Appointmentpan_on_DB'))
+			WebUI.delay(3)
+			WebUI.click(findTestObject('Object Repository/Workspace_Objects/app_page_refresh'))
+		}
+		catch(Exception e)
+		{
+			KeywordUtil.markFailed('ERROR:Agent unable naviagte to appointment page:'+e.getMessage())
 
+		}
+
+	}
+	/*//Login Resusable method
+	@Keyword
+	def CompanyadminLogin(){
+		try{
+			String loginURL=GlobalVariable.CAUrl
+			String loginUserName=GlobalVariable.CAUsername
+			String loginPassword=GlobalVariable.CAPassword
+
+			WebUI.openBrowser('')
+
+			WebUI.navigateToUrl(loginURL)
+
+			WebUI.maximizeWindow()
+
+			WebUI.setText(findTestObject('Object Repository/LoginPage_TestCases_Objects/User_Email'), loginUserName)
+
+			WebUI.setText(findTestObject('Object Repository/LoginPage_TestCases_Objects/PasswordTextfiled'), loginPassword)
+
+			WebUI.click(findTestObject('Object Repository/LoginPage_TestCases_Objects/Login_button'))
+
+					try {
+			 boolean AlreadyLoggedIn = WebUI.verifyElementPresent(findTestObject('Admin_Settings/Dept/UserCreation/button_Login_PROCEED'), 2, FailureHandling.OPTIONAL)
+			 if (AlreadyLoggedIn==true) {
+			 WebUI.click(findTestObject('Admin_Settings/Dept/UserCreation/button_Login_PROCEED'))
+			 }
+			 }
+			 catch (Exception e) {
+			 KeywordUtil.markFailed('MESSAGE: Proceed button not displayed')
+			 }
+//			WebUI.delay(5)
+//		} catch (Exception e) {
+//
+//
+//			WebUI.delay(8)
+		}
+		catch (Exception e) {
+
+			KeywordUtil.markFailed("Company admin unable to login")
+		}*/
+//	}
 }

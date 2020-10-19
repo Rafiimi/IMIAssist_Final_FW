@@ -17,7 +17,7 @@ import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 'In same script added below cases \r\nTC_Cases_8\r\nTC_Cases_9'
-CustomKeywords.'reusableKeywords.Reusable.Login'()
+//CustomKeywords.'reusableKeywords.Reusable.Login'()
 
 try {
     WebUI.delay(3)
@@ -111,3 +111,6 @@ try {
 catch (Exception e) {
 	KeywordUtil.markFailed('ERROR:Agent unable to filter esclated filters in cases page:' + e.getMessage())
 }
+
+CustomKeywords.'reusableKeywords.Reusable.Logout'()
+

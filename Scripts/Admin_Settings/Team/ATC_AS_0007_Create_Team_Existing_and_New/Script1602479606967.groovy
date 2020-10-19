@@ -60,9 +60,9 @@ try {
 
     WebUI.delay(25)
 
-    WebUI.setText(findTestObject('Object Repository/LoginPage_TestCases_Objects/User_Email'), GlobalVariable.Username)
+    WebUI.setText(findTestObject('Object Repository/LoginPage_TestCases_Objects/User_Email'), GlobalVariable.CAUsername)
 
-    WebUI.setText(findTestObject('Object Repository/LoginPage_TestCases_Objects/PasswordTextfiled'), GlobalVariable.Password)
+    WebUI.setText(findTestObject('Object Repository/LoginPage_TestCases_Objects/PasswordTextfiled'), GlobalVariable.CAPassword)
 
     WebUI.click(findTestObject('Object Repository/LoginPage_TestCases_Objects/Login_button'))
 	WebUI.delay(3)

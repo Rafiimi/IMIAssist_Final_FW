@@ -16,7 +16,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
-CustomKeywords.'reusableKeywords.Reusable.Login'()
+//CustomKeywords.'reusableKeywords.Reusable.Login'()
 
 try
 {
@@ -47,3 +47,4 @@ catch(Exception e)
 	KeywordUtil.markFailed('ERROR:Agent unable to get the dateformate from profile:' +e.getMessage())
 	
 }
+CustomKeywords.'reusableKeywords.Reusable.Logout'()
