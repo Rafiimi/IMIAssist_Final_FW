@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Check whether Custom Reports tab option is available for Team admin</description>
+   <name>TC_Custom Reports_3_Teamadmin_ableto_see_RT</name>
+   <tag>Test Cases</tag>
+   <comment></comment>
+   <testCaseGuid>db9f0463-3bf8-41d3-94d3-66d46ab1954f</testCaseGuid>
+</TestCaseEntity>

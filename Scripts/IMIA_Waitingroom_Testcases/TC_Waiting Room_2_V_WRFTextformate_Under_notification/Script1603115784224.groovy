@@ -35,7 +35,7 @@ try {
     KeywordUtil.markPassed('SUCCESS:Agent able to navigate to the notification tab')
 }
 catch (Exception e) {
-    KeywordUtil.markPassed()
+    KeywordUtil.markFailed("ERROR:Agent unable to navigate the notification Tab")
 } 
 
 WebUI.delay(3)
@@ -135,3 +135,4 @@ catch (Exception e) {
     KeywordUtil.markFailed('ERROR:Save confirmation text is not matched to expectation:' + e.getMessage())
 } 
 
+CustomKeywords.'reusableKeywords.Reusable.Logout'()

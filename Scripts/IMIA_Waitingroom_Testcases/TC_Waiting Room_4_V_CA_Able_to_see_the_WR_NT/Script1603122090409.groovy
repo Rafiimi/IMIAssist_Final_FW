@@ -143,3 +143,4 @@ catch (Exception e) {
     KeywordUtil.markFailed('ERROR:Save confirmation text is not matched to expectation:' + e.getMessage())
 } 
 
+CustomKeywords.'reusableKeywords.Reusable.Logout'()
