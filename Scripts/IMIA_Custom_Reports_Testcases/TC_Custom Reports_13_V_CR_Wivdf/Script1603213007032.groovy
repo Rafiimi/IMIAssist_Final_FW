@@ -55,3 +55,13 @@ catch(Exception e)
 	KeywordUtil.markFailed('ERROR:agent unable to see the error message like"Please Select End Date":' + e.getMessage())
 	
 }
+//verify default attributes in filter section
+
+try
+{
+	
+}
+catch(Exception e)
+{
+	
+}

@@ -38,22 +38,18 @@ try {
 
         WebUI.click(findTestObject('Page_eClinic - Video Consultations/button_LOGIN'))
 
-        WebUI.click(findTestObject('Object Repository/Page_eClinic - Video Consultations/i_insert_invitation'))
-
-      //  WebUI.click(findTestObject('Object Repository/Page_eClinic - Video Consultations/span_Appointments'))
+		WebUI.click(findTestObject('Object Repository/AppointmentCreationpopup/Apointmenttabicon'))
+			WebUI.click(findTestObject('Object Repository/AppointmentCreationpopup/Appointmenttab'))
 
         WebUI.delay(3)
 
-      String  Newappointmentlinktext = WebUI.getText(findTestObject('Object Repository/Page_eClinic - Video Consultations/Neappointment_link'))
+        Newappointmentlinktext = WebUI.getText(findTestObject('Object Repository/AppointmentCreationpopup/Startnewappointmentdropdown')).trim()
 
-        println(Newappointmentlinktext)
-		
-		WebUI.takeScreenshot('D:/IMIAssist- Automation/IMIAssist_Screenshots/Sprint_29_Screens/ATC_AP_1025_Check_whether_New_Appointment_link_is_displaying_in_Appointments_page.png')
-		
-        if (Newappointmentlinktext.equals(Newppointmenttextvalue))
+		WebUI.delay(2)
+		Expnewapplink=findTestData('Appointmentcreation_UI').getValue(5, 1)			
+        if (Newappointmentlinktext.equals(Expnewapplink))
 		 {
             KeywordUtil.markPassed('SUCCESS:New appointment link is available to the selection for user')
-			WebUI.takeScreenshot('Test Cases\\IMIAssist_Automation_Test_Snapshots\\Appointment_creation/TC_001_Appointmentlink_verification_with_different_user_rolls.png')
 			WebUI.click(findTestObject('Page_eClinic - Video Consultations/a_Support_navProfileDropdown'))
 			WebUI.click(findTestObject('Page_eClinic - Video Consultations/li_Logout'))
         } 

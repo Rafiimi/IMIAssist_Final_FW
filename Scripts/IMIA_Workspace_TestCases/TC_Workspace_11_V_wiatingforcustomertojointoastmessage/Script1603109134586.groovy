@@ -17,7 +17,7 @@ import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 'In same Script added below cases\r\nTC_Workspace_7\r\nTC_Workspace_8'
-//CustomKeywords.'reusableKeywords.Reusable.Login'()
+CustomKeywords.'reusableKeywords.Reusable.Login'()
 
 CustomKeywords.'reusableKeywords.Reusable.Naviagateappointmentpage'()
 

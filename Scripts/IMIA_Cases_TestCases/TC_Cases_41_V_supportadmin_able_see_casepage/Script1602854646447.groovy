@@ -22,7 +22,7 @@ import com.kms.katalon.core.logging.KeywordLogger as KeywordLogger
 try {
     WebUI.openBrowser('')
 
-    WebUI.navigateToUrl(GlobalVariable.CAUrl)
+    WebUI.navigateToUrl(GlobalVariable.Url)
 
     WebUI.maximizeWindow()
 

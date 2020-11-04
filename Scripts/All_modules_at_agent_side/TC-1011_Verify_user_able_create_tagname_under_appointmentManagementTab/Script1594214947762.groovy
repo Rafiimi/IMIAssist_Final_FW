@@ -22,15 +22,7 @@ import com.kms.katalon.core.util.KeywordUtil
 	
 try
 {
-WebUI.openBrowser('')
-
-WebUI.navigateToUrl(findTestData("Allthetabsatagentside").getValue(1, 1))
-
-WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-email'), findTestData("Allthetabsatagentside").getValue(2, 1))
-
-WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-_90355e'),
-	findTestData("Allthetabsatagentside").getValue(3, 1))
-WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/button_LOGIN'))
+CustomKeywords.'reusableKeywords.Reusable.Login'()
 try{
 WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/i_settings'))
 WebUI.delay(3)
@@ -80,13 +72,7 @@ catch(Exception e)
 	
 }
 WebUI.delay(2)
-WebUI.takeScreenshot('D:\\IMI_Automation\\IMI_Automation_files\\IMIAssist_Automtion\\Test Cases\\IMIAssist_Automation_Test_Snapshots\\Agent_Side_Tabs\\CreateTagname.png')
-
-WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/a_Finance_navProfileDropdown'))
-
-WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/li_Logout'))
-
-WebUI.delay(5)
+CustomKeywords.'reusableKeywords.Reusable.Logout'()
 WebUI.closeBrowser()
 KeywordUtil.markPassed('SUCCESS: Agent able to create tagname and logouted successfully')
 

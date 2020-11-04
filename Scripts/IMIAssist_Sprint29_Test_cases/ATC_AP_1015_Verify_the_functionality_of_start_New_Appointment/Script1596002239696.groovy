@@ -20,34 +20,11 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 appointmentconfirmationtext='updated successfully';
 try
 {
-WebUI.openBrowser('')
-
-    WebUI.navigateToUrl(findTestData('TestDataforLogin').getValue(1, 1))
-	WebUI.maximizeWindow()
-    WebUI.delay(3)
-
-    WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-email'), 
-        findTestData('TestDataforLogin').getValue(2, 1))
-
-    WebUI.setText(findTestObject('Page_eClinic - Video Consultations/input_Please enter your details below_user-_90355e'), 
-        findTestData('TestDataforLogin').getValue(3, 1))
-
-    WebUI.click(findTestObject('Page_eClinic - Video Consultations/button_LOGIN'))
+//CustomKeywords.'reusableKeywords.Reusable.Login'()
    WebUI.delay(2)
   try{
-		
-	
- WebUI.click(findTestObject('Object Repository/Page_eClinic - Video Consultations/i_insert_invitation'))
-
-WebUI.click(findTestObject('Object Repository/Page_eClinic - Video Consultations/span_Appointments'))
-WebUI.delay(3)
-WebUI.click(findTestObject('Object Repository/Page_eClinic - Video Consultations/div_New Appointment   close          Start _142398'))
-WebUI.delay(3)
- WebUI.click(findTestObject('Object Repository/AppointmentCreationpopup/AppointmentCreationPopup/Start_an_appointment'))
-
-WebUI.click(findTestObject('Page_eClinic - Video Consultations/button_Next (3)'))
-
-KeywordUtil.markPassed('SUCCESS:Agent able to select schedule an appointment on appointment creation popup and he able to naviagte appointment creation popup')
+	CustomKeywords.'reusableKeywords.Reusable.navigatetodepartmentpagetoselectsap'()
+	KeywordUtil.markPassed('SUCCESS:Agent able to select schedule an appointment on appointment creation popup and he able to naviagte appointment creation popup')
 
 
 	}

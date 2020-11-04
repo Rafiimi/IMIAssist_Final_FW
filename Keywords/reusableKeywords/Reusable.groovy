@@ -173,7 +173,8 @@ public class Reusable {
 	{
 		try
 		{
-			WebUI.delay(3)
+			//			WebUI.delay(3)
+			WebUI.mouseOver(findTestObject('Cases_Module_objects/Reports_Tab_icon'))
 			WebUI.click(findTestObject('Cases_Module_objects/Reports_Tab_icon'))
 			WebUI.delay(3)
 			WebUI.click(findTestObject('Object Repository/Cases_Module_objects/ReportsTab'))
@@ -215,38 +216,7 @@ public class Reusable {
 		}
 
 	}
-	/*//Login Resusable method
-	 @Keyword
-	 def CompanyadminLogin(){
-	 try{
-	 String loginURL=GlobalVariable.CAUrl
-	 String loginUserName=GlobalVariable.CAUsername
-	 String loginPassword=GlobalVariable.CAPassword
-	 WebUI.openBrowser('')
-	 WebUI.navigateToUrl(loginURL)
-	 WebUI.maximizeWindow()
-	 WebUI.setText(findTestObject('Object Repository/LoginPage_TestCases_Objects/User_Email'), loginUserName)
-	 WebUI.setText(findTestObject('Object Repository/LoginPage_TestCases_Objects/PasswordTextfiled'), loginPassword)
-	 WebUI.click(findTestObject('Object Repository/LoginPage_TestCases_Objects/Login_button'))
-	 try {
-	 boolean AlreadyLoggedIn = WebUI.verifyElementPresent(findTestObject('Admin_Settings/Dept/UserCreation/button_Login_PROCEED'), 2, FailureHandling.OPTIONAL)
-	 if (AlreadyLoggedIn==true) {
-	 WebUI.click(findTestObject('Admin_Settings/Dept/UserCreation/button_Login_PROCEED'))
-	 }
-	 }
-	 catch (Exception e) {
-	 KeywordUtil.markFailed('MESSAGE: Proceed button not displayed')
-	 }
-	 //			WebUI.delay(5)
-	 //		} catch (Exception e) {
-	 //
-	 //
-	 //			WebUI.delay(8)
-	 }
-	 catch (Exception e) {
-	 KeywordUtil.markFailed("Company admin unable to login")
-	 }*/
-	//	}
+
 
 
 	//Cases Tab Selection reusable method
@@ -263,19 +233,55 @@ public class Reusable {
 			WebUI.click(findTestObject('Object Repository/IMIA_Custome_Reports_objects/CustomReporttab'))
 			WebUI.delay(3)
 			WebUI.click(findTestObject('Object Repository/IMIA_Custome_Reports_objects/Create_custom_r'))
-			/*WebUI.delay(3)
-			 WebUI.click(findTestObject('Object Repository/Cases_Module_objects/Appointmentidoption'))
-			 //WebUI.selectOptionByValue(findTestObject('Object Repository/Cases_Module_objects/CasesDropdown'), 'Appointment ID', false)
-			 WebUI.delay(3)
-			 WebUI.setText(findTestObject('Object Repository/Cases_Module_objects/Searchtextfieldincases'), findTestData('IMIA_cases_testData').getValue(1, 1))
-			 WebUI.delay(3)
-			 WebUI.click(findTestObject('Object Repository/Cases_Module_objects/Caseselectiononfirstrow'))*/
+
 		}
 		catch(Exception e)
 		{
 			KeywordUtil.markFailed('ERROR:Agent unable to select custom reports tab under reports tab:'+e.getMessage())
 
 		}
+
+	}
+	//Navigate department page and select the start an appointment link
+	@Keyword
+	def navigatetodepartmentpagetoselectsap()
+	{
+		try
+		{
+			WebUI.click(findTestObject('Object Repository/AppointmentCreationpopup/Apointmenttabicon'))
+			WebUI.click(findTestObject('Object Repository/AppointmentCreationpopup/Appointmenttab'))
+			WebUI.click(findTestObject('Object Repository/AppointmentCreationpopup/Startnewappointmentdropdown'))
+			WebUI.click(findTestObject('Object Repository/AppointmentCreationpopup/Startanappointment'))
+
+		}
+
+		catch(Exception e)
+		{
+			KeywordUtil.markFailed('ERROR:Agent unable to select start an appointment:'+e.getMessage())
+
+		}
+
+
+	}
+	//Navigate department page and select the start an appointment link
+	@Keyword
+	def navigatetodepartmentpagetoselectscheduleap()
+	{
+		try
+		{
+			WebUI.click(findTestObject('Object Repository/AppointmentCreationpopup/Apointmenttabicon'))
+			WebUI.click(findTestObject('Object Repository/AppointmentCreationpopup/Appointmenttab'))
+			WebUI.click(findTestObject('Object Repository/AppointmentCreationpopup/Startnewappointmentdropdown'))
+			WebUI.click(findTestObject('Object Repository/AppointmentCreationpopup/Scheduleanappointment'))
+
+		}
+
+		catch(Exception e)
+		{
+			KeywordUtil.markFailed('ERROR:Agent unable to select schedule an appointment:'+e.getMessage())
+
+		}
+
 
 	}
 }

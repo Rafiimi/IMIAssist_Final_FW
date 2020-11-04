@@ -102,7 +102,8 @@ try {
         KeywordUtil.markPassed('SUCCESS:Agent able to see start activity in activity logs')
     }
 }
-catch (Exception e) {
+catch (Exception e)
+ {
     KeywordUtil.markFailed('ERROR:Agent unable to see start activity in activity logs:' + e.getMessage())
 } 
 

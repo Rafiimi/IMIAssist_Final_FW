@@ -3,8 +3,6 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-
-
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
@@ -25,9 +23,21 @@ try
 {
 WebUI.click(findTestObject('Object Repository/IMIA_Custome_Reports_objects/Firstteamfrom_settings'))
 WebUI.delay(3)
-List<WebELement> teamslist=WebUI.findWebElements(findTestObject('Object Repository/IMIA_Custome_Reports_objects/Listofteamsfromdepartment'),2)
-int count=teamslist.size()
-println("Teams count from testing department:"+count)
+
+
+String ElementText=WebUI.getText(findTestObject('Object Repository/IMIA_Custome_Reports_objects/Listofteamsfromdepartment'))
+String[] parseList = ElementText.split('\\s')
+int count = parseList.size()
+
+
+CustomKeywords.'reusableKeywords.Reusable.Selectcustom_reports'()
+
+WebUI.delay(3)
+String Teamsname=WebUI.getText(findTestObject('Object Repository/IMIA_Custome_Reports_objects/Teamsundergroupby'))
+
+//String[] teamsList = Teamsname.split('\\s')
+//int count = teamsList.size()
+
 }
 catch(Exception e)
 {

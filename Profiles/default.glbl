@@ -6,12 +6,12 @@
    <defaultProfile>true</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://stg.imiassist.ai/agent/#!/registration/login'</initValue>
+      <initValue>'https://preprod.imiassist.ai/agent/#!/registration/login\r\n'</initValue>
       <name>Url</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'cofyuperzu@enayu.com\r\n'</initValue>
+      <initValue>'castusorko@enayu.com\r\n'</initValue>
       <name>Username</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

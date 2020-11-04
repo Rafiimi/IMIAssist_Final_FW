@@ -6,12 +6,11 @@
    <elementGuidId>50c01e54-19df-438f-a16c-02885b39a802</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@class='imiassist-notifier__content-body ng-binding']</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//div[@class='Text__StyledText-lv2a73-0 gIghGo']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

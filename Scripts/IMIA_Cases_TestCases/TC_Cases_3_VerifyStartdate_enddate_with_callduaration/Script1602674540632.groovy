@@ -25,8 +25,9 @@ try
 	WebUI.click(findTestObject('Object Repository/Profile_objects/profile_option'))
 	WebUI.delay(2)
 	Dateformate=WebUI.getText(findTestObject('Object Repository/Profile_objects/ProfileDateformate'))
-	
-	CustomKeywords.'reusableKeywords.Reusable.Selectcasestab'()//Activity log in cases page
+	//Activity log in cases page
+	WebUI.delay(3)
+	CustomKeywords.'reusableKeywords.Reusable.Selectcasestab'()
 	//Get callduarion time form cases page
 try {
     Time=WebUI.getText(findTestObject('Object Repository/Cases_Module_objects/Callduartiontimeobject')).trim()

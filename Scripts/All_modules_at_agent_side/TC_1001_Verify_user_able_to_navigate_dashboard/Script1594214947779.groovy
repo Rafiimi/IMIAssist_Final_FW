@@ -24,33 +24,19 @@ import com.kms.katalon.core.util.KeywordUtil
 
 try{
 Dashboardtitle='dashboard'
-WebUI.openBrowser('')
- WebUI.navigateToUrl(findTestData("Allthetabsatagentside").getValue(1, 1))
+CustomKeywords.'reusableKeywords.Reusable.Login'()
 
- WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-email'), findTestData("Allthetabsatagentside").getValue(2, 1))
- 
- WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-_90355e'),
-	 findTestData("Allthetabsatagentside").getValue(3, 1))
- 
- WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/button_LOGIN'))
  WebUI.delay(5)
-// Dashboardurl=WebUI.getUrl()
- 	Dashboardheader=WebUI.getText(findTestObject('Object Repository/AppointmentCreationpopup/Dashbord'))
+Dashboardheader=WebUI.getText(findTestObject('Object Repository/AppointmentCreationpopup/Dashbord'))
  WebUI.delay(5) 
 if(Dashboardheader.contains('Dashboard'))
 {
-
 	KeywordUtil.markPassed('SUCCESS: User Successfully launched the dashbord')
-	
 }
 else
 {
-
 	KeywordUtil.markFailed('ERROR: User unable to launched the dashbord')
-	
 }
-WebUI.delay(3)
-WebUI.takeScreenshot('D:\\IMI_Automation\\IMI_Automation_files\\IMIAssist_Automtion\\Test Cases\\IMIAssist_Automation_Test_Snapshots\\Agent_Side_Tabs\\TC_1001_Verify_user_able_to_navigate_dashboard.png')
 KeywordUtil.markPassed('SUCCESS: User Successfully launched the dashbord')
 
 }

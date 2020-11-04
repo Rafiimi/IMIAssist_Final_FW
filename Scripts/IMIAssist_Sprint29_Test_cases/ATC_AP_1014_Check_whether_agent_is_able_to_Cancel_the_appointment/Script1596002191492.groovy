@@ -18,21 +18,7 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 Appointmentcanceltext='cancelled successfully';
 try {
-    WebUI.openBrowser('')
-
-    WebUI.navigateToUrl(findTestData('IMiAsssist_dashbord').getValue(1, 1))
-
-    WebUI.delay(3)
-	WebUI.maximizeWindow()
-	
-
-    WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-email'), 
-        findTestData('IMiAsssist_dashbord').getValue(2, 1))
-
-    WebUI.setText(findTestObject('Page_eClinic - Video Consultations/input_Please enter your details below_user-_90355e'), 
-        findTestData('IMiAsssist_dashbord').getValue(3, 1))
-
-    WebUI.click(findTestObject('Page_eClinic - Video Consultations/button_LOGIN'))
+   CustomKeywords.'reusableKeywords.Reusable.Login'()
 	WebUI.delay(3)
 
 	try
@@ -70,8 +56,7 @@ try {
 	cacelconfirmationtext=WebUI.getText(findTestObject('Object Repository/Page_eClinic - Video Consultations/Appointmentcancelconfirmationtext'))
 	
 	Expectedcancelledconfirmationtext=findTestData('IMiAsssist_dashbord').getValue(22, 1)
-	WebUI.takeScreenshot('Test Cases\\IMIAssist_Automation_Test_Snapshots\\Appointment_creation/ATC_AP_1014_Check_whether_agent_is_able_to_Cancel_the_appointment.png')
-	WebUI.delay(3)
+	
 	
 	if(cacelconfirmationtext.contains(Expectedcancelledconfirmationtext))
 	{

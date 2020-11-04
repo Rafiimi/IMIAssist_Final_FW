@@ -14,4 +14,35 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
+import com.kms.katalon.core.logging.KeywordLogger as KeywordLogger
 
+
+try
+{
+	
+Dashboardtitle='dashboard'
+WebUI.openBrowser('')
+
+
+WebUI.navigateToUrl(findTestData("Login_testdata").getValue(1, 1))
+for(int i=0;i<=1;i++)
+{
+WebUI.maximizeWindow()
+WebUI.delay(4)
+WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-email'), findTestData("Login_testdata").getValue(4,1))
+
+//WebUI.setEncryptedText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-_90355e'), findTestData("TestDataforLogin").getValue(3,1))
+WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-_90355e'), findTestData("Login_testdata").getValue(5,1))
+WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/button_LOGIN'))
+WebUI.delay(2)
+CustomKeywords.'reusableKeywords.Reusable.UserNavigation_Dept'()
+	
+CustomKeywords.'reusableKeywords.Reusable.Logout'()
+}
+}
+catch(Exception e)
+{
+	KeywordUtil.markFailed('ERROR:User unable to launched the dashbord'+ e.getMessage())
+	
+}

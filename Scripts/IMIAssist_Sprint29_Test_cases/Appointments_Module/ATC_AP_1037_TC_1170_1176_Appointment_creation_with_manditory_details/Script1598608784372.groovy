@@ -18,29 +18,16 @@ import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 
-Appointmentconfirmationtextvalue='Appointment Scheduled Successfully'
 try
 {
-//	CustomKeywords.'reusableKeywords.Reusable.Login'()
-	
-
-	try{
-		
-	
-WebUI.click(findTestObject('Object Repository/Page_eClinic - Video Consultations/i_insert_invitation'))
-
-WebUI.click(findTestObject('Object Repository/Page_eClinic - Video Consultations/span_Appointments'))
-WebUI.delay(3)
-WebUI.click(findTestObject('Object Repository/Page_eClinic - Video Consultations/div_New Appointment   close          Start _142398'))
-
-WebUI.click(findTestObject('Object Repository/Page_eClinic - Video Consultations/label_Schedule An Appointment  Schedule an _9b3aa6'))
-
-WebUI.click(findTestObject('Page_eClinic - Video Consultations/button_Next (3)'))
-
+	//CustomKeywords.'reusableKeywords.Reusable.Login'()
+   WebUI.delay(2)
+  try{
+	CustomKeywords.'reusableKeywords.Reusable.navigatetodepartmentpagetoselectscheduleap'()
 KeywordUtil.markPassed('SUCCESS:Agent able to select schedule an appointment on appointment creation popup and he able to naviagte appointment creation popup')
 
-
 	}
+		
 	catch(Exception e)
 	{
 		KeywordUtil.markFailed('ERROR:Agent Unable to select schedule an appointment :'+e.getMessage())
