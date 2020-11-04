@@ -47,7 +47,6 @@ public class Reusable {
 
 			WebUI.click(findTestObject('Object Repository/LoginPage_TestCases_Objects/Login_button'))
 			WebUI.delay(5)
-<<<<<<< HEAD
 		}
 		/*		try {
 		 boolean AlreadyLoggedIn = WebUI.verifyElementPresent(findTestObject('Admin_Settings/Dept/UserCreation/button_Login_PROCEED'), 2, FailureHandling.OPTIONAL)
@@ -80,12 +79,6 @@ public class Reusable {
 					'Password', rowNum))
 			WebUI.click(findTestObject('Object Repository/LoginPage_TestCases_Objects/Login_button'))
 			WebUI.delay(5)
-=======
-			//		} catch (Exception e) {
-			//
-			//
-			//			WebUI.delay(8)
->>>>>>> branch 'master' of https://github.com/Rafiimi/IMIAssist_Final_FW
 		}
 		catch (Exception e) {
 
