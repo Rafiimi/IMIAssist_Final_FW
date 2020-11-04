@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Check whether system is displaying the Waiting message while connecting End User</description>
+   <name>TC_Workspace_11_V_wiatingforcustomertojointoastmessage</name>
+   <tag>Test cases</tag>
+   <comment></comment>
+   <testCaseGuid>ccb3b312-5f8d-40e0-bd58-b072641b85e9</testCaseGuid>
+</TestCaseEntity>

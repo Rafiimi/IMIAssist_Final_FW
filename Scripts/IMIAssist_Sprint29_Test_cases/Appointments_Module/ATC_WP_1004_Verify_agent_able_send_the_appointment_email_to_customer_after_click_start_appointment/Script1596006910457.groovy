@@ -20,25 +20,14 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 appointmentconfirmationtext='Case updated successfully';
 try
 {
-WebUI.openBrowser('')
-
-
-    WebUI.navigateToUrl(findTestData('TestDataforLogin').getValue(1, 1))
-	WebUI.maximizeWindow()
-    WebUI.delay(3)
-
-    WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-email'), 
-        findTestData('TestDataforLogin').getValue(2, 1))
-
-    WebUI.setText(findTestObject('Page_eClinic - Video Consultations/input_Please enter your details below_user-_90355e'), 
-        findTestData('TestDataforLogin').getValue(3, 1))
-
-    WebUI.click(findTestObject('Page_eClinic - Video Consultations/button_LOGIN'))
+	CustomKeywords.'reusableKeywords.Reusable.Login'()
+	
+	CustomKeywords.'reusableKeywords.Reusable.Naviagateappointmentpage'()
    WebUI.delay(2)
   try{
 		
 	
- WebUI.click(findTestObject('Object Repository/Page_eClinic - Video Consultations/i_insert_invitation'))
+// WebUI.click(findTestObject('Object Repository/Page_eClinic - Video Consultations/i_insert_invitation'))
 
 WebUI.click(findTestObject('Object Repository/Page_eClinic - Video Consultations/span_Appointments'))
 WebUI.delay(3)
@@ -46,17 +35,17 @@ WebUI.click(findTestObject('Object Repository/Page_eClinic - Video Consultations
 WebUI.delay(3)
 
 	
-    WebUI.click(findTestObject('Object Repository/AppointmentCreationpopup/AppointmentCreationPopup/Start_an_appointment'))
+WebUI.click(findTestObject('Object Repository/AppointmentCreationpopup/AppointmentCreationPopup/Start_an_appointment'))
 
 WebUI.click(findTestObject('Page_eClinic - Video Consultations/button_Next (3)'))
 
-KeywordUtil.markPassed('SUCCESS:Agent able to select schedule an appointment on appointment creation popup and he able to naviagte appointment creation popup')
+KeywordUtil.markPassed('SUCCESS:Agent able to select start an appointment on appointment creation popup and he able to naviagte appointment creation popup')
 
 
 	}
 	catch(Exception e)
 	{
-		KeywordUtil.markFailed('ERROR:Agent Unable to select schedule an appointment :'+e.getMessage())
+		KeywordUtil.markFailed('ERROR:Agent Unable to select start an appointment :'+e.getMessage())
 		WebUI.click(findTestObject('Object Repository/Page_IMIassist - Virtual Assistance/cancelbutton_on_Appointmentcreation_popup'))
 		
 	}

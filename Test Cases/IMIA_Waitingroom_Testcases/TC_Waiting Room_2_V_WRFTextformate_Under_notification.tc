@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Check whether waiting room feature text format under notification tab in department level</description>
+   <name>TC_Waiting Room_2_V_WRFTextformate_Under_notification</name>
+   <tag>Test Cases</tag>
+   <comment></comment>
+   <testCaseGuid>a962e87d-caed-492b-b0ce-bd434ae3b647</testCaseGuid>
+</TestCaseEntity>
