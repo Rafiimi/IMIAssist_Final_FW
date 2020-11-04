@@ -9,8 +9,12 @@
          <key>XPATH</key>
          <value>//tr[@id='row5f7c6a0316092900255d54a1']/td</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//td[@class = 'department ng-binding' and (text() = ' Testing ' or . = ' Testing ')]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,7 +24,7 @@
       <value>td</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>

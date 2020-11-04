@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Team_PageDesign_Onboarding</description>
+   <name>ATC_AS_0031_AdminSettings_Verify_Department_CompanyAdmin_ITadmin_able_to_edit_the_content_of_messages_in_reminders</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d85a890e-dc4d-493a-9e03-a5363d595096</testCaseGuid>
+</TestCaseEntity>

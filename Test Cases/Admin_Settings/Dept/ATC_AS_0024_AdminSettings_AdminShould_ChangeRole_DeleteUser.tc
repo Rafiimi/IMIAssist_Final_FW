@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Covers TC_Admin Settings_32
+    	      TC_Admin Settings_42</description>
+   <name>ATC_AS_0024_AdminSettings_AdminShould_ChangeRole_DeleteUser</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>90fb4510-4a65-4ed2-b7d1-5a5df32c5733</testCaseGuid>
+</TestCaseEntity>

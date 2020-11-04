@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Tags_switch_EnableDisable</name>
+   <tag></tag>
+   <elementGuidId>918d3ef6-4ac4-45c3-aa5e-ad4d333c3a67</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='tags-tab']/div/div[3]/div/statustagscard/div/div[2]/label/span</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;tags-tab&quot;)/div[@class=&quot;d-flex flex-column h-100&quot;]/div[@class=&quot;admin-settings-view-overflow ng-scope&quot;]/div[@class=&quot;ng-scope&quot;]/statustagscard[@class=&quot;ng-isolate-scope&quot;]/div[@class=&quot;admin-settings-view-row&quot;]/div[2]/label[@class=&quot;switch switch-3d switch-primary switch-xs toggleB&quot;]/span[@class=&quot;switch-label switch-width&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>switch-label switch-width</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;tags-tab&quot;)/div[@class=&quot;d-flex flex-column h-100&quot;]/div[@class=&quot;admin-settings-view-overflow ng-scope&quot;]/div[@class=&quot;ng-scope&quot;]/statustagscard[@class=&quot;ng-isolate-scope&quot;]/div[@class=&quot;admin-settings-view-row&quot;]/div[2]/label[@class=&quot;switch switch-3d switch-primary switch-xs toggleB&quot;]/span[@class=&quot;switch-label switch-width&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <value>//div[@id='tags-tab']/div/div[3]/div/statustagscard/div/div[2]/label/span</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <value>//statustagscard/div/div[2]/label/span</value>
+   </webElementXpaths>
+</WebElementEntity>

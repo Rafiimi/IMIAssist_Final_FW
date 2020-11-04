@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Covers TC_Admin Settings_32
+    	      TC_Admin Settings_42</description>
+   <name>ATC_AS_0022_RoleManagement_TeamAdmin_CannotEditRole_ForOtherMembers</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1dab8757-7385-4426-8ec2-50aa1eefa4df</testCaseGuid>
+</TestCaseEntity>

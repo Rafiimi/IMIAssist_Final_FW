@@ -15,65 +15,63 @@ import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 import com.kms.katalon.core.logging.KeywordLogger as KeywordLogger
 
-CustomKeywords.'reusableKeywords.Reusable.Login'()
+not_run: CustomKeywords.'reusableKeywords.Reusable.Login'()
 
 for (int i = 1; i <= 2; i++) {
-	
-CustomKeywords.'reusableKeywords.Reusable.UserNavigation_Team'()
+    CustomKeywords.'reusableKeywords.Reusable.UserNavigation_Team'()
 
-try {
-    TCname = findTestData('AdminSettings_Team').getValue('Description', i)
+    try {
+        TCname = findTestData('AdminSettings_Team').getValue('Description', i)
 
-    KeywordLogger logger = new KeywordLogger()
+        KeywordLogger logger = new KeywordLogger()
 
-    logger.logInfo('***START Of TEST CASE: ' + TCname)
+        logger.logInfo('***START Of TEST CASE: ' + TCname)
 
-    WebUI.click(findTestObject('Admin_Settings/Team/TeamCreation/Link_CreateNewTeam'))
+        WebUI.click(findTestObject('Admin_Settings/Team/TeamCreation/Link_CreateNewTeam'))
 
-    WebUI.click(findTestObject('Admin_Settings/Team/TeamCreation/div_SelectSpecialty'))
+        WebUI.click(findTestObject('Admin_Settings/Team/TeamCreation/div_SelectSpecialty'))
 
-    CustomKeywords.'reusableKeywords.Reusable.ClickDynamicTextObj'(findTestData('AdminSettings_Team').getValue('Speciality', 
-            i))
+        CustomKeywords.'reusableKeywords.Reusable.ClickDynamicTextObj'(findTestData('AdminSettings_Team').getValue('Speciality', 
+                i))
 
-    WebUI.setText(findTestObject('Admin_Settings/Team/TeamCreation/Team_teamName'), findTestData('AdminSettings_Team').getValue(
-            'TeamName', i), FailureHandling.OPTIONAL)
+        WebUI.setText(findTestObject('Admin_Settings/Team/TeamCreation/Team_teamName'), findTestData('AdminSettings_Team').getValue(
+                'TeamName', i), FailureHandling.OPTIONAL)
 
-    WebUI.click(findTestObject('Admin_Settings/Team/TeamCreation/team_CREATE'))
+        WebUI.click(findTestObject('Admin_Settings/Team/TeamCreation/team_CREATE'))
 
-    WebUI.delay(1)
+        WebUI.delay(1)
 
-    actualMsg = WebUI.getText(findTestObject('Admin_Settings/Dept/UserCreation/ToastMessage'))
+        actualMsg = WebUI.getText(findTestObject('Admin_Settings/Dept/UserCreation/ToastMessage'))
 
-    expectedMsg = findTestData('AdminSettings_Team').getValue('Expected_Msg_Header', i)
+        expectedMsg = findTestData('AdminSettings_Team').getValue('Expected_Msg_Header', i)
 
-    if (actualMsg == expectedMsg) {
-        KeywordUtil.markPassed("Team creation: " +expectedMsg)
-    } else {
-        KeywordUtil.markFailed("Team creation: " +actualMsg)
+        if (actualMsg == expectedMsg) {
+            KeywordUtil.markPassed('Team creation: ' + expectedMsg)
+        } else {
+            KeywordUtil.markFailed('Team creation: ' + actualMsg)
+        }
+        
+        WebUI.delay(3)
+
+        if (findTestData('AdminSettings_Team').getValue('TestType', i) == 'Positive') {
+            //WebUI.click(findTestObject('Admin_Settings/Team/TeamCreation/team_RE_LOGIN'))
+            WebUI.delay(25)
+
+            WebUI.setText(findTestObject('Object Repository/LoginPage_TestCases_Objects/User_Email'), GlobalVariable.Username)
+
+            WebUI.setText(findTestObject('Object Repository/LoginPage_TestCases_Objects/PasswordTextfiled'), GlobalVariable.Password)
+
+            WebUI.click(findTestObject('Object Repository/LoginPage_TestCases_Objects/Login_button'))
+
+            WebUI.delay(3)
+        } else {
+            WebUI.click(findTestObject('Object Repository/Admin_Settings/Team/TeamCreation/team_CANCEL'))
+        }
+        
+        logger.logInfo('***END Of TEST CASE: ' + TCname)
     }
-    
-    WebUI.delay(3)
-
-	if (findTestData('AdminSettings_Team').getValue('TestType', i)=='Positive'){
-	
- //   WebUI.click(findTestObject('Admin_Settings/Team/TeamCreation/team_RE_LOGIN'))
-
-    WebUI.delay(25)
-
-    WebUI.setText(findTestObject('Object Repository/LoginPage_TestCases_Objects/User_Email'), GlobalVariable.Username)
-
-    WebUI.setText(findTestObject('Object Repository/LoginPage_TestCases_Objects/PasswordTextfiled'), GlobalVariable.Password)
-
-    WebUI.click(findTestObject('Object Repository/LoginPage_TestCases_Objects/Login_button'))
-	WebUI.delay(3)
-	}
-	else {
-		WebUI.click(findTestObject('Object Repository/Admin_Settings/Team/TeamCreation/team_CANCEL'))
-	}
-    logger.logInfo('***END Of TEST CASE: ' + TCname)
+    catch (Exception e) {
+        KeywordUtil.markFailed('ERROR: ' + e.getMessage())
+    } 
 }
-catch (Exception e) {
-    KeywordUtil.markFailed('ERROR: ' + e.getMessage())
-} 
 
-}

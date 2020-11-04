@@ -27,7 +27,7 @@ import com.kms.katalon.core.logging.KeywordLogger as KeywordLogger
 import internal.GlobalVariable
 
 public class Reusable {
-	//Login Resusable method
+	//Login Reussable method
 	@Keyword
 	def Login(){
 		try{
@@ -46,21 +46,39 @@ public class Reusable {
 			WebUI.setText(findTestObject('Object Repository/LoginPage_TestCases_Objects/PasswordTextfiled'), loginPassword)
 
 			WebUI.click(findTestObject('Object Repository/LoginPage_TestCases_Objects/Login_button'))
-
-			/*		try {
-			 boolean AlreadyLoggedIn = WebUI.verifyElementPresent(findTestObject('Admin_Settings/Dept/UserCreation/button_Login_PROCEED'), 2, FailureHandling.OPTIONAL)
-			 if (AlreadyLoggedIn==true) {
-			 WebUI.click(findTestObject('Admin_Settings/Dept/UserCreation/button_Login_PROCEED'))
-			 }
-			 }
-			 catch (Exception e) {
-			 KeywordUtil.markFailed('MESSAGE: Proceed button not displayed')
-			 }*/
 			WebUI.delay(5)
-		} catch (Exception e) {
+		}
+		/*		try {
+		 boolean AlreadyLoggedIn = WebUI.verifyElementPresent(findTestObject('Admin_Settings/Dept/UserCreation/button_Login_PROCEED'), 2, FailureHandling.OPTIONAL)
+		 if (AlreadyLoggedIn==true) {
+		 WebUI.click(findTestObject('Admin_Settings/Dept/UserCreation/button_Login_PROCEED'))
+		 }
+		 }
+		 catch (Exception e) {
+		 KeywordUtil.markFailed('MESSAGE: Proceed button not displayed')
+		 }
+		 WebUI.delay(5)
+		 } catch (Exception e) {
+		 WebUI.delay(5)
+		 } */
+		catch (Exception e) {
 
+			KeywordUtil.markFailed("Unable to login")
+		}
+	}
 
-			WebUI.delay(8)
+	@Keyword
+	def LoginDiffUser(int rowNum){
+		try{
+			WebUI.openBrowser('')
+			WebUI.navigateToUrl(findTestData('Login_testdata').getValue('URL', rowNum))
+			WebUI.maximizeWindow()
+			WebUI.setText(findTestObject('Object Repository/LoginPage_TestCases_Objects/User_Email'), findTestData('Login_testdata').getValue(
+					'Username', rowNum))
+			WebUI.setText(findTestObject('Object Repository/LoginPage_TestCases_Objects/PasswordTextfiled'), findTestData('Login_testdata').getValue(
+					'Password', rowNum))
+			WebUI.click(findTestObject('Object Repository/LoginPage_TestCases_Objects/Login_button'))
+			WebUI.delay(5)
 		}
 		catch (Exception e) {
 
@@ -82,12 +100,38 @@ public class Reusable {
 		}
 	}
 
+	@Keyword
+	def ClickToggleObject(String dynamicName) {
+		try{
+			int servCode
+			String xpath1=('//*[contains(text(),"'+dynamicName+'")]//preceding::div[1]/label')
+			TestObject to = new TestObject('objectName')
+			to.addProperty('xpath', ConditionType.EQUALS, xpath1)
+			WebUI.click(to)
+		} catch (Exception e) {
+			KeywordUtil.markFailed("Unable to click element: " +e.getMessage())
+		}
+	}
+
 
 	@Keyword
 	//Mostly used for speciality selection dropdown values
 	def ClickDynamicTextObj(String dynamicText) {
 		try{
 			String xpath1=('//*[@class="option ui-select-choices-row-inner" and contains(text(),"'+dynamicText+'")]')
+			TestObject to = new TestObject('objectName')
+			to.addProperty('xpath', ConditionType.EQUALS, xpath1)
+			WebUI.click(to)
+		} catch (Exception e) {
+			KeywordUtil.markFailed("Unable to click element: " +e.getMessage())
+		}
+	}
+
+	@Keyword
+	//Mostly used for dynamic class and dynamic list value in a dropdown list
+	def SelectDynamicValue(String objClass, String dynamicText) {
+		try{
+			String xpath1=('//*[@class="'+objClass+'" and contains(text(),"'+dynamicText+'")]')
 			TestObject to = new TestObject('objectName')
 			to.addProperty('xpath', ConditionType.EQUALS, xpath1)
 			WebUI.click(to)
@@ -147,7 +191,7 @@ public class Reusable {
 	}
 
 
-	//Logout Resusable Method
+	//Logout Reusable Method
 	@Keyword
 	def Logout()
 	{
@@ -159,6 +203,8 @@ public class Reusable {
 			WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/a_Finance_navProfileDropdown'))
 
 			WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/li_Logout'))
+			WebUI.delay(3)
+			WebUI.closeBrowser()
 		}
 		catch(Exception e)
 		{

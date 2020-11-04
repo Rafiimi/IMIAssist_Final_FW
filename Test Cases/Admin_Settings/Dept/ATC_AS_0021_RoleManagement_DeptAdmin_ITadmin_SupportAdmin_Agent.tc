@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Covers TC_Admin Settings_32
+    	      TC_Admin Settings_42</description>
+   <name>ATC_AS_0021_RoleManagement_DeptAdmin_ITadmin_SupportAdmin_Agent</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4f9a1d9b-55a8-498b-8a5a-12e23797e8a0</testCaseGuid>
+</TestCaseEntity>

@@ -16,7 +16,7 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 import com.kms.katalon.core.logging.KeywordLogger as KeywordLogger
 
 //****Need to change the data in .CSV file every time as there are forumas won't work in CSV****
-CustomKeywords.'reusableKeywords.Reusable.Login'()
+not_run: CustomKeywords.'reusableKeywords.Reusable.Login'()
 
 CustomKeywords.'reusableKeywords.Reusable.UserNavigation_Dept'()
 
@@ -107,11 +107,12 @@ try {
 
             if (CreationStatus == true) {
                 KeywordUtil.markPassed('User is created successfully by Bulk Upload')
-            } else {
+            } // }
+            else {
                 KeywordUtil.markFailed('User is Not created by Bulk Upload: ' + findTestData('BulkUploadData').getValue(
                         'Email', i))
             }
-        } // }
+        }
     } else {
         KeywordUtil.markFailed('User Import Result is NOT showing correctly')
     }

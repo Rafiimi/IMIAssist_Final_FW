@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ATC_AS_0026_AdminSettings_RoleChange_Team_UserloggedoutAutomatically</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4846d089-eb27-4772-bf82-3a63f449a308</testCaseGuid>
+</TestCaseEntity>
