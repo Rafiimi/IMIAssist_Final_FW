@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Resend mail check and delete user</description>
+   <name>ATC_AS_0004_DeleteUser_And_Addback</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fd4885f8-4c36-4f02-a119-3c4b4d98a9dc</testCaseGuid>
+</TestCaseEntity>

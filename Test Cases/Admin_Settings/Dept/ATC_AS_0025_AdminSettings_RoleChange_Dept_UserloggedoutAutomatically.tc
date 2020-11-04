@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Covers TC_Admin Settings_32
+    	      TC_Admin Settings_42</description>
+   <name>ATC_AS_0025_AdminSettings_RoleChange_Dept_UserloggedoutAutomatically</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>eb0d74d5-823d-455f-94fb-8cace4aa37d1</testCaseGuid>
+</TestCaseEntity>

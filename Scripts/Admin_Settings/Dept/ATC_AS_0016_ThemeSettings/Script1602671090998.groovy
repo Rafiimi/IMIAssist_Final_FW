@@ -18,7 +18,7 @@ import com.kms.katalon.core.logging.KeywordLogger as KeywordLogger
 import org.openqa.selenium.WebDriver as WebDriver
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 
-CustomKeywords.'reusableKeywords.Reusable.Login'()
+not_run: CustomKeywords.'reusableKeywords.Reusable.Login'()
 
 CustomKeywords.'reusableKeywords.Reusable.UserNavigation_Dept'()
 
@@ -34,16 +34,19 @@ try {
     WebUI.click(findTestObject('Admin_Settings/Dept/UserCreation/Speciality_Testing'))
 
     WebUI.click(findTestObject('Admin_Settings/Dept/UserCreation/Tab_ThemeSettings'))
-	WebUI.delay(2)
+
+    WebUI.delay(2)
 
     for (int i = 1; i <= 2; i++) {
         WebUI.uploadFile(findTestObject('Admin_Settings/Dept/UserCreation/BrandLogo_Upload'), findTestData('Team_Theme_Settings').getValue(
                 'BrandLogo', 3), FailureHandling.OPTIONAL)
 
-	WebUI.delay(1)
-	String fileTypeErrAct = WebUI.getText(findTestObject('Admin_Settings/Dept/UserCreation/Theme_FileSize_Error'))
-    String fileTypeErrExp = findTestData('Team_Theme_Settings').getValue('Expected_Msg_FieldLevel', i)
-    
+        WebUI.delay(1)
+
+        String fileTypeErrAct = WebUI.getText(findTestObject('Admin_Settings/Dept/UserCreation/Theme_FileSize_Error'))
+
+        String fileTypeErrExp = findTestData('Team_Theme_Settings').getValue('Expected_Msg_FieldLevel', i)
+
         if (fileTypeErrExp == fileTypeErrAct) {
             KeywordUtil.markPassed(((((('Expected and actual error messages are matched: ' + 'Actual is: ') + fileTypeErrAct) + 
                 ' ') + ',') + 'Expected is: ') + fileTypeErrExp)
@@ -172,68 +175,83 @@ try {
     TCname2 = 'Checking Brand Color, Button color and Brand Logo in all pages'
 
     logger.logInfo('***START Of TEST CASE: ' + TCname2)
-	
-	String BrandColor = findTestData('Team_Theme_Settings').getValue('BrandColor', 3)
-	String ButtonColor = findTestData('Team_Theme_Settings').getValue('ButtonColor', 3)
-	String PageFont = findTestData('Team_Theme_Settings').getValue('PageFont', 3)
 
-	WebUI.mouseOver(findTestObject('Admin_Settings/Dept/UserCreation/navigation_Dashboard'))
+    String BrandColor = findTestData('Team_Theme_Settings').getValue('BrandColor', 3)
+
+    String ButtonColor = findTestData('Team_Theme_Settings').getValue('ButtonColor', 3)
+
+    String PageFont = findTestData('Team_Theme_Settings').getValue('PageFont', 3)
+
+    WebUI.mouseOver(findTestObject('Admin_Settings/Dept/UserCreation/navigation_Dashboard'))
+
     WebUI.click(findTestObject('Admin_Settings/Dept/UserCreation/span_Dashboard'))
-	WebUI.delay(2)
+
+    WebUI.delay(2)
+
     WebUI.verifyElementPresent(findTestObject('Admin_Settings/Dept/UserCreation/BrandLogoImage'), 2, FailureHandling.OPTIONAL)
 
-	String expColorCodes = (((('primary-background-color:' + BrandColor) + '; --secondary-color:') + ButtonColor) + '; --main-font-family:') +
-	PageFont
+    String expColorCodes = (((('primary-background-color:' + BrandColor) + '; --secondary-color:') + ButtonColor) + '; --main-font-family:') + 
+    PageFont
 
-	WebDriver driver = DriverFactory.getWebDriver()
-	String pagesource2 = driver.getPageSource()
+    WebDriver driver = DriverFactory.getWebDriver()
 
-	if (pagesource2.contains(expColorCodes)) {
-		KeywordUtil.markPassed('Brand Color, Button color and Brand Logo are displayed in DashBoard successfully')
-	} else {
-		KeywordUtil.markFailed('Brand Color, Button color and Brand Logo are NOT displayed in DashBoard correctly')
-	}
-	
-	WebUI.mouseOver(findTestObject('Admin_Settings/Dept/UserCreation/navigation_Dashboard'))
+    String pagesource2 = driver.getPageSource()
+
+    if (pagesource2.contains(expColorCodes)) {
+        KeywordUtil.markPassed('Brand Color, Button color and Brand Logo are displayed in DashBoard successfully')
+    } else {
+        KeywordUtil.markFailed('Brand Color, Button color and Brand Logo are NOT displayed in DashBoard correctly')
+    }
+    
+    WebUI.mouseOver(findTestObject('Admin_Settings/Dept/UserCreation/navigation_Dashboard'))
+
     WebUI.click(findTestObject('Admin_Settings/Dept/UserCreation/span_Appointments'))
-	WebUI.delay(2)
+
+    WebUI.delay(2)
+
     WebUI.verifyElementPresent(findTestObject('Admin_Settings/Dept/UserCreation/BrandLogoImage'), 2, FailureHandling.OPTIONAL)
 
-	String pagesource3 = driver.getPageSource()
+    String pagesource3 = driver.getPageSource()
 
-	if (pagesource3.contains(expColorCodes)) {
-		KeywordUtil.markPassed('Brand Color, Button color and Brand Logo are displayed in Appointments successfully')
-	} else {
-		KeywordUtil.markFailed('Brand Color, Button color and Brand Logo are NOT displayed in Appointments correctly')
-	}
-	
-	WebUI.mouseOver(findTestObject('Admin_Settings/Dept/UserCreation/navigation_Dashboard'))
+    if (pagesource3.contains(expColorCodes)) {
+        KeywordUtil.markPassed('Brand Color, Button color and Brand Logo are displayed in Appointments successfully')
+    } else {
+        KeywordUtil.markFailed('Brand Color, Button color and Brand Logo are NOT displayed in Appointments correctly')
+    }
+    
+    WebUI.mouseOver(findTestObject('Admin_Settings/Dept/UserCreation/navigation_Dashboard'))
+
     WebUI.click(findTestObject('Admin_Settings/Dept/UserCreation/span_Reports'))
-	WebUI.delay(2)
+
+    WebUI.delay(2)
+
     WebUI.verifyElementPresent(findTestObject('Admin_Settings/Dept/UserCreation/BrandLogoImage'), 2, FailureHandling.OPTIONAL)
 
-	String pagesource4 = driver.getPageSource()
+    String pagesource4 = driver.getPageSource()
 
-	if (pagesource4.contains(expColorCodes)) {
-		KeywordUtil.markPassed('Brand Color, Button color and Brand Logo are displayed in Reports successfully')
-	} else {
-		KeywordUtil.markFailed('Brand Color, Button color and Brand Logo are NOT displayed in Reports correctly')
-	}
-	
-	WebUI.mouseOver(findTestObject('Admin_Settings/Dept/UserCreation/navigation_Dashboard'))
+    if (pagesource4.contains(expColorCodes)) {
+        KeywordUtil.markPassed('Brand Color, Button color and Brand Logo are displayed in Reports successfully')
+    } else {
+        KeywordUtil.markFailed('Brand Color, Button color and Brand Logo are NOT displayed in Reports correctly')
+    }
+    
+    WebUI.mouseOver(findTestObject('Admin_Settings/Dept/UserCreation/navigation_Dashboard'))
+
     WebUI.click(findTestObject('Admin_Settings/Dept/UserCreation/span_Logs'))
-	WebUI.delay(2)
+
+    WebUI.delay(2)
+
     WebUI.verifyElementPresent(findTestObject('Admin_Settings/Dept/UserCreation/BrandLogoImage'), 2, FailureHandling.OPTIONAL)
 
-	String pagesource5 = driver.getPageSource()
+    String pagesource5 = driver.getPageSource()
 
-	if (pagesource5.contains(expColorCodes)) {
-		KeywordUtil.markPassed('Brand Color, Button color and Brand Logo are displayed in Logs successfully')
-	} else {
-		KeywordUtil.markFailed('Brand Color, Button color and Brand Logo are NOT displayed in Logs correctly')
-	}
-
-	logger.logInfo('***END Of TEST CASE: ' + TCname2)
+    if (pagesource5.contains(expColorCodes)) {
+        KeywordUtil.markPassed('Brand Color, Button color and Brand Logo are displayed in Logs successfully')
+    } else {
+        KeywordUtil.markFailed('Brand Color, Button color and Brand Logo are NOT displayed in Logs correctly')
+    }
+    
+    logger.logInfo('***END Of TEST CASE: ' + TCname2)
 }
 catch (Exception e) {
     KeywordUtil.markFailed('ERROR :' + e.getMessage())

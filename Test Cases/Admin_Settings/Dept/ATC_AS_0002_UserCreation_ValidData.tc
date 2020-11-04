@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>User creation in Dept</description>
+   <description>User creation in Dept
+Also covers TC_Admin Settings_109</description>
    <name>ATC_AS_0002_UserCreation_ValidData</name>
    <tag></tag>
    <comment></comment>

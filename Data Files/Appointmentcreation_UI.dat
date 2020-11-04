@@ -6,9 +6,9 @@
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>fc0174b5-1394-4638-9d72-d27a6d1282b9</dataFileGUID>
-   <dataSourceUrl>D:\IMI_Automation\IMIAssist_Automtion\TestData\IMIassist_Automation_TestData.xlsx</dataSourceUrl>
+   <dataSourceUrl>TestData/IMIassist_Automation_TestData.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
-   <isInternalPath>false</isInternalPath>
+   <isInternalPath>true</isInternalPath>
    <query></query>
    <secureUserAccount>false</secureUserAccount>
    <sheetName>Sprint-29-appointment-creation</sheetName>

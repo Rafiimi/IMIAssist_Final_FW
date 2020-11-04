@@ -15,23 +15,46 @@ import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 import com.kms.katalon.core.logging.KeywordLogger as KeywordLogger
 
-CustomKeywords.'reusableKeywords.Reusable.Login'()
+not_run: CustomKeywords.'reusableKeywords.Reusable.Login'()
 
 KeywordLogger logger = new KeywordLogger()
 
 try {
-	logger.logInfo('***Login as Department---To check Department settings option is visible***')
+    logger.logInfo('***Login as Department---To check Department settings option is visible***')
+
     WebUI.mouseOver(findTestObject('Admin_Settings/Dept/UserCreation/navigation_Dashboard'))
 
     WebUI.mouseOver(findTestObject('Admin_Settings/Dept/UserCreation/navigation_Settings'))
 
-    WebUI.verifyElementPresent(findTestObject('Admin_Settings/Dept/UserCreation/Settings_Dept'), 2, FailureHandling.OPTIONAL)
+    boolean deptStatus = WebUI.verifyElementPresent(findTestObject('Admin_Settings/Dept/UserCreation/Settings_Dept'), 2, 
+        FailureHandling.OPTIONAL)
 
+    if (deptStatus == true) {
+        KeywordUtil.markPassed('Page design and settings tab is visible only for the respective team-admin')
+    } else {
+        KeywordUtil.markFailed('Page design and settings tab is visible for User also')
+    }
+    
+    WebUI.click(findTestObject('Admin_Settings/Team/TeamCreation/Settings_Team'))
+
+    WebUI.mouseOver(findTestObject('Admin_Settings/Team/TeamCreation/teamsWindow_empty'))
+
+    boolean teamStatus = WebUI.verifyElementPresent(findTestObject('Admin_Settings/Team/TeamCreation/Link_CreateNewTeam'))
+
+    if (teamStatus == true) {
+        KeywordUtil.markPassed('New Team creation option is available only for Admins')
+    } else {
+        KeywordUtil.markFailed('New Team creation option is available for User also')
+    }
+    
     CustomKeywords.'reusableKeywords.Reusable.Logout'()
+
     WebUI.delay(3)
+
     WebUI.closeBrowser()
 
-	logger.logInfo('***Login as User---To check Department settings option is NOT visible***')
+    logger.logInfo('***Login as User---To check Department settings option is NOT visible***')
+
     WebUI.openBrowser('')
 
     WebUI.navigateToUrl(findTestData('Login_testdata').getValue('URL', 2))
@@ -52,13 +75,30 @@ try {
 
     WebUI.mouseOver(findTestObject('Admin_Settings/Dept/UserCreation/navigation_Settings'))
 
-    WebUI.verifyElementNotPresent(findTestObject('Admin_Settings/Dept/UserCreation/Settings_Dept'), 2, FailureHandling.OPTIONAL)
-	
-	CustomKeywords.'reusableKeywords.Reusable.Logout'()
-	WebUI.delay(3)
-	WebUI.closeBrowser()
+    boolean deptStatus2 = WebUI.verifyElementNotPresent(findTestObject('Admin_Settings/Dept/UserCreation/Settings_Dept'), 
+        2, FailureHandling.OPTIONAL)
+
+    if (deptStatus2 == true) {
+        KeywordUtil.markPassed('Page design and settings tab is Not visible for User')
+    } else {
+        KeywordUtil.markFailed('Page design and settings tab is visible for User also')
+    }
+    
+    WebUI.click(findTestObject('Admin_Settings/Team/TeamCreation/Settings_Team'))
+
+    WebUI.mouseOver(findTestObject('Admin_Settings/Team/TeamCreation/teamsWindow_empty'))
+
+    boolean teamStatus2 = WebUI.verifyElementNotPresent(findTestObject('Admin_Settings/Team/TeamCreation/Link_CreateNewTeam'))
+
+    if (teamStatus2 == true) {
+        KeywordUtil.markPassed('New Team creation option is Not available for user')
+    } else {
+        KeywordUtil.markFailed('New Team creation option is available for user also')
+    }
+    
+    CustomKeywords.'reusableKeywords.Reusable.Logout'()
 }
 catch (Exception e) {
-    println('Department Settings Visible Options: ' + e.getMessage())
+    KeywordUtil.markFailed('ERROR: ' + e.getMessage())
 } 
 

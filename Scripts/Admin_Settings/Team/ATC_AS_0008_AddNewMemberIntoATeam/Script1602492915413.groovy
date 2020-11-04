@@ -15,7 +15,7 @@ import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 import com.kms.katalon.core.logging.KeywordLogger as KeywordLogger
 
-CustomKeywords.'reusableKeywords.Reusable.Login'()
+not_run: CustomKeywords.'reusableKeywords.Reusable.Login'()
 
 CustomKeywords.'reusableKeywords.Reusable.UserNavigation_Team'()
 
@@ -62,6 +62,23 @@ try {
 
     if (actualMsg == expectedMsg) {
         KeywordUtil.markPassed('Add member: ' + expectedMsg)
+
+        //Search functionality
+        WebUI.delay(5)
+
+        WebUI.setText(findTestObject('Admin_Settings/Team/TeamCreation/Search_Member'), findTestData('AdminSettings_Team').getValue(
+                'MemberEmail', 3), FailureHandling.OPTIONAL)
+
+        WebUI.delay(1)
+
+        boolean sStatus = WebUI.verifyElementPresent(findTestObject('Admin_Settings/Team/TeamCreation/Search_Success'), 
+            2, FailureHandling.OPTIONAL)
+
+        if (sStatus == true) {
+            KeywordUtil.markPassed('Search functionality is working fine in Teams page')
+        } else {
+            KeywordUtil.markFailed('Search functionality is NOT working in Teams page')
+        }
     } else {
         KeywordUtil.markFailed('Add member: ' + actualMsg)
     }

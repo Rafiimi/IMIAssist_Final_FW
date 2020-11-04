@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Covers below manual cases:
+TC_Admin Settings_34
+TC_Admin Settings_35
+TC_Admin Settings_36</description>
+   <name>ATC_AS_0018_BulkUploadUsers_NegativeCases</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>55ecd67c-4bfc-4106-81a9-5b5ed6a84a15</testCaseGuid>
+</TestCaseEntity>

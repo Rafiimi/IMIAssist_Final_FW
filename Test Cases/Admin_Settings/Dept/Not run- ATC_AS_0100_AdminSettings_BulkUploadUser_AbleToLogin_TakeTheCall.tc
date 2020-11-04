@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Covers TC_Admin Settings_32
+    	      TC_Admin Settings_42</description>
+   <name>Not run- ATC_AS_0100_AdminSettings_BulkUploadUser_AbleToLogin_TakeTheCall</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8de042d4-b65e-4f07-b857-a5f74bc312bd</testCaseGuid>
+</TestCaseEntity>

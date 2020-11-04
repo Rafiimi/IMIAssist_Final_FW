@@ -6,12 +6,11 @@
    <elementGuidId>3b60ab5f-fa4d-4afe-a425-8bab7608a8ee</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Login'])[1]//div[1]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//button[@id='login-button']</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

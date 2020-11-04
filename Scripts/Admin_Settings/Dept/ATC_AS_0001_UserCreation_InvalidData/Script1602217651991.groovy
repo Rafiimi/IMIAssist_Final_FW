@@ -16,7 +16,7 @@ import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 import com.kms.katalon.core.logging.KeywordLogger
 
-CustomKeywords.'reusableKeywords.Reusable.Login'()
+CustomKeywords.'reusableKeywords.Reusable.LoginDiffUser'(10)
 
 try {
     WebUI.mouseOver(findTestObject('Admin_Settings/Dept/UserCreation/navigation_Dashboard'))
