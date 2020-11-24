@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>AppointmentReminder_Switch</name>
+   <tag></tag>
+   <elementGuidId>9556bf83-8bc3-4879-b4a3-90d7a3c7b627</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;agentNotificationTab&quot;]/div/form/div[3]/label/span[2]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;agentNotificationTab&quot;)/div[@class=&quot;admin-notifications&quot;]/form[@class=&quot;admin-notifications-form ng-pristine ng-valid&quot;]/div[@class=&quot;admin-notifications-reminder&quot;]/label[@class=&quot;switch switch-3d switch-primary switch-xs toggleB admin-notifications-reminder-switch&quot;]/span[@class=&quot;switch-label switch-width&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>switch-label switch-width</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;agentNotificationTab&quot;)/div[@class=&quot;admin-notifications&quot;]/form[@class=&quot;admin-notifications-form ng-pristine ng-valid&quot;]/div[@class=&quot;admin-notifications-reminder&quot;]/label[@class=&quot;switch switch-3d switch-primary switch-xs toggleB admin-notifications-reminder-switch&quot;]/span[@class=&quot;switch-label switch-width&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <value>//div[@id='agentNotificationTab']/div/form/div[3]/label/span</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <value>//div[3]/label/span</value>
+   </webElementXpaths>
+</WebElementEntity>

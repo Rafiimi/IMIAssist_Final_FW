@@ -1,8 +1,8 @@
-import org.openqa.selenium.By as By
-import org.openqa.selenium.JavascriptExecutor
-import org.openqa.selenium.WebDriver
-import org.openqa.selenium.WebElement
-import org.openqa.selenium.chrome.ChromeDriver
+import com.kms.katalon.core.testdata.CSVData
+import com.kms.katalon.core.testdata.reader.CSVSeparator
+
+
+
 
 /*WebUI.openBrowser('https://gmail.com')
 
@@ -45,3 +45,30 @@ JavascriptExecutor jse = (JavascriptExecutor)driver;
 WebElement element = driver.findElement(By.xpath("//*[@id='input']"));
 String emailid = jse.executeScript("email id displayed is: ", element);
 System.out.println(emailid);*/
+
+//CSVData csvData = new CSVData("C://Users//ravi.b//Downloads//saveas2.csv", true, CSVSeparator.COMMA)
+String reportTitle = "Ravibolla"
+	String userprofile = System.getenv("USERPROFILE");
+	CSVData csvData = new CSVData(userprofile+"//Downloads//"+reportTitle+".csv", true, CSVSeparator.COMMA)
+	
+//to access or to get the .csv file values refer to some commonly used commands
+csvData.allData 
+patEmail = csvData.getValue('Patient Email', 2)
+patPhone = csvData.getValue('Patient Phone', 2)
+cliEmail = csvData.getValue('Clinician Email', 2)
+priorityTag = csvData.getValue('Priority', 2)
+statusTag = csvData.getValue('Status', 2)
+
+println patEmail
+println patPhone
+println cliEmail
+println priorityTag
+println statusTag
+
+
+totRecords = csvData.rowNumbers //this is to get all the used rows or total number of rows
+println totRecords
+
+
+//csvData.columnNumbers
+//csvData.columnNames

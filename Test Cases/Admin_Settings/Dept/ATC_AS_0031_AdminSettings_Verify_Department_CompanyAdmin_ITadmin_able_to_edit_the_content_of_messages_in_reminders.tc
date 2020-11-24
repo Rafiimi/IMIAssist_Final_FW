@@ -5,4 +5,11 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>d85a890e-dc4d-493a-9e03-a5363d595096</testCaseGuid>
+   <variable>
+      <defaultValue>'return document.querySelector(&quot;[ng-model=\'agent.reminder.content\']&quot;).value'</defaultValue>
+      <description></description>
+      <id>4fa9536c-4c81-41bb-b3c6-a4c269b75606</id>
+      <masked>false</masked>
+      <name>actValList</name>
+   </variable>
 </TestCaseEntity>

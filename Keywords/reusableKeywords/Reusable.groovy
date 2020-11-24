@@ -308,7 +308,7 @@ public class Reusable {
 			WebUI.delay(3)
 			WebUI.click(findTestObject('Object Repository/IMIA_Custome_Reports_objects/CustomReporttab'))
 			WebUI.delay(3)
-			WebUI.click(findTestObject('Object Repository/IMIA_Custome_Reports_objects/Create_custom_r'))
+			WebUI.click(findTestObject('IMIA_Custome_Reports_objects/Create_custom_r'))
 			/*WebUI.delay(3)
 			 WebUI.click(findTestObject('Object Repository/Cases_Module_objects/Appointmentidoption'))
 			 //WebUI.selectOptionByValue(findTestObject('Object Repository/Cases_Module_objects/CasesDropdown'), 'Appointment ID', false)

@@ -70,31 +70,8 @@ for (int i = 1; i <= 2; i++) {
         
         logger.logInfo('***END Of TEST CASE: ' + TCname)
     }
-<<<<<<< HEAD
     catch (Exception e) {
         KeywordUtil.markFailed('ERROR: ' + e.getMessage())
     } 
-=======
-    
-    WebUI.delay(3)
-
-	if (findTestData('AdminSettings_Team').getValue('TestType', i)=='Positive'){
-	
- //   WebUI.click(findTestObject('Admin_Settings/Team/TeamCreation/team_RE_LOGIN'))
-
-    WebUI.delay(25)
-
-    WebUI.setText(findTestObject('Object Repository/LoginPage_TestCases_Objects/User_Email'), GlobalVariable.CAUsername)
-
-    WebUI.setText(findTestObject('Object Repository/LoginPage_TestCases_Objects/PasswordTextfiled'), GlobalVariable.CAPassword)
-
-    WebUI.click(findTestObject('Object Repository/LoginPage_TestCases_Objects/Login_button'))
-	WebUI.delay(3)
-	}
-	else {
-		WebUI.click(findTestObject('Object Repository/Admin_Settings/Team/TeamCreation/team_CANCEL'))
-	}
-    logger.logInfo('***END Of TEST CASE: ' + TCname)
->>>>>>> branch 'master' of https://github.com/Rafiimi/IMIAssist_Final_FW
 }
 

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Covered:
+TC_Custom Reports_29
+TC_Custom Reports_31
+TC_Custom Reports_32
+TC_Custom Reports_33
+TC_Custom Reports_34</description>
+   <name>TC_Custom Reports_CustomReport_generation_OtherTags</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>27275a4a-afbb-4576-b18f-e9f7bdc5bc23</testCaseGuid>
+   <variable>
+      <defaultValue>'return document.getElementsByName(&quot;startDate&quot;)[0].value'</defaultValue>
+      <description></description>
+      <id>49c3baff-2e94-46d2-8764-2fe4de84d48f</id>
+      <masked>false</masked>
+      <name>fromDate</name>
+   </variable>
+   <variable>
+      <defaultValue>'return document.getElementsByName(&quot;endDate&quot;)[0].value'</defaultValue>
+      <description></description>
+      <id>1e21ba8c-d7b9-4482-9e64-5032f703e1fe</id>
+      <masked>false</masked>
+      <name>toDate</name>
+   </variable>
+</TestCaseEntity>

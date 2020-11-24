@@ -6,12 +6,11 @@
    <elementGuidId>8a69b09e-fe98-4b85-8b4e-9f5130f3e922</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//*[@ui-sref='app.createCustomReports']</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

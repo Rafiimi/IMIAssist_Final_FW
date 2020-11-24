@@ -89,7 +89,7 @@ try {
 
     String expectedMsg = findTestData('Team_Theme_Settings').getValue('Expected_Msg_Header', 3)
 
-    if (actualMsg == expectedMsg) {
+	if (actualMsg.contains(expectedMsg)) {
         KeywordUtil.markPassed('Team Theme settings: ' + expectedMsg)
     } else {
         KeywordUtil.markFailed('Team Theme settings: ' + actualMsg)
