@@ -21,22 +21,7 @@ import com.kms.katalon.core.util.KeywordUtil
 try
 {
 	
-/*	WebUI.openBrowser('')
-	
-	
-	  WebUI.navigateToUrl(findTestData('IMiAsssist_dashbord').getValue(1, 1))
-	
-		WebUI.delay(3)
-		WebUI.maximizeWindow()
-		
-	
-		WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-email'),
-			findTestData('IMiAsssist_dashbord').getValue(2, 1))
-	
-		WebUI.setText(findTestObject('Page_eClinic - Video Consultations/input_Please enter your details below_user-_90355e'),
-			findTestData('IMiAsssist_dashbord').getValue(3, 1))
-	
-		WebUI.click(findTestObject('Page_eClinic - Video Consultations/button_LOGIN'))*/
+//CustomKeywords.'reusableKeywords.Reusable.Login'()
 		
 WebUI.delay(2)
 //WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/i_settings'))
@@ -73,7 +58,7 @@ WebUI.click(findTestObject('Object Repository/AppointmentCreationpopup/Appointme
 appointment_typecreatetext=WebUI.getText(findTestObject('Object Repository/Page_IMIassist - Virtual Assistance/appointmenttypeconfirmationtext'))
 WebUI.takeScreenshot('Test Cases\\IMIAssist_Automation_Test_Snapshots\\Agent_Side_Tabs\\TC_1007_Verify_User_able_to_create-appointment_type_under_appointment_Managment_tab.png')
 
-WebUI.delay(2)
+WebUI.delay(7)
 Appointmenttypeexpectedconftext=findTestData("Allthetabsatagentside").getValue(8, 1)
 if(Appointmenttypeexpectedconftext.equalsIgnoreCase(appointment_typecreatetext))
 {

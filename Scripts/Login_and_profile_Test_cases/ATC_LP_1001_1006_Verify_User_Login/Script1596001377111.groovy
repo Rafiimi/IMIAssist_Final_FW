@@ -23,41 +23,28 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 //{
 try
 {
-	
-Dashboardtitle='dashboard'
-WebUI.openBrowser('')
-
-
-WebUI.navigateToUrl(findTestData("TestDataforLogin").getValue(1, 1))
-WebUI.maximizeWindow()
-WebUI.delay(4)
-WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-email'), findTestData("TestDataforLogin").getValue(2,1))
-
-//WebUI.setEncryptedText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-_90355e'), findTestData("TestDataforLogin").getValue(3,1))
-WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-_90355e'), findTestData("TestDataforLogin").getValue(3,1))
-WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/button_LOGIN'))
-WebUI.delay(2)
-WebUI.takeScreenshot('Test Cases\\IMIAssist_Automation_Test_Snapshots\\Profile_Page\\ATC_LP_1001_1006_Verify_User_Login.png')
-/*windowtitle=WebUI.getUrl()
-println("windowtitle :"+windowtitle)
+CustomKeywords.'reusableKeywords.Reusable.Login'()
 WebUI.delay(5)
-
-if(windowtitle.contains(Dashboardtitle))
+try
 {
-	
-	KeywordUtil.markPassed('SUCCESS:User able to launched the app')
+Dashboardheader=WebUI.getText(findTestObject('Object Repository/AppointmentCreationpopup/Dashbord'))
+if(Dashboardheader.contains('Dashboard'))
+{
+	KeywordUtil.markPassed('SUCCESS: User Successfully launched the dashbord')
 }
 else
 {
-	KeywordUtil.markFailed('ERROR:User unable to launched the dashbord')
+	KeywordUtil.markFailed('ERROR: User unable to launched the dashbord')
+}
+}
+catch(Exception e)
+{
+	KeywordUtil.markFailed('ERROR: User unable to launched the dashbord:'+e.getMessage())
 	
-}*/
+}
 WebUI.delay(5)
-WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/a_Finance_navProfileDropdown'))
+CustomKeywords.'reusableKeywords.Reusable.Logout'()
 
-WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/li_Logout'))
-WebUI.delay(3)
-WebUI.closeBrowser()
 }
 catch(Exception e)
 {

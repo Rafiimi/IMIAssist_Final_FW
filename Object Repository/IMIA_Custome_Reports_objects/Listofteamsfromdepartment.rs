@@ -6,12 +6,11 @@
    <elementGuidId>38b42bda-2231-4646-af23-450e3878acc7</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//div[@id='accordion']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@ng-click='getTeamDetails(companyTeam._id)']</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

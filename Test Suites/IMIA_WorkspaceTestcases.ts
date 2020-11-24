@@ -38,12 +38,12 @@
       <guid>cf82a5ae-643b-4409-9c74-28f843b65225</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/IMIA_Workspace_TestCases/TC_Workspace_11_V_wiatingforcustomertojointoastmessage</testCaseId>
+      <testCaseId>Test Cases/IMIA_Workspace_TestCases/ATC_Workspace_11_V_wiatingforcustomertojointoastmessage</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>88340ce7-e4a0-4d75-9d48-14ba43f40b77</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/IMIA_Workspace_TestCases/TC_Workspace_4_VUabletonaviagteapppage</testCaseId>
+      <testCaseId>Test Cases/IMIA_Workspace_TestCases/ATC_Workspace_4_VUabletonaviagteapppage</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

@@ -17,19 +17,7 @@ import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 try
 {
-WebUI.openBrowser('')
-
-
-WebUI.navigateToUrl(findTestData("IMiAsssist_dashbord").getValue(1,1))
-
-WebUI.maximizeWindow()
-WebUI.delay(4)
-WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-email'), findTestData("IMiAsssist_dashbord").getValue(2,1))
-
-//WebUI.setEncryptedText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-_90355e'), findTestData("TestDataforLogin").getValue(3,1))
-WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-_90355e'), findTestData("IMiAsssist_dashbord").getValue(3,1))
-
-WebUI.click(findTestObject('Object Repository/Page_eClinic - Video Consultations/button_LOGIN'))
+CustomKeywords.'reusableKeywords.Reusable.Login'()
 
 try
 {
@@ -39,8 +27,8 @@ WebUI.click(findTestObject('AppointmentCreationpopup/AppointmentCreationPopup/Ap
 
 WebUI.delay(3)
 WebUI.click(findTestObject('Object Repository/AppointmentCreationpopup/filter_options_object'))
-Restbuttonstatus=WebUI.verifyElementPresent(findTestObject('Object Repository/AppointmentCreationpopup/Reset_button_under_filter'), 2)
-if(Restbuttonstatus==true)
+Resetbuttonstatus=WebUI.verifyElementPresent(findTestObject('Object Repository/AppointmentCreationpopup/Reset_button_under_filter'), 2)
+if(Resetbuttonstatus==true)
 {
 	KeywordUtil.markPassed('SUCCESS:Reset button is available under filters')
 	
@@ -326,10 +314,7 @@ KeywordUtil.markPassed('SUCCESS:All optikons is available under filter section')
 //WebUI.delay(3)
 //WebUI.click(findTestObject('Object Repository/AppointmentCreationpopup/Filter_Clear_object'))
 WebUI.delay(3)
-
-WebUI.click(findTestObject('Page_eClinic - Video Consultations/a_Support_navProfileDropdown'))
-
-WebUI.click(findTestObject('Page_eClinic - Video Consultations/li_Logout'))
+CustomKeywords.'reusableKeywords.Reusable.Logout'()
 }
 catch(Exception e)
 {

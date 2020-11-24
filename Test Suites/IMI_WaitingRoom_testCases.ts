@@ -14,12 +14,12 @@
       <guid>69fcc5f5-1e56-4cfc-991f-3abac096aae4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/IMIA_Waitingroom_Testcases/TC_Waiting Room_2_V_WRFTextformate_Under_notification</testCaseId>
+      <testCaseId>Test Cases/IMIA_Waitingroom_Testcases/ATC_Waiting Room_2_V_WRFTextformate_Under_notification</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>983d6a39-cfdf-4d37-8fdf-204ae532ee21</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/IMIA_Waitingroom_Testcases/TC_Waiting Room_4_V_CA_Able_to_see_the_WR_NT</testCaseId>
+      <testCaseId>Test Cases/IMIA_Waitingroom_Testcases/ATC_Waiting Room_4_V_CA_Able_to_see_the_WR_NT</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

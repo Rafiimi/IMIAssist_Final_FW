@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Check whether filter option is working for Open Status Type in cases tab</description>
-   <name>TC_Cases_7_V_filter_opensts</name>
-   <tag>Test Cases</tag>
-   <comment></comment>
-   <testCaseGuid>8176ce8d-c2d3-4128-ac58-fee4f22eb21e</testCaseGuid>
-</TestCaseEntity>

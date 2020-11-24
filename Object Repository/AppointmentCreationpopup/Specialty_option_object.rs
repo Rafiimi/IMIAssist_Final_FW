@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[text()=' Specialty ']</value>
+         <value>//div[@class='dropdown-label ng-binding']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

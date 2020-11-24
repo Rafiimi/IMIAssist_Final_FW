@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Verify whether current day and tomorrow upcoming   appointments are displaying to the respective user on right side at dashboard in real-time</description>
-   <name>TC_Dashboard_15_Vtodayandtmr_App_On_DB</name>
-   <tag>Test Cases</tag>
-   <comment></comment>
-   <testCaseGuid>cfceb453-e0e3-4c4a-9969-4723194ef61f</testCaseGuid>
-</TestCaseEntity>

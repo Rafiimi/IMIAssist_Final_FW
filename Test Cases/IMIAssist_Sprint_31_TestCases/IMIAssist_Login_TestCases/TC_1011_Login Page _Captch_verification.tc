@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Check whether captcha is displaying to user on entering 3 consecutive wrong passwords</description>
-   <name>TC_1011_Login Page _Captch_verification</name>
-   <tag>Test Cases</tag>
-   <comment></comment>
-   <testCaseGuid>3f3fe7a7-97c7-4a0e-a6ed-4250c2fcb165</testCaseGuid>
-</TestCaseEntity>

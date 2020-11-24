@@ -17,21 +17,8 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.util.KeywordUtil
 
-
-/*WebUI.openBrowser('')
-
-
-WebUI.navigateToUrl(findTestData("Allthetabsatagentside").getValue(1, 1))
-
-WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-email'), findTestData("Allthetabsatagentside").getValue(2, 1))
-
-WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-_90355e'),
-	findTestData("Allthetabsatagentside").getValue(3, 1))
-WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/button_LOGIN'))*/
-
 try
 {
-	WebUI.delay(2)
 WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/i_settings'))
 WebUI.delay(2)
 
@@ -50,7 +37,6 @@ WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Brand Co
 
 WebUI.delay(5)
 WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/button_SAVE'))
-WebUI.takeScreenshot('Test Cases\\IMIAssist_Automation_Test_Snapshots\\Agent_Side_Tabs\\Tc_1004_Verify_user_able_to_navigate_deparotment.png')
 
 KeywordUtil.markPassed('SUCCESS: User successfully changed buttons color in theme settings')
 
@@ -60,9 +46,3 @@ catch(Exception e)
 	KeywordUtil.markFailed('ERROR:User unable to change buttons color in theme settings')
 	
 }
-/*WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/a_Finance_navProfileDropdown'))
-
-WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/li_Logout'))
-
-WebUI.delay(5)
-WebUI.closeBrowser()*/

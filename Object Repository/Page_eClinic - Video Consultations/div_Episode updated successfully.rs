@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='assistNotifier']/div[2]</value>
+         <value>//div[@class='Text__StyledText-lv2a73-0 gIghGo']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

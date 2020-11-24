@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[contains(text(),' Create Custom Report ')]</value>
+         <value>//*[normalize-space(text())='Create Custom Report']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

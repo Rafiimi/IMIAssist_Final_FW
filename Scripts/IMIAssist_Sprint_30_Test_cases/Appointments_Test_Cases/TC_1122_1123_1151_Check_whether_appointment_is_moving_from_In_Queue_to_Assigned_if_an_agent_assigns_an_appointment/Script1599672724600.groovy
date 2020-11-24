@@ -19,28 +19,15 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 
 Appointmentreassigned='The appointment is reassigned'
-try
-{
-WebUI.openBrowser('')
-
-
-    WebUI.navigateToUrl(findTestData('IMiAsssist_dashbord').getValue(1, 1))
-WebUI.delay(4)
-WebUI.maximizeWindow()
-
- WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-email'), 
-        findTestData('IMiAsssist_dashbord').getValue(2, 1))
-
-    WebUI.setText(findTestObject('Page_eClinic - Video Consultations/input_Please enter your details below_user-_90355e'), 
-        findTestData('IMiAsssist_dashbord').getValue(3, 1))
-
-    WebUI.click(findTestObject('Page_eClinic - Video Consultations/button_LOGIN'))
+//try
+//{
+CustomKeywords.'reusableKeywords.Reusable.Login'()
 
 	try
 	{
 	WebUI.delay(3)
 	WebUI.waitForElementClickable(findTestObject('Page_eClinic - Video Consultations/i_insert_invitation'), 2)
-   WebUI.click(findTestObject('Page_eClinic - Video Consultations/i_insert_invitation'))
+	WebUI.click(findTestObject('Page_eClinic - Video Consultations/i_insert_invitation'))
 
     WebUI.delay(4)
 
@@ -51,7 +38,11 @@ WebUI.maximizeWindow()
 	
 WebUI.click(findTestObject('Object Repository/AppointmentCreationpopup/Assignelinkobject'))
 WebUI.delay(2)
-WebUI.click(findTestObject('Object Repository/AppointmentCreationpopup/Rafi_team'))
+CustomKeywords.'reusableKeywords.Reusable.SelectDynamicTextobject'(findTestData('IMiAsssist_dashbord').getValue(23, 1))
+
+//WebUI.setText(findTestObject('Object Repository/AppointmentCreationpopup/Appointmentsearchonassignedpopup'),findTestData('IMiAsssist_dashbord').getValue(23, 1))
+CustomKeywords.'reusableKeywords.Reusable.SelectDynamicTextobject'(findTestData('IMiAsssist_dashbord').getValue(24, 1))
+/*WebUI.click(findTestObject('Object Repository/AppointmentCreationpopup/Rafi_team'))
 WebUI.delay(2)
 
 WebUI.click(findTestObject('Object Repository/AppointmentCreationpopup/Rafi_team_object'))
@@ -67,10 +58,7 @@ WebUI.delay(3)
 if(!assignedcountafterupdate.equals(assignedcount))
 {
 	KeywordUtil.markPassed('SUCCESS:Appointment is updated into inque appoinmtnets withoutrefresh')
-	WebUI.delay(2)
-	WebUI.click(findTestObject('Page_eClinic - Video Consultations/a_Testing_navProfileDropdown (3)'))
-	 
-	 WebUI.click(findTestObject('Page_eClinic - Video Consultations/li_Logout (8)'))
+	CustomKeywords.'reusableKeywords.Reusable.Logout'()
 }
 else
 {
@@ -87,7 +75,7 @@ WebUI.delay(3)
 		KeywordUtil.markFailed('ERROR:Agent unable to click on update button on assign popup')
 		
 	}
-	
+	*/
 	KeywordUtil.markPassed('SUCCESS:Appointment is updated into inque appoinmtnets withoutrefresh')
 
 }

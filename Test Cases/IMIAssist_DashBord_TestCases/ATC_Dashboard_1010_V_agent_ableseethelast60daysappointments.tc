@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Check whether system is able to fetch &quot;Last 30 Days&quot; appointments data on selecting &quot;Last 30 Days&quot; from Time Period dropdown</description>
+   <name>ATC_Dashboard_1010_V_agent_ableseethelast60daysappointments</name>
+   <tag>Test cases</tag>
+   <comment></comment>
+   <testCaseGuid>d18d0064-fd2d-47e1-90e2-1ec94893ffec</testCaseGuid>
+</TestCaseEntity>

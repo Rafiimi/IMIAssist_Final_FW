@@ -52,4 +52,34 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Login_and_profile_Test_cases/ATC_LP_1007_Check_whether_agent_able_to_see_exsting_user_login_popup</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>e634decc-3e5f-478a-8bf2-2876abbec856</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/IMIAssist_Sprint_31_TestCases/IMIAssist_Login_TestCases/ATC_1001_Verify_available_login_page_objects</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>60f13b20-8565-47d4-ab75-53c32794f0ae</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/IMIAssist_Sprint_31_TestCases/IMIAssist_Login_TestCases/ATC_1007_Forgot Password _With_Inavlid_email_address</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>260f951e-b8c2-4264-91db-785f65c72417</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/IMIAssist_Sprint_31_TestCases/IMIAssist_Login_TestCases/ATC_1008_Forgot Password _Resetpassword_with_emtyemailId</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>6b10fce3-acff-40fb-a343-767ac3ad00d4</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/IMIAssist_Sprint_31_TestCases/IMIAssist_Login_TestCases/ATC_1011_Login Page _Captch_verification</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>ec3dca33-20f0-4d3f-adb1-db1f0a5470cf</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/IMIAssist_Sprint_31_TestCases/IMIAssist_Login_TestCases/ATC_1017_TC_1018_Login Page _Support_Company_admin_Login</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>

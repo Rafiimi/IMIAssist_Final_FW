@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Check wether company level admins able to turn on waiting room active feature under department level</description>
-   <name>TC_Waiting Room_4_V_CA_Able_to_see_the_WR_NT</name>
-   <tag>Test Cases</tag>
-   <comment></comment>
-   <testCaseGuid>0d526c06-eab1-4d02-9dcf-e36795668ebf</testCaseGuid>
-</TestCaseEntity>

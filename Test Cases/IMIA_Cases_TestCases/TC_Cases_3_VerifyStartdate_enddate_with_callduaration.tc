@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Verify whether Start date and End date format in Call duration is displaying as per  Date format selected in profile page</description>
-   <name>TC_Cases_3_VerifyStartdate_enddate_with_callduaration</name>
-   <tag>Test Cases</tag>
-   <comment></comment>
-   <testCaseGuid>243be4e2-5725-42f7-a1f5-dc253fc3786e</testCaseGuid>
-</TestCaseEntity>

@@ -20,25 +20,13 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 Selecteteamname='Qaprofiletesttime';
 try
 {
-WebUI.openBrowser('')
-
-WebUI.navigateToUrl(findTestData('IMiAsssist_dashbord').getValue(1, 1))
-
-    WebUI.delay(3)
-WebUI.maximizeWindow()
-    WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-email'), 
-        findTestData('IMiAsssist_dashbord').getValue(4, 1))
-
-    WebUI.setText(findTestObject('Page_eClinic - Video Consultations/input_Please enter your details below_user-_90355e'), 
-        findTestData('IMiAsssist_dashbord').getValue(5, 1))
-
-    WebUI.click(findTestObject('Page_eClinic - Video Consultations/button_LOGIN'))
+	CustomKeywords.'reusableKeywords.Reusable.Login'()
+	
 
 	WebUI.delay(3)
-WebUI.click(findTestObject('null'))
-
-WebUI.click(findTestObject('Page_eClinic - Video Consultations/span_Appointments (4)'))
-
+	WebUI.click(findTestObject('Object Repository/AppointmentCreationpopup/Apointmenttabicon'))
+	WebUI.click(findTestObject('Object Repository/AppointmentCreationpopup/Appointmenttab'))
+	WebUI.delay(2)
 WebUI.click(findTestObject('Page_eClinic - Video Consultations/a_Support_navProfileDropdown (2)'))
 
 WebUI.click(findTestObject('Page_eClinic - Video Consultations/div_Specialty (2)'))
@@ -50,10 +38,6 @@ WebUI.click(findTestObject('Page_eClinic - Video Consultations/a_Assigned (1) (2
 WebUI.click(findTestObject('Object Repository/Page_eClinic - Video Consultations/i_filter_list'))
 
 WebUI.click(findTestObject('Object Repository/Page_eClinic - Video Consultations/label_Qaprofiletesttime'))
-
-WebUI.click(findTestObject('Object Repository/Page_eClinic - Video Consultations/button_APPLY FILTER'))
-
-WebUI.click(findTestObject('Object Repository/Page_eClinic - Video Consultations/button_APPLY FILTER'))
 
 WebUI.click(findTestObject('Object Repository/Page_eClinic - Video Consultations/button_APPLY FILTER'))
 

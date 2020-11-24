@@ -22,24 +22,7 @@ import com.kms.katalon.core.util.KeywordUtil
 
 try
 {
-	
-	/*
-	WebUI.openBrowser('')
-	
-	
-	  WebUI.navigateToUrl(findTestData('IMiAsssist_dashbord').getValue(1, 1))
-	
-		WebUI.delay(3)
-		WebUI.maximizeWindow()
-		
-	
-		WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-email'),
-			findTestData('IMiAsssist_dashbord').getValue(2, 1))
-	
-		WebUI.setText(findTestObject('Page_eClinic - Video Consultations/input_Please enter your details below_user-_90355e'),
-			findTestData('IMiAsssist_dashbord').getValue(3, 1))
-	
-		WebUI.click(findTestObject('Page_eClinic - Video Consultations/button_LOGIN'))*/
+CustomKeywords.'reusableKeywords.Reusable.Login'()
 WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/i_settings'))
 
 WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/span_Settings'))
@@ -73,8 +56,6 @@ catch(Exception e)
 }
 //WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/button_RE-LOGIN'))
 
-WebUI.delay(5)
-WebUI.closeBrowser()
 
 KeywordUtil.markPassed('SUCCESS: Agent able to create new team')
 

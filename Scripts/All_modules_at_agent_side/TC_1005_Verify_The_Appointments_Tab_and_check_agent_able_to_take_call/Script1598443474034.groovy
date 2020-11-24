@@ -17,37 +17,27 @@ import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.util.KeywordUtil
 try
 {
-/*WebUI.openBrowser('')
+//	CustomKeywords.'reusableKeywords.Reusable.Login'()
 
-WebUI.navigateToUrl(findTestData("TestDataforLogin").getValue(1, 1))
-
-WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-email'), findTestData("TestDataforLogin").getValue(2, 1))
-
-WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-_90355e'),
-	findTestData("TestDataforLogin").getValue(3, 1))
-
-WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/button_LOGIN'))*/
-
-	
 	try{
 		
-		WebUI.click(findTestObject('AppointmentCreationpopup/AppointmentCreationPopup/Aoointmenticon'))
-	   WebUI.delay(2)
+	WebUI.click(findTestObject('AppointmentCreationpopup/AppointmentCreationPopup/Aoointmenticon'))
+	WebUI.delay(2)
 	   
-	   WebUI.click(findTestObject('AppointmentCreationpopup/AppointmentCreationPopup/Appointments'))
+	WebUI.click(findTestObject('AppointmentCreationpopup/AppointmentCreationPopup/Appointments'))
 	
-	   WebUI.delay(3)
-	    WebUI.click(findTestObject('Object Repository/AppointmentCreationpopup/AppointmentCreationPopup/Selectnewappointmentobject'))
-		WebUI.delay(2)
-		WebUI.click(findTestObject('Object Repository/AppointmentCreationpopup/AppointmentCreationPopup/Start_an_appointment'))
+	WebUI.delay(3)
+	WebUI.click(findTestObject('Object Repository/AppointmentCreationpopup/AppointmentCreationPopup/Selectnewappointmentobject'))
+	WebUI.delay(2)
+	WebUI.click(findTestObject('Object Repository/AppointmentCreationpopup/AppointmentCreationPopup/Start_an_appointment'))
 		
-			WebUI.delay(3)
+	WebUI.delay(3)
 	
 	
 	
-		WebUI.click(findTestObject('Page_eClinic - Video Consultations/button_Next'))
-		WebUI.delay(3)
-		KeywordUtil.markPassed('SUCCESS:Agent able to launch the appointment creation popup')
+	WebUI.click(findTestObject('Page_eClinic - Video Consultations/button_Next'))
+	WebUI.delay(3)
+	KeywordUtil.markPassed('SUCCESS:Agent able to launch the appointment creation popup')
 		
 	}
 	catch(Exception e)
@@ -109,13 +99,8 @@ WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/button_LOGIN'))*
 		KeywordUtil.markFailed('ERROR:agent able to click on end call button on workspace:'+e.getMessage())
 	}
 
-	/*
-	WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/a_Finance_navProfileDropdown'))
+//	CustomKeywords.'reusableKeywords.Reusable.Logout'()
 	
-	WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/li_Logout'))
-	
-	WebUI.delay(5)
-	WebUI.closeBrowser()*/
 	KeywordUtil.markPassed('SUCCESS: Agent able to create the appointment and he able to take the call')
 	
 	}

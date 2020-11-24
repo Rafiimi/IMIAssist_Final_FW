@@ -6,12 +6,11 @@
    <elementGuidId>132cf830-cbf9-4a82-8de8-3ec1deae121a</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='assigned-content']//i[@class='material-icons appointments-overview__right-icon'][contains(text(),'highlight_off')]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>(//i[@ng-click='cancel()'])[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
