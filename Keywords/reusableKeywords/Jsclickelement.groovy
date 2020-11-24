@@ -31,7 +31,7 @@ import org.openqa.selenium.WebDriver
 import org.openqa.selenium.By
 
 import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory
-import com.kms.katalon.core.webui.driver.DriverFactory
+//import com.kms.katalon.core.webui.driver.DriverFactory
 
 import com.kms.katalon.core.testobject.RequestObject
 import com.kms.katalon.core.testobject.ResponseObject
