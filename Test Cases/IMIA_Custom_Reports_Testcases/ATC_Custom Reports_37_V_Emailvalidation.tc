@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Check whether user is able to delete any of the added filter under filters section while creating Custom Report</description>
+   <name>ATC_Custom Reports_37_V_Emailvalidation</name>
+   <tag>Test Cases</tag>
+   <comment></comment>
+   <testCaseGuid>6f69f525-5ade-44e9-afef-98db48f11052</testCaseGuid>
+</TestCaseEntity>

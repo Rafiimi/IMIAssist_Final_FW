@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Check if support admin is able to see cases for all departments in the company</description>
+   <name>ATC_Cases_41_V_supportadmin_able_see_casepage</name>
+   <tag>Test cases</tag>
+   <comment></comment>
+   <testCaseGuid>e6ea9b1a-a16e-4bdc-ae6f-ab7a3ba7d5a2</testCaseGuid>
+</TestCaseEntity>

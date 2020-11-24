@@ -152,7 +152,18 @@ public class Reusable {
 			KeywordUtil.markFailed("Unable to click element: " +e.getMessage())
 		}
 	}
-
+	@Keyword
+	//used for clicking a team based on search text
+	def SelectDynamicTextobject(String dynamicText) {
+		try{
+			String xpath1=('//*[contains(text(),"'+dynamicText+'")]')
+			TestObject to = new TestObject('objectName')
+			to.addProperty('xpath', ConditionType.EQUALS, xpath1)
+			WebUI.click(to)
+		} catch (Exception e) {
+			KeywordUtil.markFailed("Unable to click element: " +e.getMessage())
+		}
+	}
 	@Keyword
 	def UserNavigation_Dept() {
 		try {

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>View Chat History</description>
+   <name>ATC_cases_1_View_Chat_History</name>
+   <tag>Test Case's</tag>
+   <comment></comment>
+   <testCaseGuid>161d4507-fb3a-40d9-bc30-390425763305</testCaseGuid>
+</TestCaseEntity>

@@ -18,36 +18,11 @@ import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.util.KeywordUtil
 
 
-/*WebUI.openBrowser('')
 
-WebUI.navigateToUrl(findTestData("Allthetabsatagentside").getValue(1, 1))
-
-WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-email'), findTestData("Allthetabsatagentside").getValue(2, 1))
-
-WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-_90355e'),
-	findTestData("Allthetabsatagentside").getValue(3, 1))
-
-WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/button_LOGIN'))
-*/
 try
 {
+	CustomKeywords.'reusableKeywords.Reusable.Login'()
 	
-	WebUI.openBrowser('')
-	
-	
-	  WebUI.navigateToUrl(findTestData('IMiAsssist_dashbord').getValue(1, 1))
-	
-		WebUI.delay(3)
-		WebUI.maximizeWindow()
-		
-	
-		WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-email'),
-			findTestData('IMiAsssist_dashbord').getValue(2, 1))
-	
-		WebUI.setText(findTestObject('Page_eClinic - Video Consultations/input_Please enter your details below_user-_90355e'),
-			findTestData('IMiAsssist_dashbord').getValue(3, 1))
-	
-		WebUI.click(findTestObject('Page_eClinic - Video Consultations/button_LOGIN'))
 WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/i_list_alt'))
 
 WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/span_Logs'))
@@ -57,12 +32,7 @@ WebUI.click(findTestObject('Object Repository/Page_IMIassist - Virtual Assistanc
 WebUI.click(findTestObject('Object Repository/Page_IMIassist - Virtual Assistance/a_Audit Logs'))
 WebUI.takeScreenshot('Test Cases\\IMIAssist_Automation_Test_Snapshots\\Agent_Side_Tabs\\TC_1009_Verify_the_user_able_to_navigate_to_the_logs.png')
 
-
-/*WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/a_Finance_navProfileDropdown'))
-
-WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/li_Logout'))
-
-WebUI.closeBrowser()*/
+CustomKeywords.'reusableKeywords.Reusable.Logout'()
 KeywordUtil.markPassed('SUCCESS: Agent able to navigate audit_logs')
 }
 catch(Exception e)

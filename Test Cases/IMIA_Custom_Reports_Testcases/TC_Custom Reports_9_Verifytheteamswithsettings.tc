@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Validate teams that are displaying under group by filter</description>
-   <name>TC_Custom Reports_9_Verifytheteamswithsettings</name>
-   <tag>Test cases</tag>
-   <comment></comment>
-   <testCaseGuid>0592b606-cf8c-4219-9175-210770a79d90</testCaseGuid>
-</TestCaseEntity>

@@ -19,19 +19,7 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 try
 {
-WebUI.openBrowser('')
-
-WebUI.navigateToUrl(findTestData('IMiAsssist_dashbord').getValue(1, 1))
-
-	WebUI.delay(3)
-WebUI.maximizeWindow()
-	WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-email'),
-		findTestData('IMiAsssist_dashbord').getValue(4, 1))
-
-	WebUI.setText(findTestObject('Page_eClinic - Video Consultations/input_Please enter your details below_user-_90355e'),
-		findTestData('IMiAsssist_dashbord').getValue(5, 1))
-
-	WebUI.click(findTestObject('Page_eClinic - Video Consultations/button_LOGIN'))
+CustomKeywords.'reusableKeywords.Reusable.Login'()
 
 	WebUI.delay(3)
 	try
@@ -99,11 +87,7 @@ catch(Exception e)
 		KeywordUtil.markFailed('ERROR:Agnet unable to select the apply button under filter section:'+e.getMessage())
 		
 	}
-//	WebUI.delay(3)
-//	WebUI.click(findTestObject('Object Repository/AppointmentCreationpopup/Filter_Clear_object'))
-
-WebUI.click(findTestObject('Page_eClinic - Video Consultations/a_Testing_navProfileDropdown'))
-WebUI.click(findTestObject('Page_eClinic - Video Consultations/li_Logout'))
+CustomKeywords.'reusableKeywords.Reusable.Logout'()
 KeywordUtil.markPassed('SUCCESS:appointments are displaying correctly according to the team selected')
 
 

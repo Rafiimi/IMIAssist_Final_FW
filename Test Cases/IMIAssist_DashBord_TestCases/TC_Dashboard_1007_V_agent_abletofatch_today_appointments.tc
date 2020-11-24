@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Check whether system is able to fetch &quot;Today's&quot; appointments data on selecting &quot;Today&quot; from Time Period dropdown</description>
-   <name>TC_Dashboard_1007_V_agent_abletofatch_today_appointments</name>
-   <tag>Test Cases</tag>
-   <comment></comment>
-   <testCaseGuid>fb8053e9-bdd4-49a0-8498-e40385a5d035</testCaseGuid>
-</TestCaseEntity>

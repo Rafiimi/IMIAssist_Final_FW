@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Check whether the active Department's appointments data  is displaying on selecting &quot;Department admin's&quot; View from View as dropdown. Active Department is the Department selected from under the Profile section</description>
+   <name>ATC_Dashboard_1003_V_agent_able_to_select_DA_From_VD</name>
+   <tag>Test cases</tag>
+   <comment></comment>
+   <testCaseGuid>d829b435-ff32-4e2a-8bdb-a974cf8d0aaf</testCaseGuid>
+</TestCaseEntity>
