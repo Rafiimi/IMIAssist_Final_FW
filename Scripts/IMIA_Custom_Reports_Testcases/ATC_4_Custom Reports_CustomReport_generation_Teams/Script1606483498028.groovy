@@ -36,16 +36,16 @@ try {
     //validation  - Teams
     String teamsSource = WebUI.getText(findTestObject('IMIA_Custome_Reports_objects/Teams_Container'))
 
-    String[] teansList = teamsSource.split('\n')
+    String[] teamsList = teamsSource.split('\n')
 
-    int teamsListCount = teansList.size()
+    int teamsListCount = teamsList.size()
 
     //From date
     String startDateVal = findTestData('CustomReports_Filters').getValue('fromDate', 11)
 
     String endDateVal = findTestData('CustomReports_Filters').getValue('toDate', 11)
 
-    String timePerBefore = (startDateVal & ' to ') & endDateVal
+    String timePerBefore = startDateVal + " to " + endDateVal
 
     WebUI.click(findTestObject('IMIA_Custome_Reports_objects/Calendar/input_startDate'))
 
@@ -167,6 +167,7 @@ try {
         KeywordUtil.markFailed('Report is NOT showing the selected time period episodes data successfully')
     }
     
+	CustomKeywords.'reusableKeywords.Reusable.Logout'()
     logger.logInfo('***END Of TEST CASE: ' + TCname1)
 }
 catch (Exception e) {

@@ -16,28 +16,13 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 import com.kms.katalon.core.logging.KeywordLogger as KeywordLogger
 
 KeywordLogger logger = new KeywordLogger()
+CustomKeywords.'reusableKeywords.Reusable.LoginDiffUser'(7)
 
 try {
     String UserRole = findTestData('Login_testdata').getValue('Role', 7)
 
     logger.logInfo('***Verify the Landing page of ***' + UserRole)
-
-    WebUI.openBrowser('')
-
-    WebUI.navigateToUrl(findTestData('Login_testdata').getValue('URL', 7))
-
-    WebUI.maximizeWindow()
-
-    WebUI.setText(findTestObject('Object Repository/LoginPage_TestCases_Objects/User_Email'), findTestData('Login_testdata').getValue(
-            'Username', 7))
-
-    WebUI.setText(findTestObject('Object Repository/LoginPage_TestCases_Objects/PasswordTextfiled'), findTestData('Login_testdata').getValue(
-            'Password', 7))
-
-    WebUI.click(findTestObject('Object Repository/LoginPage_TestCases_Objects/Login_button'))
-
-    WebUI.delay(4)
-
+   
 //    if (UserRole == 'Team admin') {
         CustomKeywords.'reusableKeywords.Reusable.UserNavigation_Team'()
 
@@ -52,7 +37,7 @@ try {
         
         CustomKeywords.'reusableKeywords.Reusable.SelectDynamicText'(findTestData('Role_Mgmt').getValue('TeamName', 1))
 
-        WebUI.delay(2)
+        WebUI.delay(3)
 
         WebUI.setText(findTestObject('Admin_Settings/Dept/UserCreation/Search_TeamMember'), findTestData('Role_Mgmt').getValue(
                 'TeamMember', 1), FailureHandling.OPTIONAL)

@@ -123,7 +123,7 @@ try {
 	
 	WebUI.click(findTestObject('IMIA_Custome_Reports_objects/CR_CREATE REPORT'))
 	
-	WebUI.delay(1)
+	WebUI.delay(3)
 
 	actualSuccMsg = WebUI.getText(findTestObject('IMIA_Custome_Reports_objects/ErrorMsg_Header_CR'))
 	
@@ -238,7 +238,7 @@ try {
 		KeywordUtil.markFailed('Priority filters count mismatched in Custom report generated')
 	}
 	
-
+	CustomKeywords.'reusableKeywords.Reusable.Logout'()
 	logger.logInfo('***END Of TEST CASE: ' + TCname1)
 }
 catch (Exception e) {

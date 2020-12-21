@@ -6,15 +6,15 @@
    <elementGuidId>b53813ef-fd71-49ce-9662-25c05e031040</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//button[@class = 'modal-cancel-button button-imi-custom' and (text() = ' RE-LOGIN ' or . = ' RE-LOGIN ')]</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>(//button[@type='button'])[24]</value>
       </entry>
-      <entry>
-         <key>BASIC</key>
-         <value>//button[@class = 'modal-cancel-button button-imi-custom' and @type = 'button' and @ng-click = 'startLogoutTimer()' and (text() = ' RE-LOGIN ' or . = ' RE-LOGIN ')]</value>
-      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -31,7 +31,7 @@
       <value>modal-cancel-button button-imi-custom</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>type</name>
       <type>Main</type>
@@ -45,7 +45,7 @@
       <value>modal</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>ng-click</name>
       <type>Main</type>

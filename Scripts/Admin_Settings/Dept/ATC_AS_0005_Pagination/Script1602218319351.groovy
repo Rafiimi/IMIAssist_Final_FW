@@ -15,18 +15,15 @@ import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 import com.kms.katalon.core.logging.KeywordLogger as KeywordLogger
 
-not_run: CustomKeywords.'reusableKeywords.Reusable.Login'()
-
-CustomKeywords.'reusableKeywords.Reusable.UserNavigation_Dept'()
-
 KeywordLogger logger = new KeywordLogger()
 
-WebUI.click(findTestObject('Admin_Settings/Dept/UserCreation/Speciality_Testing'))
-
 try {
-    TCname = 'Pagination for Department summary'
+	TCname = 'Pagination for Department summary'
+	logger.logInfo('***START Of TEST CASE: ' + TCname)
 
-    logger.logInfo('***START Of TEST CASE: ' + TCname)
+	WebUI.click(findTestObject('Admin_Settings/Dept/UserCreation/Back_arrow'))
+	WebUI.delay(2)
+	WebUI.click(findTestObject('Admin_Settings/Dept/UserCreation/Speciality_Testing'))
 
     WebUI.scrollToElement(findTestObject('Admin_Settings/Dept/UserCreation/Page_Previous'), 3, FailureHandling.OPTIONAL)
 
@@ -48,7 +45,8 @@ try {
         KeywordUtil.markFailed('Previous and Next buttons are NOT displaying in Pagination')
     }
     
-    WebUI.setText(findTestObject('Admin_Settings/Dept/UserCreation/Search_User'), GlobalVariable.CAUsername, FailureHandling.OPTIONAL)
+    WebUI.setText(findTestObject('Admin_Settings/Dept/UserCreation/Search_User'), findTestData('Login_testdata').getValue(
+            'Username', 2), FailureHandling.OPTIONAL)
 
     WebUI.delay(2)
 

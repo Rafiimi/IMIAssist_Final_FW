@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='left-view']/form/div[2]/div/div[2]/div[2]/label</value>
+         <value>//label[@for = 'fontColourBlack' and (text() = ' White ')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

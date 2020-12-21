@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//form[@id='addMemberForm']/div[4]/div/div</value>
+         <value>//div[(text() = 'Select Role' or . = 'Select Role')][2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

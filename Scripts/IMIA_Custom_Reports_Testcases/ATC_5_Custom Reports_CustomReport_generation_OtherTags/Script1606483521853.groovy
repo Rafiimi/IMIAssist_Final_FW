@@ -123,13 +123,13 @@ try {
 
     WebUI.click(findTestObject('IMIA_Custome_Reports_objects/List_SelectFilter'))
 
-    String pExpath = ((('//*[@class="ng-binding ng-scope" and contains(text(),' + '\'') + 'Patient Email') + '\'') + ')]'
+    String pExpath2 = ((('//*[@class="ng-binding ng-scope" and contains(text(),' + '\'') + 'Patient Email') + '\'') + ')]'
 
-    TestObject pEto = new TestObject('objectName')
+    TestObject pEto2 = new TestObject('objectName')
 
-    pEto.addProperty('xpath', ConditionType.EQUALS, pExpath)
+    pEto2.addProperty('xpath', ConditionType.EQUALS, pExpath2)
 
-    WebUI.click(pEto)
+    WebUI.click(pEto2)
 
     String patEmail = findTestData('CustomReports_Filters').getValue('TestData', 12)
 
@@ -438,6 +438,7 @@ try {
         KeywordUtil.markFailed('Client ID filters count mismatched in Custom report generated')
     }
     
+	CustomKeywords.'reusableKeywords.Reusable.Logout'()
     logger.logInfo('***END Of TEST CASE: ' + TCname1)
 }
 catch (Exception e) {

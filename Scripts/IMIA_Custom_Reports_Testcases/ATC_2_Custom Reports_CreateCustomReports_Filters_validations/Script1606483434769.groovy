@@ -176,7 +176,7 @@ try {
 	to2.addProperty('xpath', ConditionType.EQUALS, xpath)
 	WebUI.click(to2)
 	
-	WebUI.click(findTestObject('IMIA_Custome_Reports_objects/dept_multiselect_up'))
+	WebUI.click(findTestObject('IMIA_Custome_Reports_objects/Filters_Status_up'))
 	
 	String statusListSource2 = WebUI.getText(findTestObject('IMIA_Custome_Reports_objects/Status_Container'))
 	String[] StatList2 = statusListSource2.split('\n')
@@ -189,10 +189,10 @@ try {
 		KeywordUtil.markFailed('Not able to deselect the Statuses successfully')
 	}
 			
-	WebUI.click(findTestObject('IMIA_Custome_Reports_objects/Filters_Status_down'))
+	WebUI.click(findTestObject('IMIA_Custome_Reports_objects/Filters_Status_up'))
 	WebUI.click(to2)
 	
-	WebUI.click(findTestObject('IMIA_Custome_Reports_objects/dept_multiselect_up'))
+	WebUI.click(findTestObject('IMIA_Custome_Reports_objects/Filters_Status_down'))
 	
 	String statusListSource3 = WebUI.getText(findTestObject('IMIA_Custome_Reports_objects/Status_Container'))
 	String[] StatList3 = statusListSource3.split('\n')
@@ -252,8 +252,9 @@ try {
     logger.logInfo('***START Of TEST CASE: ' + TCname6)
 
     input = findTestData('CustomReports_Filters').getValue('TestData', 6)
-
-    WebUI.click(findTestObject('IMIA_Custome_Reports_objects/Link_AddFilter'))	//duplicate
+	
+	//WebUI.mouseOver(findTestObject('IMIA_Custome_Reports_objects/Link_AddFilter'))
+    //WebUI.click(findTestObject('IMIA_Custome_Reports_objects/Link_AddFilter'))	//duplicate
 
     WebUI.click(findTestObject('IMIA_Custome_Reports_objects/List_SelectFilter'))
 
@@ -361,6 +362,7 @@ try {
         KeywordUtil.markFailed('Not able to remove new Attribute successfully')
     }
     
+	CustomKeywords.'reusableKeywords.Reusable.Logout'()
     logger.logInfo('***END Of TEST CASE: ' + TCname7)
 }
 catch (Exception e) {

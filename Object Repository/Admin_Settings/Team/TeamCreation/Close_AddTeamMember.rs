@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Close_AddTeamMember</name>
+   <tag></tag>
+   <elementGuidId>d75d4c5e-e822-4111-ac0c-66363d55b13b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[3]/div/div/div/i</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>i</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>Header__Close-sc-1ryxen8-4 jbeaKW imi-close</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[@class=&quot;ng-scope wf-opensans-n4-active wf-opensans-n6-active wf-opensans-n7-active wf-active&quot;]/body[@class=&quot;modal-open&quot;]/div[@class=&quot;fade Modal__StyledModal-sc-1k59v3t-0 dazyR modal show&quot;]/div[@class=&quot;modal-dialog modal-sm modal-dialog-centered&quot;]/div[@class=&quot;modal-content&quot;]/div[@class=&quot;Header__StyledHeader-sc-1ryxen8-0 bOeuHG modal-header&quot;]/i[@class=&quot;Header__Close-sc-1ryxen8-4 jbeaKW imi-close&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <value>//div[3]/div/div/div/i</value>
+   </webElementXpaths>
+</WebElementEntity>

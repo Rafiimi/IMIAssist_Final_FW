@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//ul[@id='sub-tabs']/li[4]/a</value>
+         <value>//a[contains(@class, 'nav-link sub-tab-headers') and contains(text(), 'Link Expiry')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

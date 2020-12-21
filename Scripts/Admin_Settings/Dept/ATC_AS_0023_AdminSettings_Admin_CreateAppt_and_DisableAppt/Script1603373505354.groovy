@@ -85,64 +85,67 @@ try {
 
 	WebUI.delay(1)
 
-	actualMsg = WebUI.getText(findTestObject('Admin_Settings/Dept/UserCreation/ToastMessage'))
-
-	expectedMsg = 'Appointment Type already exists'
-
-	if (actualMsg == expectedMsg) {
-		KeywordUtil.markPassed('Proper error message is displayed: '+expectedMsg)
+	actualMsg2 = WebUI.getText(findTestObject('Admin_Settings/Dept/UserCreation/ToastMessage'))
+	expectedMsg2 = findTestData('AppointmentTypes').getValue('Expected_Msg_Header', 1)
+	
+	if (actualMsg2 == expectedMsg2) {
+		KeywordUtil.markPassed('Proper error message is displayed: '+expectedMsg2)
 	} else {
-		KeywordUtil.markFailed(actualMsg)
+		KeywordUtil.markFailed(actualMsg2)
 	}
+	
+	WebUI.delay(2)
+	WebUI.click(findTestObject('Admin_Settings/Dept/UserCreation/Close_CreateAppointmentType'))
 	
 }
 catch (Exception e) {
     KeywordUtil.markFailed('ERROR: ' + e.getMessage())
+	WebUI.click(findTestObject('Admin_Settings/Dept/UserCreation/Close_CreateAppointmentType'))
 } 
 
 try {
-    TCname3 = findTestData('AppointmentTypes').getValue('Description', 2)
+    TCname3 = findTestData('AppointmentTypes').getValue('Description', 3)
 
     logger.logInfo('***START Of TEST CASE: ' + TCname3)
 
     WebUI.setText(findTestObject('Admin_Settings/Dept/UserCreation/Search_AppointmentType'), findTestData('AppointmentTypes').getValue(
-            'ApptType', 2), FailureHandling.OPTIONAL)
+            'ApptType', 3), FailureHandling.OPTIONAL)
 
     WebUI.delay(2)
 
-    CustomKeywords.'reusableKeywords.Reusable.ClickToggleObject'(findTestData('AppointmentTypes').getValue('ApptType', 2))
+    CustomKeywords.'reusableKeywords.Reusable.ClickToggleObject'(findTestData('AppointmentTypes').getValue('ApptType', 3))
 
     WebUI.delay(1)
 
-    actualMsg = WebUI.getText(findTestObject('Admin_Settings/Dept/UserCreation/ToastMessage'))
+    actualMsg3 = WebUI.getText(findTestObject('Admin_Settings/Dept/UserCreation/ToastMessage'))
 
-    expectedMsg = findTestData('AppointmentTypes').getValue('Expected_Msg_Header', 2)
+    expectedMsg3 = findTestData('AppointmentTypes').getValue('Expected_Msg_Header', 3)
 
-    if (actualMsg == expectedMsg) {
-        KeywordUtil.markPassed('Appointment Type is Disabled successfully: ' + expectedMsg)
+    if (actualMsg3 == expectedMsg3) {
+        KeywordUtil.markPassed('Appointment Type is Disabled successfully: ' + expectedMsg3)
     } else {
-        KeywordUtil.markFailed('Appointment Type is NOT Disabled: ' + actualMsg)
+        KeywordUtil.markFailed('Appointment Type is NOT Disabled: ' + actualMsg3)
     }
     
     logger.logInfo('***END Of TEST CASE: ' + TCname3)
 
 	//Enable checking
-	TCname4 = findTestData('AppointmentTypes').getValue('Description', 3)
+	TCname4 = findTestData('AppointmentTypes').getValue('Description', 4)
 	logger.logInfo('***START Of TEST CASE: ' + TCname4)
 	
 	WebUI.delay(5)
-	CustomKeywords.'reusableKeywords.Reusable.ClickToggleObject'(findTestData('AppointmentTypes').getValue('ApptType', 3))
+	CustomKeywords.'reusableKeywords.Reusable.ClickToggleObject'(findTestData('AppointmentTypes').getValue('ApptType', 4))
 	
 	WebUI.delay(1)
 
-	actualMsg = WebUI.getText(findTestObject('Admin_Settings/Dept/UserCreation/ToastMessage'))
+	actualMsg4 = WebUI.getText(findTestObject('Admin_Settings/Dept/UserCreation/ToastMessage'))
 
-	expectedMsg =  findTestData('AppointmentTypes').getValue('Expected_Msg_Header', 3)
+	expectedMsg4 =  findTestData('AppointmentTypes').getValue('Expected_Msg_Header', 4)
 
-	if (actualMsg == expectedMsg) {
-		KeywordUtil.markPassed('Appointment Type is Enabled successfully: ' + expectedMsg)
+	if (actualMsg4 == expectedMsg4) {
+		KeywordUtil.markPassed('Appointment Type is Enabled successfully: ' + expectedMsg4)
 	} else {
-		KeywordUtil.markFailed('Tag is NOT Disabled: ' + actualMsg)
+		KeywordUtil.markFailed('Tag is NOT Disabled: ' + actualMsg4)
 	}
 
  //   CustomKeywords.'reusableKeywords.Reusable.Logout'()

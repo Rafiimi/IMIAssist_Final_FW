@@ -16,18 +16,18 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 import com.kms.katalon.core.logging.KeywordLogger as KeywordLogger
 
 //****Need to change the data in .CSV file every time as there are forumas won't work in CSV****
-not_run: CustomKeywords.'reusableKeywords.Reusable.Login'()
-
-CustomKeywords.'reusableKeywords.Reusable.UserNavigation_Dept'()
-
 KeywordLogger logger = new KeywordLogger()
 
-WebUI.click(findTestObject('Admin_Settings/Dept/UserCreation/Speciality_Testing'))
+TCname = 'Import Bulk Upload Users with invalid file type'
 
 try {
-    TCname = 'Import Bulk Upload Users with invalid file type'
+   logger.logInfo('***START Of TEST CASE: ' + TCname)
 
-    logger.logInfo('***START Of TEST CASE: ' + TCname)
+    WebUI.click(findTestObject('Admin_Settings/Dept/UserCreation/Back_arrow'))
+
+    WebUI.delay(2)
+
+    WebUI.click(findTestObject('Admin_Settings/Dept/UserCreation/Speciality_Testing'))
 
     WebUI.click(findTestObject('Admin_Settings/Dept/UserCreation/BulkUploadIcon'))
 
@@ -106,9 +106,8 @@ try {
                 2)
 
             if (CreationStatus == true) {
-                KeywordUtil.markPassed('User is created successfully by Bulk Upload')
-            } // }
-            else {
+                KeywordUtil.markPassed('User is created successfully by Bulk Upload') // }
+            } else {
                 KeywordUtil.markFailed('User is Not created by Bulk Upload: ' + findTestData('BulkUploadData').getValue(
                         'Email', i))
             }

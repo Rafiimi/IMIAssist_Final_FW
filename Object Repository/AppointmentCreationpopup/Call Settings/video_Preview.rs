@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>video_Preview</name>
+   <tag></tag>
+   <elementGuidId>d9dfd788-0a08-4902-a39e-706eaba73ce3</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//video</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>video</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>StartConfirmationModal__StyledVideo-sc-8227ys-19 lomWTV</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[@class=&quot;ng-scope wf-opensans-n4-active wf-opensans-n6-active wf-opensans-n7-active wf-active&quot;]/body[@class=&quot;modal-open&quot;]/div[@class=&quot;fade Modal__StyledModal-sc-1k59v3t-0 dazyR StartConfirmationModal__StyledModal-sc-8227ys-0 gpzFaW modal show&quot;]/div[@class=&quot;modal-dialog modal-sm modal-dialog-centered&quot;]/div[@class=&quot;modal-content&quot;]/div[@class=&quot;Body__StyledBody-vv9pxn-0 ioOXSB StartConfirmationModal__CustomModalBody-sc-8227ys-1 hOmOUO modal-body&quot;]/div[@class=&quot;StartConfirmationModal__FlexContainer-sc-8227ys-3 jcqeGA&quot;]/div[@class=&quot;StartConfirmationModal__CallStratingOptions-sc-8227ys-11 nevws&quot;]/div[@class=&quot;StartConfirmationModal__VideoContainer-sc-8227ys-12 gRQZku&quot;]/div[@class=&quot;StartConfirmationModal__Video-sc-8227ys-16 hyDpFt&quot;]/video[@class=&quot;StartConfirmationModal__StyledVideo-sc-8227ys-19 lomWTV&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <value>//video</value>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description>By Ravi</description>
+   <name>Custom_Reports</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <testSuiteGuid>1a5f12bf-822d-40d4-83a2-5be0c99c07a6</testSuiteGuid>
+   <testCaseLink>
+      <guid>37e68b4b-c919-4326-9a4c-a84092817fa3</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/IMIA_Custom_Reports_Testcases/ATC_1_Custom Reports_Custom_Reports_tab_option_availability</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>7df3a5da-ecd2-445d-960a-0b47289c317c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/IMIA_Custom_Reports_Testcases/ATC_2_Custom Reports_CreateCustomReports_Filters_validations</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>4f683262-f34c-42f5-9505-d35b76b42f71</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>8bcfe5c4-7ef1-4be9-ad46-777dfc00c004</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>1062b4c3-2cfa-456a-b374-ffbea8a0cd57</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/IMIA_Custom_Reports_Testcases/ATC_3_Custom Reports_CustomReport_generation_Spl</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>11fe2998-e01f-4b60-aaa6-7b550bcd1785</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>f8dce218-030b-49eb-b978-35e6d1e66c21</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>1a1124d6-7a59-4867-bd8c-60d27e822683</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/IMIA_Custom_Reports_Testcases/ATC_4_Custom Reports_CustomReport_generation_Teams</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>98bac663-0c3c-4714-9482-d6d28c8bbc5e</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>02b817a6-faeb-423e-9128-31b13c72c711</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>55825dba-827e-45c8-b216-cab049fbd8dc</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/IMIA_Custom_Reports_Testcases/ATC_5_Custom Reports_CustomReport_generation_OtherTags</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>49c3baff-2e94-46d2-8764-2fe4de84d48f</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>1e21ba8c-d7b9-4482-9e64-5032f703e1fe</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>d15e6698-5c47-4ca5-aa43-bd28623827dc</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/IMIA_Custom_Reports_Testcases/ATC_6_Custom Reports_CustomReport_generation_csvFile_Validations</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>847adb03-6b3e-4b8b-ac47-42824d43d210</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>70986078-113a-4a43-b28e-c4e4d92c70dd</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>

@@ -16,7 +16,7 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 import com.kms.katalon.core.logging.KeywordLogger as KeywordLogger
 
 //****Need to change the data in .CSV file every time as there are formulas won't work in CSV****
-CustomKeywords.'reusableKeywords.Reusable.Login'()
+CustomKeywords.'reusableKeywords.Reusable.LoginDiffUser'(10)
 
 CustomKeywords.'reusableKeywords.Reusable.UserNavigation_Dept'()
 

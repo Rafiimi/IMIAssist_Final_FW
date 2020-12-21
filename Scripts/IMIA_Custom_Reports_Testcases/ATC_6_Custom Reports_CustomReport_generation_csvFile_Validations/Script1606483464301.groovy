@@ -134,13 +134,13 @@ try {
 
 	WebUI.click(findTestObject('IMIA_Custome_Reports_objects/List_SelectFilter'))
 
-	String pExpath = ((('//*[@class="ng-binding ng-scope" and contains(text(),' + '\'') + 'Clinician Email') + '\'') + ')]'
+	String pExpath2 = ((('//*[@class="ng-binding ng-scope" and contains(text(),' + '\'') + 'Clinician Email') + '\'') + ')]'
 
-	TestObject pEto = new TestObject('objectName')
+	TestObject pEto2 = new TestObject('objectName')
 
-	pEto.addProperty('xpath', ConditionType.EQUALS, pExpath)
+	pEto2.addProperty('xpath', ConditionType.EQUALS, pExpath2)
 
-	WebUI.click(pEto)
+	WebUI.click(pEto2)
 
 	WebUI.setText(findTestObject('IMIA_Custome_Reports_objects/input_Clinician_email'), ClinicianEmail)
 	
@@ -215,7 +215,7 @@ try {
 		KeywordUtil.markFailed('Custom Report generated is not having the selected filters properly')
 	}
 	
-
+	CustomKeywords.'reusableKeywords.Reusable.Logout'()
 	logger.logInfo('***END Of TEST CASE: ' + TCname1)
 }
 catch (Exception e) {

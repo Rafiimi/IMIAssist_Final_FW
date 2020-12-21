@@ -1,28 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description>Covered:
-TC_Custom Reports_24
-TC_Custom Reports_25
-TC_Custom Reports_28
-TC_Custom Reports_30
-TC_Custom Reports_35
-TC_Custom Reports_36
-TC_Custom Reports_38</description>
-   <name>TC_Custom Reports_CustomReport_generation_Spl</name>
+TC_Custom Reports_26
+TC_Custom Reports_27
+TC_Custom Reports_57
+TC_Custom Reports_64</description>
+   <name>ATC_4_Custom Reports_CustomReport_generation_Teams</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>43c6c47e-ad22-4bd5-9068-c688c301b744</testCaseGuid>
+   <testCaseGuid>2b84dc92-0a16-4382-aaff-d046b1ef27bf</testCaseGuid>
    <variable>
       <defaultValue>'return document.getElementsByName(&quot;startDate&quot;)[0].value'</defaultValue>
       <description></description>
-      <id>11fe2998-e01f-4b60-aaa6-7b550bcd1785</id>
+      <id>98bac663-0c3c-4714-9482-d6d28c8bbc5e</id>
       <masked>false</masked>
       <name>fromDate</name>
    </variable>
    <variable>
       <defaultValue>'return document.getElementsByName(&quot;endDate&quot;)[0].value'</defaultValue>
       <description></description>
-      <id>f8dce218-030b-49eb-b978-35e6d1e66c21</id>
+      <id>02b817a6-faeb-423e-9128-31b13c72c711</id>
       <masked>false</masked>
       <name>toDate</name>
    </variable>

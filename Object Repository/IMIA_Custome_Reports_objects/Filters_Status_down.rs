@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='Status'])[1]/following::i[13]</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Status'])[1]/following::i[6]</value>
       </entry>
       <entry>
          <key>BASIC</key>

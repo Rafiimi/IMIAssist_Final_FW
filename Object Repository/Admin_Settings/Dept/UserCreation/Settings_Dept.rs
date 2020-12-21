@@ -7,14 +7,15 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//ul[@id='subSidebarId']/li/a/i</value>
+         <value>//i[@class='d-flex imi-business imi-icon-xxl sidebar-icon']
+</value>
       </entry>
       <entry>
          <key>BASIC</key>
          <value>//i[@class = 'd-flex imi-business imi-icon-xxl sidebar-icon']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
