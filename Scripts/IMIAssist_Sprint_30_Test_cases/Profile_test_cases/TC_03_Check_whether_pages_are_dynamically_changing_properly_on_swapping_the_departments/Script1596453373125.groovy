@@ -18,23 +18,8 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 try
 {
- WebUI.openBrowser('')
-
-    WebUI.navigateToUrl(findTestData('IMiAsssist_dashbord').getValue(1, 1))
-
-    WebUI.delay(3)
-	WebUI.maximizeWindow()
-	
-
-    WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-email'), 
-        findTestData('IMiAsssist_dashbord').getValue(2, 1))
-
-    WebUI.setText(findTestObject('Page_eClinic - Video Consultations/input_Please enter your details below_user-_90355e'), 
-        findTestData('IMiAsssist_dashbord').getValue(3, 1))
-
-    WebUI.click(findTestObject('Page_eClinic - Video Consultations/button_LOGIN'))
-	WebUI.delay(3)
-WebUI.click(findTestObject('Page_eClinic - Video Consultations/a_Testing_navProfileDropdown'))
+ CustomKeywords.'reusableKeywords.Reusable.Login'()
+WebUI.click(findTestObject('Object Repository/LoginPage_TestCases_Objects/Profiledropdown'))
 WebUI.delay(3)
 
 WebUI.click(findTestObject('Object Repository/AppointmentCreationpopup/Specialty_option_object'))
@@ -47,7 +32,6 @@ WebUI.click(findTestObject('Object Repository/AppointmentCreationpopup/Specialit
 WebUI.delay(3)
 
 expectedchangedspeciality=WebUI.getText(findTestObject('Object Repository/AppointmentCreationpopup/Speciality_on_dashbord'))
-WebUI.takeScreenshot('Test Cases\\IMIAssist_Automation_Test_Snapshots\\Profile_Page\\TC_03_Check_whether_pages_are_dynamically_changing_properly_on_swapping_the_departments.png')
 
 
 if(expectedchangedspeciality.contains(changedspecialityname))
@@ -61,10 +45,6 @@ else
 	KeywordUtil.markFailed('ERROR:user unable to change the department')
 	
 }
-WebUI.delay(3)
-/*WebUI.click(findTestObject('Page_eClinic - Video Consultations/a_Support_navProfileDropdown'))
-
-WebUI.click(findTestObject('Page_eClinic - Video Consultations/li_Logout'))*/
 
 KeywordUtil.markPassed('SUCCESS:User successfully changed the departoment')
 

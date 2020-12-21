@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//option[@value=' hh:mm a']</value>
+         <value>//div[normalize-space(text())='10:54 PM']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

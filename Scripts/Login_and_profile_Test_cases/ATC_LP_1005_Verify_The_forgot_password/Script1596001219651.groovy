@@ -22,42 +22,30 @@ try
 {
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl( findTestData("TC_03_OtherdetailsChenge").getValue(1,1))
+WebUI.navigateToUrl( findTestData("Invalidcredentials").getValue(1,1))
 WebUI.maximizeWindow()
 WebUI.delay(4)
-WebUI.click(findTestObject('Object Repository/Page_IMIassist - Virtual Assistance/button_Forgot password'))
+WebUI.click(findTestObject('Object Repository/LoginPage_TestCases_Objects/forgotpswlink'))
 WebUI.delay(3)
-
-WebUI.setText(findTestObject('Object Repository/Page_IMIassist - Virtual Assistance/input_Please enter a valid email address (n_259fe2'), 
-    findTestData("TC_03_OtherdetailsChenge").getValue(2,1))
-
-WebUI.click(findTestObject('Object Repository/Page_IMIassist - Virtual Assistance/button_RESET PASSWORD'))
-WebUI.click(findTestObject('Object Repository/Page_IMIassist - Virtual Assistance/Restpasswordconfirmationtextobject'))
-forgotpasswordtext=WebUI.getText(findTestObject('Object Repository/Page_IMIassist - Virtual Assistance/Restpasswordconfirmationtextobject'))
-println("Rest mail confirmation :"+forgotpasswordtext)
+WebUI.setText(findTestObject('Object Repository/LoginPage_TestCases_Objects/Emailtextf'), findTestData('Invalidcredentials').getValue(2, 1))
+WebUI.click(findTestObject('Object Repository/LoginPage_TestCases_Objects/Requestresetlink'))
+WebUI.delay(3)
+forgotpasswordtext=WebUI.getText(findTestObject('Object Repository/LoginPage_TestCases_Objects/Fpswmailsentconftext'))
 WebUI.delay(2)
-WebUI.takeScreenshot('Test Cases\\IMIAssist_Automation_Test_Snapshots\\Profile_Page\\ATC_LP_1005_Verify_The_forgot_password.png')
-
-if(forgotpasswordtext.contains(mailconfirmationtextmessage))
+Expectefpassconftext=findTestData("Invalidcredentials").getValue(6,1)
+if(forgotpasswordtext.contains(Expectefpassconftext))
 {
-	println("Successfully Password Reset mail is sent to your registered mail")
 	KeywordUtil.markPassed('SUCCESS:Successfully Password Reset mail is sent to your registered mail')
 	
 }
 else
 {
-println("Password Reset mail is not sent to your registered mail")
 KeywordUtil.markFailed('ERROR:Password Reset mail is not sent to your registered mail')
 
 }
-WebUI.click(findTestObject('Object Repository/Page_IMIassist - Virtual Assistance/a_LOGIN'))
-
-WebUI.click(findTestObject('Object Repository/Page_IMIassist - Virtual Assistance/div_Please enter your details belowForgot p_facb95'))
-WebUI.delay(3)
-WebUI.closeBrowser()
 }
 catch(Exception e)
 {
-	KeywordUtil.markFailed('ERROR:Password Reset mail is not sent to your registered mail')
+	KeywordUtil.markFailed('ERROR:Password Reset mail is not sent to your registered mail:'+e.getMessage())
 	
 }

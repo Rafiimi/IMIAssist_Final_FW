@@ -16,38 +16,23 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
 import com.kms.katalon.core.util.KeywordUtil
+CustomKeywords.'reusableKeywords.Reusable.Login'()
+
 try{
-	
-/*
-WebUI.openBrowser('')
 
-WebUI.navigateToUrl(findTestData("Allthetabsatagentside").getValue(1, 1))
-WebUI.maximizeWindow()
-WebUI.delay(4)
-
-WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-email'), findTestData("Allthetabsatagentside").getValue(2, 1))
-WebUI.delay(3)
-
-WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-_90355e'),
-	findTestData("Allthetabsatagentside").getValue(3, 1))
-WebUI.delay(3)
-
-WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/button_LOGIN'))*/
-WebUI.waitForElementClickable(findTestObject('Page_eClinic - Video Consultations/a_Testing_navProfileDropdown'),2)
-WebUI.click(findTestObject('Page_eClinic - Video Consultations/a_Testing_navProfileDropdown'))
+WebUI.click(findTestObject('Object Repository/LoginPage_TestCases_Objects/Profiledropdown'))
 
 WebUI.click(findTestObject('Page_eClinic - Video Consultations/li_Profile'))
 
 WebUI.click(findTestObject('Object Repository/Page_eClinic - Video Consultations/i_create'))
 WebUI.delay(3)
 
-WebUI.setText(findTestObject('Object Repository/Page_eClinic - Video Consultations/input_land Islands_mobinput'), findTestData('IMIAssist_sprint30_testdata').getValue(2,1))
+WebUI.setText(findTestObject('Object Repository/Page_eClinic - Video Consultations/input_land Islands_mobinput'), findTestData('Login_testdata').getValue(11,1))
 WebUI.delay(2)
 //WebUI.click(findTestObject('Object Repository/AppointmentCreationpopup/Savbuttonobject'))
 WebUI.click(findTestObject('Object Repository/Page_IMIassist - Virtual Assistance/button_SAVE'))
 
 WebUI.delay(2)
-WebUI.takeScreenshot('Test Cases\\IMIAssist_Automation_Test_Snapshots\\Profile_Page\\TC_07_Verify_updating_of _mobile_field_with_invalid_mobile_number.png')
 Invalidpasswordexptext=WebUI.getText(findTestObject('Object Repository/AppointmentCreationpopup/Invalidpassworderror'));
 Expectinvaliderrormessage=findTestData('IMIAssist_sprint30_testdata').getValue(3,1)
 if(Expectinvaliderrormessage.contains(Invalidpasswordexptext))
@@ -62,9 +47,7 @@ else
 	KeywordUtil.markFailed('ERROR: Unable to see the error message with invalid number')
 	
 }
-/*WebUI.click(findTestObject('Page_eClinic - Video Consultations/a_Testing_navProfileDropdown'))
-
-WebUI.click(findTestObject('Page_eClinic - Video Consultations/li_Logout'))*/
+//CustomKeywords.'reusableKeywords.Reusable.Logout'()
 KeywordUtil.markPassed('SUCCESS:User able to see the error message with invalid number')
 
 }

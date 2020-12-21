@@ -123,9 +123,9 @@ catch(Exception e)
 	
 }
 WebUI.delay(3)
-/*WebUI.click(findTestObject('Page_eClinic - Video Consultations/a_Testing_navProfileDropdown (3)'))
+/*WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Page_eClinic - Video Consultations/li_Logout (8)'))*/
+WebUI.click(findTestObject('null'))*/
 KeywordUtil.markPassed('SUCCESS:Appointment is available under assigned tab')
 
 }

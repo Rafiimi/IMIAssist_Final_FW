@@ -43,7 +43,7 @@
    <testCaseLink>
       <guid>bf1cd4e3-511f-46d4-bb1b-8221a1dc4a8e</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Login_test_Cases/IMIAssist_login_test_case</testCaseId>
    </testCaseLink>
    <testCaseLink>

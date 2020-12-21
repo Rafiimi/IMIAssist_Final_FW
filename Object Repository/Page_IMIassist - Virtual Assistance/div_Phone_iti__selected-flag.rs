@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//form[@id='mobileform']/div/div/div</value>
+         <value>//div[@class='iti__selected-flag']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

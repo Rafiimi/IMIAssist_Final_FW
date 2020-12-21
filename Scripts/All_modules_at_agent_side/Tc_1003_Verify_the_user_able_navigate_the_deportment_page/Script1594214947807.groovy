@@ -24,7 +24,7 @@ try
 	
 	
 WebUI.click(findTestObject('Object Repository/AppointmentCreationpopup/Assesmenticon_object'))
-WebUI.waitForElementClickable(findTestObject('Object Repository/AppointmentCreationpopup/Reporttab_object'), 3)
+/*WebUI.waitForElementClickable(findTestObject('Object Repository/AppointmentCreationpopup/Reporttab_object'), 3)
 
 WebUI.click(findTestObject('Object Repository/AppointmentCreationpopup/Reporttab_object'))
 
@@ -45,7 +45,7 @@ WebUI.click(findTestObject('Object Repository/Page_IMIassist - Virtual Assistanc
 
 WebUI.click(findTestObject('Object Repository/Page_IMIassist - Virtual Assistance/button_Close'))
 KeywordUtil.markPassed('SUCCESS: User successfully created custom reports')
-
+*/
 }
 catch(Exception e)
 {

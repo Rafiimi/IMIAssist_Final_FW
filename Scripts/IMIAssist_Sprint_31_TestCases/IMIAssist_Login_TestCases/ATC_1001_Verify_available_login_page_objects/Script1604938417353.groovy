@@ -20,7 +20,7 @@ try
 {
 	
 WebUI.openBrowser('')
-WebUI.navigateToUrl(findTestData("TestDataforLogin").getValue(1, 1))
+WebUI.navigateToUrl(findTestData("Login_testdata").getValue(1, 1))
 WebUI.maximizeWindow()
 WebUI.delay(4)
 BrandlogStatus=WebUI.verifyElementVisible(findTestObject('Object Repository/LoginPage_TestCases_Objects/Brandlogo'))
@@ -60,7 +60,7 @@ else
 	
 }
 WebUI.delay(3)
-forgotpasswordlink=WebUI.verifyElementVisible(findTestObject('Object Repository/LoginPage_TestCases_Objects/forgotpasswordlink'))
+forgotpasswordlink=WebUI.verifyElementVisible(findTestObject('Object Repository/LoginPage_TestCases_Objects/forgotpswlink'))
 if(forgotpasswordlink==true)
 {
 	KeywordUtil.markPassed('SUCCESS:forgotpassword link is visible to the loginuser')
@@ -84,27 +84,7 @@ else
 	KeywordUtil.markFailed('ERROR:login button is not visible to the loginuser')
 	
 }
-/*Activelogin=WebUI.verifyElementPresent(findTestObject('Object Repository/AppointmentCreationpopup/Active_login_text_objects'), 5)
-//Activelogin=WebUI.verifyElementVisible('Object Repository/AppointmentCreationpopup/Active_login_text_objects')
 
-if(Activelogin==true)
-{
-	WebUI.click(findTestObject('Object Repository/AppointmentCreationpopup/ProceedButtononactivelogin'))
-	KeywordUtil.markPassed('SUCCESS:All options are avilable in view as drop down field')
-	
-}
-
-else if(Activelogin==false)
-{
-	KeywordUtil.markPassed('SUCCESS:There is not active login')
-	
-}
-else
-{
-	KeywordUtil.markFailed('ERROR:User unable to login')
-	
-}
-*/
 }
 catch(Exception e)
 {

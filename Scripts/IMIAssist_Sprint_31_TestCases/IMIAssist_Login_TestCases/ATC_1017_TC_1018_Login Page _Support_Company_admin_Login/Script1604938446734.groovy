@@ -28,18 +28,21 @@ WebUI.openBrowser('')
 WebUI.navigateToUrl(findTestData("Login_testdata").getValue(1, 1))
 for(int i=0;i<=1;i++)
 {
-WebUI.maximizeWindow()
-WebUI.delay(4)
-WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-email'), findTestData("Login_testdata").getValue(4,1))
+WebUI.setText(findTestObject('Object Repository/LoginPage_TestCases_Objects/Emailtextf'), findTestData("Login_testdata").getValue(4,1))
 
 //WebUI.setEncryptedText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-_90355e'), findTestData("TestDataforLogin").getValue(3,1))
-WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-_90355e'), findTestData("Login_testdata").getValue(5,1))
-WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/button_LOGIN'))
+WebUI.setText(findTestObject('Object Repository/LoginPage_TestCases_Objects/PasswordTextfiled'), findTestData("Login_testdata").getValue(5,1))
+WebUI.click(findTestObject('Object Repository/LoginPage_TestCases_Objects/Login_button'))
 WebUI.delay(2)
 CustomKeywords.'reusableKeywords.Reusable.UserNavigation_Dept'()
 	
-CustomKeywords.'reusableKeywords.Reusable.Logout'()
-}
+WebUI.delay(5)
+
+			WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/a_Finance_navProfileDropdown'))
+
+			WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/li_Logout'))
+			WebUI.delay(3)
+			}
 }
 catch(Exception e)
 {

@@ -26,9 +26,9 @@ WebUI.setEncryptedText(findTestObject('Object Repository/Page_eClinic - Video Co
 
 WebUI.click(findTestObject('Object Repository/Page_eClinic - Video Consultations/div_Login_Ripple__RippleContainer-cs6dy7-0 dXRetU'))
 
-WebUI.click(findTestObject('Page_eClinic - Video Consultations/a_Support_navProfileDropdown (6)'))
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Page_eClinic - Video Consultations/li_Logout (14)'))
+WebUI.click(findTestObject('null'))
 
 WebUI.closeBrowser()
 

@@ -132,9 +132,9 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 	WebUI.click(findTestObject('Object Repository/Page_eClinic - Video Consultations/button_Schedule'))
 	
 	WebUI.delay(4)
-	WebUI.click(findTestObject('Page_eClinic - Video Consultations/a_Support_navProfileDropdown'))
+	WebUI.click(findTestObject('null'))
 
-	WebUI.click(findTestObject('Page_eClinic - Video Consultations/li_Logout'))
+	WebUI.click(findTestObject('null'))
 
 	KeywordUtil.markPassed('SUCCESS:Agent able to create appointment with exsting cutomer')
 //*///}

@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//li[@id='iti-item-in']</value>
+         <value>//li[@class='iti__country iti__standard iti__highlight']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

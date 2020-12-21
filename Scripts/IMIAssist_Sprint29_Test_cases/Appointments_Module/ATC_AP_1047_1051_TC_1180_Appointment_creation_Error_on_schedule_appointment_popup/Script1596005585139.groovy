@@ -26,7 +26,7 @@ WebUI.maximizeWindow()
 
     WebUI.navigateToUrl(findTestData('IMiAsssist_dashbord').getValue(1, 1))
 WebUI.delay(4)
- WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-email'), 
+ WebUI.setText(findTestObject('null'), 
         findTestData('IMiAsssist_dashbord').getValue(2, 1))
 
     WebUI.setText(findTestObject('Page_eClinic - Video Consultations/input_Please enter your details below_user-_90355e'), 
@@ -124,9 +124,9 @@ WebUI.delay(7)
 //WebUI.click(findTestObject('Object Repository/TestRecord/Page_eClinic - Video Consultations/div_arrow_back  Schedule An Appointment   c_4ff18f'))
 
 	WebUI.click(findTestObject('Object Repository/TestRecord/Page_eClinic - Video Consultations/i_close'))
-/*WebUI.click(findTestObject('Page_eClinic - Video Consultations/a_Testing_navProfileDropdown (3)'))
+/*WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Page_eClinic - Video Consultations/li_Logout (8)'))*/
+WebUI.click(findTestObject('null'))*/
 KeywordUtil.markPassed('SUCCESS:Agent Unable to create the appointment with exsting mobile number')
 
 }

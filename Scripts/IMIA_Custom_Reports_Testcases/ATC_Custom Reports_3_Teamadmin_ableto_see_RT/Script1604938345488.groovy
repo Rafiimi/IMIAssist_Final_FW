@@ -22,13 +22,13 @@ try {
 
     WebUI.navigateToUrl(findTestData('IMI_Custome_reports_TD').getValue(1, 1))
 
-    WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-email'), 
+    WebUI.setText(findTestObject('null'), 
         findTestData('IMI_Custome_reports_TD').getValue(2, 1))
 
     WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-_90355e'), 
         findTestData('IMI_Custome_reports_TD').getValue(3, 1))
 
-    WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/button_LOGIN'))
+    WebUI.click(findTestObject('null'))
 
     KeywordUtil.markPassed('SUCCESS:Agent able to login the application')
 }

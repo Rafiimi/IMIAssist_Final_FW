@@ -19,29 +19,11 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 try
 {
-/*WebUI.openBrowser('')
-
-  WebUI.navigateToUrl(findTestData('IMiAsssist_dashbord').getValue(1, 1))
-  WebUI.maximizeWindow()
-  
-  WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-email'), 
-        findTestData('IMiAsssist_dashbord').getValue(2, 1))
-
-  WebUI.setText(findTestObject('Page_eClinic - Video Consultations/input_Please enter your details below_user-_90355e'), 
-        findTestData('IMiAsssist_dashbord').getValue(3, 1)) 
-    WebUI.click(findTestObject('Page_eClinic - Video Consultations/button_LOGIN'))
-*/
+CustomKeywords.'reusableKeywords.Reusable.Login'()
 	try{
 WebUI.delay(2)
 
-WebUI.click(findTestObject('AppointmentCreationpopup/AppointmentCreationPopup/Aoointmenticon'))
-
-WebUI.click(findTestObject('AppointmentCreationpopup/AppointmentCreationPopup/Appointments'))
-
-WebUI.click(findTestObject('AppointmentCreationpopup/AppointmentCreationPopup/Newappointmentlink'))
-
-WebUI.click(findTestObject('AppointmentCreationpopup/AppointmentCreationPopup/Startanappointmentlink'))
-
+CustomKeywords.'reusableKeywords.Reusable.navigatetodepartmentpagetoselectscheduleap'()
 popupheader=WebUI.getText(findTestObject('AppointmentCreationpopup/AppointmentCreationPopup/Newappointmentheader'))
 println(popupheader)
 
@@ -73,7 +55,6 @@ WebUI.delay(3)
 WebUI.waitForElementClickable(findTestObject('AppointmentCreationpopup/AppointmentCreationPopup/StartAnAppointmentleabelobject'), 2)
 startanappointmentactuallabletext=WebUI.getText(findTestObject('AppointmentCreationpopup/AppointmentCreationPopup/StartAnAppointmentleabelobject'))
 Exepectedstartanappointmenttext=findTestData("Appointment_creation_popup_Test_data").getValue(2, 1)
-WebUI.takeScreenshot('Test Cases\\IMIAssist_Automation_Test_Snapshots\\Appointment_creation/TC_1153_Appointment_Creation_ Verify_whether_the_following_options_are_available_in_popup_on.png')
 
 if(startanappointmentactuallabletext.equals(Exepectedstartanappointmenttext))
 {
@@ -142,10 +123,7 @@ else
 	}
 WebUI.click(findTestObject('AppointmentCreationpopup/AppointmentCreationPopup/Closebutton'))
 WebUI.delay(5)
-/*WebUI.click(findTestObject('AppointmentCreationpopup/AppointmentCreationPopup/Profiledropdownobject'))
-
-WebUI.click(findTestObject('AppointmentCreationpopup/AppointmentCreationPopup/Logoutbutton'))
-*/
+//CustomKeywords.'reusableKeywords.Reusable.Logout'()
 KeywordUtil.markPassed('SUCCESS:All options are available in popup')
 
 }

@@ -26,11 +26,11 @@ WebUI.setText(findTestObject('Page_eClinic - Video Consultations/input_Please en
 WebUI.setEncryptedText(findTestObject('Page_eClinic - Video Consultations/input_Please enter your details below_user-_90355e (16)'), 
     't01vaTQW2aA54u53vLzm8g==')
 
-WebUI.click(findTestObject('Page_eClinic - Video Consultations/button_LOGIN (16)'))
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Page_eClinic - Video Consultations/button_PROCEED (9)'))
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Page_eClinic - Video Consultations/a_Testing_navProfileDropdown (9)'))
+WebUI.click(findTestObject('null'))
 
 WebUI.click(findTestObject('Page_eClinic - Video Consultations/li_Profile (2)'))
 

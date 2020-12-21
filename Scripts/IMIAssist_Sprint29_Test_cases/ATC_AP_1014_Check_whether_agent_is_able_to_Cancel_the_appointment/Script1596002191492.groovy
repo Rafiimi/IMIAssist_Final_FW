@@ -77,9 +77,7 @@ try {
 		
 	}
 	WebUI.delay(3)
-	/*WebUI.click(findTestObject('Page_eClinic - Video Consultations/a_Support_navProfileDropdown'))
-	
-	WebUI.click(findTestObject('Page_eClinic - Video Consultations/li_Logout'))*/
+//	CustomKeywords.'reusableKeywords.Reusable.Login'()
 	KeywordUtil.markPassed('SUCCESS:Appointment canceled successfully')
 	
 }

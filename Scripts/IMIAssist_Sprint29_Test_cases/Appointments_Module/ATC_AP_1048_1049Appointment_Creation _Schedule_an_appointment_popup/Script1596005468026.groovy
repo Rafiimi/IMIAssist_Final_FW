@@ -24,7 +24,7 @@ try {
     WebUI.navigateToUrl(findTestData('IMiAsssist_dashbord').getValue(1, 1))
 	WebUI.maximizeWindow()
 	
-    WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-email'), 
+    WebUI.setText(findTestObject('null'), 
         findTestData('IMiAsssist_dashbord').getValue(2, 1))
 
     WebUI.setText(findTestObject('Page_eClinic - Video Consultations/input_Please enter your details below_user-_90355e'), 
@@ -133,9 +133,9 @@ try
 		
 	}
 	WebUI.delay(3)
-	/*WebUI.click(findTestObject('Page_eClinic - Video Consultations/a_Support_navProfileDropdown'))
+	/*WebUI.click(findTestObject('null'))
 	
-	WebUI.click(findTestObject('Page_eClinic - Video Consultations/li_Logout'))*/
+	WebUI.click(findTestObject('null'))*/
 	KeywordUtil.markPassed("SUCCESS:All fileds are available under schedule an appointment popup")
 }
 

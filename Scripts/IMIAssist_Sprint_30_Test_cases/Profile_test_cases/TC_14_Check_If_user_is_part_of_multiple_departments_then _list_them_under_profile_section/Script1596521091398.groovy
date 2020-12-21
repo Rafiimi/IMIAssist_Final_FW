@@ -21,36 +21,24 @@ import com.kms.katalon.core.util.KeywordUtil
 
 try
 {
-/*WebUI.openBrowser('')
+CustomKeywords.'reusableKeywords.Reusable.Login'()
 
-
-WebUI.navigateToUrl(findTestData("TestDataForchangepassword").getValue(1,1))
-
-WebUI.maximizeWindow()
-WebUI.delay(4)
-WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-email'), findTestData("TestDataForchangepassword").getValue(2,1))
-
-//WebUI.setEncryptedText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-_90355e'), findTestData("TestDataforLogin").getValue(3,1))
-WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-_90355e'), findTestData("TestDataForchangepassword").getValue(3,1))
-
-WebUI.click(findTestObject('Object Repository/Page_eClinic - Video Consultations/button_LOGIN'))*/
-
-
-WebUI.click(findTestObject('Object Repository/Page_eClinic - Video Consultations/a_Testing_navProfileDropdown'))
+WebUI.click(findTestObject('Object Repository/LoginPage_TestCases_Objects/Profiledropdown'))
 
 WebUI.click(findTestObject('Object Repository/AppointmentCreationpopup/Speciality_Object'))
+WebUI.delay(5)
 
-Teamscount=WebUI.getNumberOfTotalOption(findTestObject('Object Repository/AppointmentCreationpopup/Teamslist_object'))
-WebUI.delay(4)
+departmentsscount=WebUI.getNumberOfTotalOption(findTestObject('Object Repository/AppointmentCreationpopup/Teamslist_object'))
+WebUI.delay(5)
 WebUI.click(findTestObject('Object Repository/AppointmentCreationpopup/Settings_icon_object'))
 WebUI.click(findTestObject('Object Repository/AppointmentCreationpopup/SettingsTab_object'))
-WebUI.delay(2)
-WebUI.click(findTestObject('Object Repository/AppointmentCreationpopup/Teams_Tab_Object'))
+//WebUI.delay(2)
+//WebUI.click(findTestObject('Object Repository/AppointmentCreationpopup/Teams_Tab_Object'))
 WebUI.delay(3)
-Teamcountfromtamstab=WebUI.getNumberOfTotalOption(findTestObject('Object Repository/AppointmentCreationpopup/Teams_count_Objects'))
+departmentscountfromdepartment=WebUI.getNumberOfTotalOption(findTestObject('Object Repository/AppointmentCreationpopup/Teams_count_Objects'))
 
 
-if(Teamscount.equals(Teamcountfromtamstab))
+if(departmentsscount.equals(departmentscountfromdepartment))
 {
 KeywordUtil.markPassed('SUCCESS:Teams count is matched with under teams tab')
 
@@ -63,9 +51,7 @@ else
 }
 
 WebUI.delay(2)
-/*WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/a_Finance_navProfileDropdown'))
-
-WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/li_Logout'))*/
+CustomKeywords.'reusableKeywords.Reusable.Logout'()
 KeywordUtil.markPassed('SUCCESS:Teams count is matched with under teams tab')
 
 

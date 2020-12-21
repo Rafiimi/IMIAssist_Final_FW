@@ -23,36 +23,28 @@ import com.kms.katalon.core.util.KeywordUtil
 expectedinvalidloginmessage="Invalid email. Email field is mandatory.";
 try
 {
-//WebUI.openBrowser('')
-//
-//WebUI.navigateToUrl(findTestData("Invalidcredentials").getValue(1,1))
-//WebUI.maximizeWindow()
-WebUI.delay(4)
-WebUI.clearText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-email'))
+/*WebUI.openBrowser('')
+
+WebUI.navigateToUrl(findTestData("Invalidcredentials").getValue(1,1))
+WebUI.maximizeWindow()
+WebUI.delay(4)*/
+WebUI.clearText(findTestObject('Object Repository/LoginPage_TestCases_Objects/User_Email'))
 WebUI.delay(2)
-WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-email'),' ')
-WebUI.clearText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-_90355e'))
-WebUI.delay(2)
-
-WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-_90355e'),'')
-WebUI.delay(3)
-
-WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/button_LOGIN'))
-
-WebUI.click(findTestObject('Object Repository/Page_IMIassist - Virtual Assistance/span_Invalid user email or password'))
-WebUI.delay(2)
-WebUI.takeScreenshot('Test Cases\\IMIAssist_Automation_Test_Snapshots\\Profile_Page\\ATC_LP_1004_Login_with_empty_credentials.png')
-
-invalidmessage=WebUI.getText(findTestObject('Object Repository/Page_IMIassist - Virtual Assistance/span_Invalid user email or password'))
-println('Invalid error message :'+invalidmessage)
-if(invalidmessage.equals(expectedinvalidloginmessage))
+WebUI.clearText(findTestObject('Object Repository/LoginPage_TestCases_Objects/PasswordTextfiled'))
+Loginbuttondisabledtext=WebUI.getText(findTestObject('Object Repository/LoginPage_TestCases_Objects/Disableelementloginbutton'))
+if(Loginbuttondisabledtext.equals('LOGIN'))
 {
-	KeywordUtil.markPassed('SUCCESS:User unabel to login with invalid username')
-}
+	WebUI.click(findTestObject('Object Repository/LoginPage_TestCases_Objects/Login_button'))
+	if(WebUI.getUrl().contains('login')){
+		KeywordUtil.markPassed('SUCCESS:User unable to login with empty credentials')
+		
+	}
+
 else
 {
-	KeywordUtil.markFailed('ERROR: User abel to login with invalid email')
+	KeywordUtil.markFailed('ERROR: User abel to login with with empty credentials')
 	
+}
 }
 
 //WebUI.closeBrowser()

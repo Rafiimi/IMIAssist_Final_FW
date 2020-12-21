@@ -77,9 +77,9 @@ catch(Exception e)
 	
 }
 /*WebUI.delay(2)
-WebUI.click(findTestObject('Page_eClinic - Video Consultations/a_Testing_navProfileDropdown'))
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Page_eClinic - Video Consultations/li_Logout'))*/
+WebUI.click(findTestObject('null'))*/
 KeywordUtil.markPassed('SUCCESS:Sms confimration message is displayed and appointment is update in episodes')
 }
 catch(Exception e)

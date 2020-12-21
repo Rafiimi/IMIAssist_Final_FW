@@ -20,7 +20,7 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 try
 {
-	//CustomKeywords.'reusableKeywords.Reusable.Login'()
+//	CustomKeywords.'reusableKeywords.Reusable.Login'()
    WebUI.delay(2)
   try{
 	CustomKeywords.'reusableKeywords.Reusable.navigatetodepartmentpagetoselectscheduleap'()
@@ -106,12 +106,9 @@ KeywordUtil.markPassed('SUCCESS:Agent successfully create schedule an appointmen
 //Click on cancel button
 
 
-WebUI.takeScreenshot('Test Cases\\IMIAssist_Automation_Test_Snapshots\\Appointment_creation\\ATC_AP_1039_Appointment_Creation_Verify_agent_able_to_cancel_the_appointment_while_creation.png')
 KeywordUtil.markPassed('SUCCESS:Agent able to cancel the appointment while creating the appointment')
 
-/*WebUI.click(findTestObject('Page_eClinic - Video Consultations/a_Testing_navProfileDropdown (3)'))
-
-WebUI.click(findTestObject('Page_eClinic - Video Consultations/li_Logout (8)'))*/
+//CustomKeywords.'reusableKeywords.Reusable.Logout'()
 
 }
 catch(Exception e)

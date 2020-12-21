@@ -6,12 +6,11 @@
    <elementGuidId>12d3420c-1777-4fe9-8063-080090d95bd6</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//span[normalize-space(text())='New Appointment']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//a[@id='startAppointmentDropdown']</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

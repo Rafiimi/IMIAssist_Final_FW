@@ -27,7 +27,7 @@ WebUI.click(findTestObject('AppointmentCreationpopup/AppointmentCreationPopup/Ao
 
 //WebUI.click(findTestObject('Page_eClinic - Video Consultations/span_Appointments (4)'))
 
-WebUI.click(findTestObject('Page_eClinic - Video Consultations/a_Testing_navProfileDropdown'))
+WebUI.click(findTestObject('null'))
 
 WebUI.click(findTestObject('Page_eClinic - Video Consultations/div_Specialty (2)'))
 

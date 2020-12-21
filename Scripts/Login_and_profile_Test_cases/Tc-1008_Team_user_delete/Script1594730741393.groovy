@@ -28,13 +28,13 @@ try {
 
     WebUI.delay(4)
 
-    WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-email'), 
+    WebUI.setText(findTestObject('null'), 
         findTestData('Allthetabsatagentside').getValue(2, 1))
 
     WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-_90355e'), 
         findTestData('Allthetabsatagentside').getValue(3, 1))
 
-    WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/button_LOGIN'))
+    WebUI.click(findTestObject('null'))
 
     WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/i_settings'))
 

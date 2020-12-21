@@ -20,33 +20,22 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
-expectedinvalidloginmessage='Invalid user email or password';
 try
 {
-//WebUI.openBrowser('')
-
-//WebUI.navigateToUrl(findTestData("InvalidPassword").getValue(1,1))
-//WebUI.maximizeWindow()
 WebUI.delay(4)
-WebUI.clearText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-email'))
+WebUI.clearText(findTestObject('Object Repository/LoginPage_TestCases_Objects/PasswordTextfiled'))
 WebUI.delay(2)
 
 
-WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-email'), findTestData("InvalidPassword").getValue(2,1))
-WebUI.clearText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-_90355e'))
-WebUI.delay(2)
-WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-_90355e'),findTestData("InvalidPassword").getValue(3,1))
+WebUI.setText(findTestObject('Object Repository/LoginPage_TestCases_Objects/User_Email'), findTestData('Invalidcredentials').getValue(2,1))
 
-WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/button_LOGIN'))
+WebUI.setText(findTestObject('Object Repository/LoginPage_TestCases_Objects/PasswordTextfiled'),findTestData('Invalidcredentials').getValue(4,1))
 
-WebUI.click(findTestObject('Object Repository/Page_IMIassist - Virtual Assistance/span_Invalid user email or password'))
-WebUI.delay(2)
-WebUI.takeScreenshot('Test Cases\\IMIAssist_Automation_Test_Snapshots\\Profile_Page\\ATC_LP_1003_Login with Invalid password.png')
-
-invalidmessage=WebUI.getText(findTestObject('Object Repository/Page_IMIassist - Virtual Assistance/span_Invalid user email or password'))
-println('Invalid error message :'+invalidmessage)
-
-if(invalidmessage.equals(expectedinvalidloginmessage))
+WebUI.click(findTestObject('Object Repository/LoginPage_TestCases_Objects/Login_button'))
+WebUI.delay(3)
+invalidmessage=WebUI.getText(findTestObject('Object Repository/LoginPage_TestCases_Objects/InvalidcredentialsErrorMessage'))
+ExpectedInvaliderrormessage=findTestData('Invalidcredentials').getValue(5, 1)
+if(invalidmessage.equals(ExpectedInvaliderrormessage))
 {
 	KeywordUtil.markPassed('SUCCESS:User unabel to login with invalid password')
 }
@@ -59,6 +48,6 @@ else
 }
 catch(Exception e)
 {
-	KeywordUtil.markFailed('ERROR:User abel to login with invalid password')
+	KeywordUtil.markFailed('ERROR:User abel to login with invalid password:'+e.getMessage())
 	
 }

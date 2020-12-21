@@ -24,7 +24,7 @@ CustomKeywords.'reusableKeywords.Reusable.Login'()
 	WebUI.delay(3)
 	try
 	{
-	WebUI.click(findTestObject('Page_eClinic - Video Consultations/a_Testing_navProfileDropdown'))
+	WebUI.click(findTestObject('null'))
 	WebUI.delay(3)
 	
 	WebUI.click(findTestObject('Object Repository/AppointmentCreationpopup/Specialty_option_object'))

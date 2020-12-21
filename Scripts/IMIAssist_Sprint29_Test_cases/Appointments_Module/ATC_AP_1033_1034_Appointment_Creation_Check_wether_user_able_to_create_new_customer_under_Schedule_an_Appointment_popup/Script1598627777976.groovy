@@ -127,9 +127,9 @@ KeywordUtil.markPassed('SUCCESS:Agent able to scroll down and successfully creat
 WebUI.takeScreenshot('Test Cases\\IMIAssist_Automation_Test_Snapshots\\Appointment_creation\\ATC_AP_1035_Appointment_creation_Check_wither_agent_able_to_scroll_the_fill_appointment_details_page_under_popup.png')
 KeywordUtil.markPassed('SUCCESS:Agent able to scroll down and successfully create schedule an appointment')
 
-/*WebUI.click(findTestObject('Page_eClinic - Video Consultations/a_Testing_navProfileDropdown (3)'))
+/*WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Page_eClinic - Video Consultations/li_Logout (8)'))*/
+WebUI.click(findTestObject('null'))*/
 
 }
 catch(Exception e)

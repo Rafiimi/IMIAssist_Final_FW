@@ -21,11 +21,11 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl(findTestData("Allthetabsatagentside").getValue(1, 1))
 
-WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-email'), findTestData("IMIA_Appointment_page_Testdata").getValue(11, 1))
+WebUI.setText(findTestObject('null'), findTestData("IMIA_Appointment_page_Testdata").getValue(11, 1))
 
 WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-_90355e'),
 	findTestData("IMIA_Appointment_page_Testdata").getValue(12, 1))
-WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/button_LOGIN'))
+WebUI.click(findTestObject('null'))
 
 CustomKeywords.'reusableKeywords.Reusable.UserNavigation_Dept'()
 

@@ -18,9 +18,9 @@ import internal.GlobalVariable as GlobalVariable
 try
 {
 	WebUI.delay(3)
-	WebUI.click(findTestObject('Page_eClinic - Video Consultations/a_Testing_navProfileDropdown'))
+	WebUI.click(findTestObject('null'))
 	
-	WebUI.click(findTestObject('Page_eClinic - Video Consultations/li_Logout'))
+	WebUI.click(findTestObject('null'))
 	println('User successfully logouted the page')
 }
 catch(Exception e)

@@ -17,22 +17,18 @@ import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.util.KeywordUtil
 
 try{
-WebUI.openBrowser('')
-WebUI.delay(3)
- WebUI.navigateToUrl(findTestData('TC_03_OtherdetailsChenge').getValue(1, 1))
- WebUI.delay(3)
+ WebUI.openBrowser('')
+ WebUI.navigateToUrl(findTestData('Login_testdata').getValue(1, 1))
  WebUI.maximizeWindow()
  
- 
- WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-email'),
-		findTestData('TC_03_OtherdetailsChenge').getValue(2, 1))
- WebUI.setText(findTestObject('Page_eClinic - Video Consultations/input_Please enter your details below_user-_90355e'),
-	 findTestData('TC_03_OtherdetailsChenge').getValue(9, 1))
-// WebUI.clearText(findTestObject('Page_eClinic - Video Consultations/input_Please enter your details below_user-_90355e'))
+ WebUI.setText(findTestObject('Object Repository/LoginPage_TestCases_Objects/Emailtextf'),findTestData('Login_testdata').getValue(2, 1))
+ WebUI.setText(findTestObject('Object Repository/LoginPage_TestCases_Objects/PasswordTextfiled'),findTestData('Login_testdata').getValue(8, 1))
 
  //Validating login with invalid password for captch verification
  for (int i=0; i<4;i++) {
- WebUI.click(findTestObject('Page_eClinic - Video Consultations/button_LOGIN'))
+	 WebUI.delay(3)
+ 
+ WebUI.click(findTestObject('Object Repository/LoginPage_TestCases_Objects/Login_button'))
  }
  WebUI.delay(2)
  Capthelementstatus=WebUI.switchToFrame(findTestObject('Object Repository/LoginPage_TestCases_Objects/Cpathframeobject'), 5)
@@ -51,6 +47,7 @@ WebUI.delay(3)
 
 println('user able to login the page')
 }
+
 catch(Exception e)
 {
 KeywordUtil.markFailed('ERROR:Agent unable to see the captch after trying to login morethen 4 times:'+e.getMessage())

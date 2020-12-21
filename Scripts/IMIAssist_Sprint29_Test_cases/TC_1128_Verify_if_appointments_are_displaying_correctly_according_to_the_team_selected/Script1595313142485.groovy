@@ -27,7 +27,7 @@ try
 	WebUI.click(findTestObject('Object Repository/AppointmentCreationpopup/Apointmenttabicon'))
 	WebUI.click(findTestObject('Object Repository/AppointmentCreationpopup/Appointmenttab'))
 	WebUI.delay(2)
-WebUI.click(findTestObject('Page_eClinic - Video Consultations/a_Support_navProfileDropdown (2)'))
+WebUI.click(findTestObject('null'))
 
 WebUI.click(findTestObject('Page_eClinic - Video Consultations/div_Specialty (2)'))
 
@@ -60,9 +60,9 @@ KeywordUtil.markFailed('ERROR:appointments are not displaying correctly accordin
 }
 WebUI.delay(3)
 
-WebUI.click(findTestObject('Page_eClinic - Video Consultations/a_Testing_navProfileDropdown'))
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Page_eClinic - Video Consultations/li_Logout'))
+WebUI.click(findTestObject('null'))
 KeywordUtil.markPassed('SUCCESS:appointments are displaying correctly according to the team selected')
 
 }

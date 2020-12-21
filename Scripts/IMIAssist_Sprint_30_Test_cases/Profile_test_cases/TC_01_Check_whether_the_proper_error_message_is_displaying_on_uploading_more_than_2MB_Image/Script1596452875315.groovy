@@ -15,34 +15,18 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.openBrowser('')
+CustomKeywords.'reusableKeywords.Reusable.Login'()
 
-WebUI.navigateToUrl(findTestData('Allthetabsatagentside').getValue(1, 1))
-
-WebUI.maximizeWindow()
-
-WebUI.delay(4)
-
-WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-email'), findTestData(
-        'Allthetabsatagentside').getValue(2, 1))
-
-WebUI.delay(3)
-
-WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-_90355e'), 
-    findTestData('Allthetabsatagentside').getValue(3, 1))
-
-WebUI.delay(3)
-
-WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/button_LOGIN'))
-
-WebUI.click(findTestObject('Page_eClinic - Video Consultations/a_Testing_navProfileDropdown'))
+WebUI.click(findTestObject('Object Repository/LoginPage_TestCases_Objects/Profiledropdown'))
 
 WebUI.click(findTestObject('Page_eClinic - Video Consultations/li_Profile'))
 
 WebUI.delay(3)
-WebUI.mouseOver(findTestObject('Object Repository/AppointmentCreationpopup/profile_view'))
-WebUI.uploadFile(findTestObject('Object Repository/AppointmentCreationpopup/Cam_icon_under_profile_object'), 'C:\\Users\\TT046\\Desktop\\images.jpg')
+WebUI.click(findTestObject('Object Repository/LoginPage_TestCases_Objects/profileuploadicon'))
+WebUI.delay(3)
 
+WebUI.uploadFile(findTestObject('Object Repository/LoginPage_TestCases_Objects/profileuploadicon'), 'D:\\IMI_Automation\\IMIAssist_Automtion\\Screenshot_20201211_093404.jpg', 
+        FailureHandling.OPTIONAL)
 
 
 

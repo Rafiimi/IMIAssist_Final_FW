@@ -27,7 +27,7 @@ try
 	WebUI.maximizeWindow()
 	
 WebUI.delay(4)
- WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-email'), 
+ WebUI.setText(findTestObject('null'), 
         findTestData('IMiAsssist_dashbord').getValue(2, 1))
 
     WebUI.setText(findTestObject('Page_eClinic - Video Consultations/input_Please enter your details below_user-_90355e'), 
@@ -102,9 +102,9 @@ WebUI.takeScreenshot('Test Cases\\IMIAssist_Automation_Test_Snapshots\\Appointme
 
 KeywordUtil.markPassed('SUCCESS:Agent able to cancel the appointment while creating the appointment')
 
-/*WebUI.click(findTestObject('Page_eClinic - Video Consultations/a_Testing_navProfileDropdown (3)'))
+/*WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Page_eClinic - Video Consultations/li_Logout (8)'))*/
+WebUI.click(findTestObject('null'))*/
 
 }
 catch(Exception e)

@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//a[contains(@title,'Appointments')]//i</value>
+         <value>//i[@class='d-flex imi-invitation imi-icon-xxl sidebar-icon']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

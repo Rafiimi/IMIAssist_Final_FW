@@ -22,39 +22,28 @@ try
 {
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl( findTestData("TC_03_OtherdetailsChenge").getValue(1,1))
+WebUI.navigateToUrl( findTestData("Invalidcredentials").getValue(1,1))
 WebUI.maximizeWindow()
 WebUI.delay(4)
-WebUI.click(findTestObject('Object Repository/Page_IMIassist - Virtual Assistance/button_Forgot password'))
+WebUI.click(findTestObject('Object Repository/LoginPage_TestCases_Objects/forgotpswlink'))
 WebUI.delay(3)
-
-WebUI.setText(findTestObject('Object Repository/Page_IMIassist - Virtual Assistance/input_Please enter a valid email address (n_259fe2'), 
-    findTestData("TC_03_OtherdetailsChenge").getValue(6,1))
-
-WebUI.click(findTestObject('Object Repository/Page_IMIassist - Virtual Assistance/button_RESET PASSWORD'))
-//WebUI.click(findTestObject('Object Repository/Page_IMIassist - Virtual Assistance/Restpasswordconfirmationtextobject'))
-Invalidemailcontext=WebUI.getText(findTestObject('Object Repository/LoginPage_TestCases_Objects/ForgotpasswordInvalidemail'))
-WebUI.delay(2)
-WebUI.takeScreenshot('TC_1007_Forgot Password _With_Inavlid_email_address.png')
-Expectedinvalidmailtext=findTestData("TC_03_OtherdetailsChenge").getValue(7,1)
-if(Invalidemailcontext.equals(Expectedinvalidmailtext))
+WebUI.setText(findTestObject('Object Repository/LoginPage_TestCases_Objects/Emailtextf'), findTestData('Invalidcredentials').getValue(7, 1))
+WebUI.click(findTestObject('Object Repository/LoginPage_TestCases_Objects/EmailIdLabel'))
+WebUI.delay(5)
+warningtext=WebUI.getText(findTestObject('Object Repository/LoginPage_TestCases_Objects/EMailtooltiptext'))
+if(warningtext.equals('Please enter a valid email'))
 {
-	KeywordUtil.markPassed('SUCCESS:User able to saw invalid mail confoirmation')
+	KeywordUtil.markPassed('SUCCESS:Agent unable to send the forgot password link to email with invalid email address')
 	
 }
 else
 {
-KeywordUtil.markFailed('ERROR:User unable to saw invalid mail confoirmation')
+KeywordUtil.markFailed('ERROR:Agent able to send the forgot password link to email with invalid email address')
 
 }
-WebUI.click(findTestObject('Object Repository/Page_IMIassist - Virtual Assistance/a_LOGIN'))
-
-WebUI.click(findTestObject('Object Repository/Page_IMIassist - Virtual Assistance/div_Please enter your details belowForgot p_facb95'))
-WebUI.delay(3)
-WebUI.closeBrowser()
 }
 catch(Exception e)
 {
-	KeywordUtil.markFailed('ERROR:Password Reset mail is not sent to your registered mail')
+	KeywordUtil.markFailed('ERROR:Forgot password email with invalid useremail is failed:'+e.getMessage())
 	
 }

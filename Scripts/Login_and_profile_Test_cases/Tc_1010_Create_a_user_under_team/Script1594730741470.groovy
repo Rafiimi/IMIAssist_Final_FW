@@ -26,10 +26,10 @@ WebUI.openBrowser('')
 WebUI.navigateToUrl(findTestData("TC_03_OtherdetailsChenge").getValue(1,1))
 WebUI.maximizeWindow()
 WebUI.delay(4)
-WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-email'), findTestData("TC_03_OtherdetailsChenge").getValue(2,1))
+WebUI.setText(findTestObject('null'), findTestData("TC_03_OtherdetailsChenge").getValue(2,1))
 WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-_90355e'), findTestData("TC_03_OtherdetailsChenge").getValue(3,1))
 
-WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/button_LOGIN'))
+WebUI.click(findTestObject('null'))
 
 WebUI.click(findTestObject('Object Repository/Page_IMIassist - Virtual Assistance/i_settings'))
 

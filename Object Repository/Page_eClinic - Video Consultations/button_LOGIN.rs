@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//button[@id='login-button']</value>
+         <value>//button[normalize-space(text())='LOGIN']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

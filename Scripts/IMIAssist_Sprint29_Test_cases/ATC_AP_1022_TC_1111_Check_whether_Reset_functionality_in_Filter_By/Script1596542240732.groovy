@@ -30,7 +30,7 @@ WebUI.click(findTestObject('AppointmentCreationpopup/AppointmentCreationPopup/Ao
    WebUI.click(findTestObject('AppointmentCreationpopup/AppointmentCreationPopup/Appointments'))
 
    WebUI.delay(3)
-WebUI.click(findTestObject('Page_eClinic - Video Consultations/a_Support_navProfileDropdown (3)'))
+WebUI.click(findTestObject('null'))
 
 WebUI.click(findTestObject('Page_eClinic - Video Consultations/div_Specialty (3)'))
 
@@ -73,9 +73,9 @@ KeywordUtil.markFailed('ERROR:Reset functionality is not working fine as per exp
 	}
 
 WebUI.delay(3)
-WebUI.click(findTestObject('Page_eClinic - Video Consultations/a_Testing_navProfileDropdown'))
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Page_eClinic - Video Consultations/li_Logout'))
+WebUI.click(findTestObject('null'))
 KeywordUtil.markPassed('SUCCESS:Reset functionality is working fine as per expected')
 
 }

@@ -16,60 +16,41 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.util.KeywordUtil
-prifleconfirmationexpectedmessage='Saved changes successfully'
+CustomKeywords.'reusableKeywords.Reusable.Login'()
+
 try{
-	
 
-/*WebUI.openBrowser('')
+WebUI.click(findTestObject('Object Repository/LoginPage_TestCases_Objects/Profiledropdown'))
 
-WebUI.navigateToUrl(findTestData("Allthetabsatagentside").getValue(1, 1))
-WebUI.maximizeWindow()
-WebUI.delay(4)
-
-WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-email'), findTestData('IMiAsssist_dashbord').getValue(2, 1))
-WebUI.delay(3)
-
-WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-_90355e'),
-	findTestData('IMiAsssist_dashbord').getValue(3, 1))
-WebUI.delay(3)
-
-WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/button_LOGIN'))*/
-WebUI.delay(3)
-WebUI.waitForElementClickable(findTestObject('Page_eClinic - Video Consultations/a_Testing_navProfileDropdown'),2)
-WebUI.click(findTestObject('Page_eClinic - Video Consultations/a_Testing_navProfileDropdown'))
-WebUI.delay(3)
 WebUI.click(findTestObject('Page_eClinic - Video Consultations/li_Profile'))
-WebUI.waitForElementClickable(findTestObject('Object Repository/AppointmentCreationpopup/TImeformate'), 2)
 WebUI.click(findTestObject('Object Repository/AppointmentCreationpopup/Edit_button_object'))
 WebUI.delay(3)
 
 WebUI.click(findTestObject('Object Repository/AppointmentCreationpopup/TImeformate'))
 WebUI.click(findTestObject('Object Repository/AppointmentCreationpopup/timeformatevalue'))
 WebUI.click(findTestObject('Object Repository/Page_eClinic - Video Consultations/button_SAVE'))
+WebUI.delay(5)
+profileconfirmationtext=WebUI.getText(findTestObject('Object Repository/LoginPage_TestCases_Objects/Profilesaveconfirmation'))
 WebUI.delay(2)
-profileconfirmationtext=WebUI.getText(findTestObject('Object Repository/AppointmentCreationpopup/profileupdateconfirmationObject'))
-println(profileconfirmationtext)
-WebUI.delay(2)
-WebUI.takeScreenshot('Test Cases\\IMIAssist_Automation_Test_Snapshots\\Profile_Page\\TC_10_Verify_whether_Other_Details_is_saving_successfully_by_selecting _time_Format.png')
-if(profileconfirmationtext.equals(prifleconfirmationexpectedmessage))
+Expectedprofileconfirmationtext=findTestData('Login_testdata').getValue(7, 1)
+if(profileconfirmationtext.equals(Expectedprofileconfirmationtext))
 {
-	KeywordUtil.markPassed('SUCCESS:Agent updated profile details(time zone) successfully')
+	KeywordUtil.markPassed('SUCCESS:Agent is update his profile with time formate')
+	
 }
 else
 {
-	KeywordUtil.markFailed('ERROR:Agent is not updated profile details(time zone)')
+	KeywordUtil.markFailed('ERROR:Agent is not able to updated profile with time formate')
 	
 }
 
-/*WebUI.click(findTestObject('Page_eClinic - Video Consultations/a_Testing_navProfileDropdown'))
 
-WebUI.click(findTestObject('Page_eClinic - Video Consultations/li_Logout'))*/
-KeywordUtil.markPassed('SUCCESS:Agent updated profile details(time zone) successfully')
+KeywordUtil.markPassed('SUCCESS:Agent updated profile details with time formate')
 
 }
 catch(Exception e)
 {
-	KeywordUtil.markFailed('ERROR:Agent is not updated profile details(time zone)')
+	KeywordUtil.markFailed('ERROR:Agent is not updated profile with time formate')
 	
 }
 

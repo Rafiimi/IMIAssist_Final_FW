@@ -30,7 +30,7 @@ try {
         WebUI.delay(4)
 		WebUI.maximizeWindow()
 
-        WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-email'), 
+        WebUI.setText(findTestObject('null'), 
             findTestData("Appointmentcreation_UI").getValue(2, rowNum))
 
         WebUI.setText(findTestObject('Page_eClinic - Video Consultations/input_Please enter your details below_user-_90355e'), 
@@ -50,8 +50,8 @@ try {
         if (Newappointmentlinktext.equals(Expnewapplink))
 		 {
             KeywordUtil.markPassed('SUCCESS:New appointment link is available to the selection for user')
-			WebUI.click(findTestObject('Page_eClinic - Video Consultations/a_Support_navProfileDropdown'))
-			WebUI.click(findTestObject('Page_eClinic - Video Consultations/li_Logout'))
+			WebUI.click(findTestObject('null'))
+			WebUI.click(findTestObject('null'))
         } 
 		else 
 		{

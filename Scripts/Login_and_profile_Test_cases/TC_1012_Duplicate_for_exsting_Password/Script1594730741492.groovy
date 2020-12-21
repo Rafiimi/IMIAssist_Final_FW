@@ -15,58 +15,54 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-WebUI.openBrowser('')
-String expectedchangepasswordmessage="credExpired";
+import com.kms.katalon.core.util.KeywordUtil
 
-WebUI.navigateToUrl(findTestData("CHangepassword_Duplicate").getValue(1,1))
-WebUI.maximizeWindow()
-WebUI.delay(4)
-WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-email'), findTestData("CHangepassword_Duplicate").getValue(2,1))
+//Again Changing into old password because of existing test cases should not be effected
+try
+{
+	WebUI.openBrowser('')
+	WebUI.delay(3)
+	 WebUI.navigateToUrl(findTestData('Login_testdata').getValue(1, 1))
+	 WebUI.delay(3)
+	 WebUI.maximizeWindow()
+	 
+	 
+	 WebUI.setText(findTestObject('Object Repository/LoginPage_TestCases_Objects/User_Email'),findTestData('Login_testdata').getValue(2, 1))
+	 WebUI.setText(findTestObject('Object Repository/LoginPage_TestCases_Objects/PasswordTextfiled'),findTestData('Login_testdata').getValue(8, 1))	
+ WebUI.click(findTestObject('Page_eClinic - Video Consultations/button_LOGIN'))
 
-//WebUI.setEncryptedText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-_90355e'), findTestData("TestDataforLogin").getValue(3,1))
-WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-_90355e'), findTestData("CHangepassword_Duplicate").getValue(3,1))
-
-WebUI.click(findTestObject('Object Repository/Page_eClinic - Video Consultations/button_LOGIN'))
-
-WebUI.delay(5)
-WebUI.click(findTestObject('Object Repository/Page_eClinic - Video Consultations/a_Testing_navProfileDropdown'))
+WebUI.click(findTestObject('Object Repository/LoginPage_TestCases_Objects/Profiledropdown'))
 
 WebUI.click(findTestObject('Object Repository/Page_eClinic - Video Consultations/li_Profile'))
 
 WebUI.click(findTestObject('Object Repository/Page_eClinic - Video Consultations/button_Change Password'))
 WebUI.click(findTestObject('Object Repository/Page_IMIassist - Virtual Assistance/div_Change Passwordclose New password and c_06d1ba'))
 
-WebUI.setText(findTestObject('Object Repository/Page_eClinic - Video Consultations/input_close_currentpassword'),findTestData("CHangepassword_Duplicate").getValue(3,1))
+WebUI.setText(findTestObject('Object Repository/Page_eClinic - Video Consultations/input_close_currentpassword'),findTestData("Login_testdata").getValue(8,1))
 
-WebUI.setText(findTestObject('Object Repository/Page_eClinic - Video Consultations/input_close_form-control form-textbox ng-pr_d955f3'),findTestData("CHangepassword_Duplicate").getValue(4,1))
+WebUI.setText(findTestObject('Object Repository/Page_eClinic - Video Consultations/input_close_form-control form-textbox ng-pr_d955f3'),findTestData("Login_testdata").getValue(3,1))
 
-WebUI.setText(findTestObject('Object Repository/Page_eClinic - Video Consultations/input_check_confirmpassword'),findTestData("CHangepassword_Duplicate").getValue(5,1))
-WebUI.click(findTestObject('Object Repository/Page_eClinic - Video Consultations/div_CHANGE'))
+WebUI.setText(findTestObject('Object Repository/Page_eClinic - Video Consultations/input_check_confirmpassword'),findTestData("Login_testdata").getValue(3,1))
 WebUI.delay(2)
-WebUI.takeScreenshot('D:\\IMIAssist- Automation\\IMIAssist_Screenshots\\LoginAndprofile_screens\\TC_1012_Duplicate_for_exsting_Password.png')
 
-WebUI.waitForPageLoad(3)
-//WebUI.switchToFrame(findTestObject('//div[@class="cred-expired ng-scope"]'), 5);
-//Thread.sleep(2000)
+WebUI.click(findTestObject('Object Repository/Page_eClinic - Video Consultations/div_CHANGE'))
+WebUI.delay(5)
+Changepasswordconfirmationtext=WebUI.getText(findTestObject('Object Repository/LoginPage_TestCases_Objects/Changepasswordtext'))
 
-//String passwordchangeconfirmationtext=WebUI.getText("Object Repository/Page_IMIassist - Virtual Assistance/div_Your password has been changed Please s_2db65e")
-String passwordchangeconfirmationtext=WebUI.getUrl();
-System.out.println("passwordchangeconfirmationtext :"+passwordchangeconfirmationtext)	
-
-if(passwordchangeconfirmationtext.contains(expectedchangepasswordmessage))
+Expectedchgpasstext=findTestData('Login_testdata').getValue(10,1)
+if(Changepasswordconfirmationtext.equals(Expectedchgpasstext))
 {
-	System.out.println("Password is changed successfully ")
+	KeywordUtil.markPassed('SUCCESS:Password is changed successfully')
 }
 else
 {
-	System.out.println("Password is not changed")
+	KeywordUtil.markFailed('ERROR:Password is not changed')
+}
+
+}
+catch(Exception e)
+{
+	KeywordUtil.markFailed('ERROR:Password is not chnaged successfully:'+e.getMessage())
 	
 }
-WebUI.delay(3)
-//
-//WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/a_Finance_navProfileDropdown'))
-//
-//WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/li_Logout'))
-//Thread.sleep(5000)
 
-WebUI.closeBrowser()

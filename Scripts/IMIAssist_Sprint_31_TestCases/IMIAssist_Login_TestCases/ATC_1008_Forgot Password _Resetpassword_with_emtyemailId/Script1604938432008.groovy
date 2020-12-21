@@ -22,37 +22,29 @@ try
 {
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl( findTestData("TC_03_OtherdetailsChenge").getValue(1,1))
+WebUI.navigateToUrl( findTestData("Invalidcredentials").getValue(1,1))
 WebUI.maximizeWindow()
 WebUI.delay(4)
-WebUI.click(findTestObject('Object Repository/Page_IMIassist - Virtual Assistance/button_Forgot password'))
+WebUI.click(findTestObject('Object Repository/LoginPage_TestCases_Objects/forgotpswlink'))
 WebUI.delay(3)
-
-WebUI.setText(findTestObject('Object Repository/Page_IMIassist - Virtual Assistance/input_Please enter a valid email address (n_259fe2'), 
-    findTestData("TC_03_OtherdetailsChenge").getValue(8,1))
-//Reset button disable stratus
-Restpwdbuttonstatus=WebUI.verifyElementVisible(findTestObject('Object Repository/LoginPage_TestCases_Objects/Resetpassworddisableobject'))
-//Restpwdbuttonstatus=WebUI.verifyElementAttributeValue(findTestObject('Object Repository/LoginPage_TestCases_Objects/Resetpassworddisableobject'), 'disabled', 'disabled', 3)
-WebUI.delay(2)
-WebUI.takeScreenshot('TC_1008_Forgot Password _Resetpassword_with_emtyemailId')
-if(Restpwdbuttonstatus == true)
+WebUI.setText(findTestObject('Object Repository/LoginPage_TestCases_Objects/Emailtextf'), findTestData('Invalidcredentials').getValue(7, 1))
+WebUI.click(findTestObject('Object Repository/LoginPage_TestCases_Objects/EmailIdLabel'))
+WebUI.clearText(findTestObject('Object Repository/LoginPage_TestCases_Objects/Emailtextf'))
+WebUI.delay(5)
+warningtext=WebUI.getText(findTestObject('Object Repository/LoginPage_TestCases_Objects/EMailtooltiptext'))
+if(warningtext.equals('Please enter a valid email'))
 {
-	KeywordUtil.markPassed('SUCCESS:Reset button is in disable mode so user unable to click on it')
+	KeywordUtil.markPassed('SUCCESS:Agent unable to send the forgot password link to email with invalid email address')
 	
 }
 else
 {
-KeywordUtil.markFailed('ERROR:User able to click on rest password button with empty email address')
+KeywordUtil.markFailed('ERROR:Agent able to send the forgot password link to email with invalid email address')
 
 }
-WebUI.click(findTestObject('Object Repository/Page_IMIassist - Virtual Assistance/a_LOGIN'))
-
-WebUI.click(findTestObject('Object Repository/Page_IMIassist - Virtual Assistance/div_Please enter your details belowForgot p_facb95'))
-WebUI.delay(3)
-WebUI.closeBrowser()
 }
 catch(Exception e)
 {
-	KeywordUtil.markFailed('ERROR:Password Reset mail is not sent to your registered mail')
+	KeywordUtil.markFailed('ERROR:Forgot password email with invalid useremail is failed:'+e.getMessage())
 	
 }

@@ -25,7 +25,7 @@ WebUI.navigateToUrl(findTestData('IMiAsssist_dashbord').getValue(1, 1))
 
 	WebUI.delay(3)
 WebUI.maximizeWindow()
-	WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-email'),
+	WebUI.setText(findTestObject('null'),
 		findTestData('IMiAsssist_dashbord').getValue(4, 1))
 
 	WebUI.setText(findTestObject('Page_eClinic - Video Consultations/input_Please enter your details below_user-_90355e'),
@@ -36,7 +36,7 @@ WebUI.maximizeWindow()
 	WebUI.delay(3)
 	try
 	{
-	WebUI.click(findTestObject('Page_eClinic - Video Consultations/a_Testing_navProfileDropdown'))
+	WebUI.click(findTestObject('null'))
 	WebUI.delay(3)
 	
 	WebUI.click(findTestObject('Object Repository/AppointmentCreationpopup/Specialty_option_object'))
@@ -96,8 +96,8 @@ KeywordUtil.markPassed('SUCCESS:User able to select priority option from filter 
 //	WebUI.delay(3)
 //	WebUI.click(findTestObject('Object Repository/AppointmentCreationpopup/Filter_Clear_object'))
 
-WebUI.click(findTestObject('Page_eClinic - Video Consultations/a_Testing_navProfileDropdown'))
-WebUI.click(findTestObject('Page_eClinic - Video Consultations/li_Logout'))
+WebUI.click(findTestObject('null'))
+WebUI.click(findTestObject('null'))
 KeywordUtil.markPassed('SUCCESS:appointments are displaying correctly according to the team selected')
 
 

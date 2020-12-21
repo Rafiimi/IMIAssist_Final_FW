@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='Login'])[1]//div[1]</value>
+         <value>//button[normalize-space(text())='LOGIN']</value>
       </entry>
       <entry>
          <key>BASIC</key>

@@ -20,7 +20,6 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
-expectedinvalidloginmessage='Invalid user email or password';
 try
 {
 WebUI.openBrowser('')
@@ -29,19 +28,16 @@ WebUI.navigateToUrl(findTestData('Invalidcredentials').getValue(1,1))
 WebUI.maximizeWindow()
 WebUI.delay(4)
 
-WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-email'), findTestData('Invalidcredentials').getValue(2,1))
+WebUI.setText(findTestObject('Object Repository/LoginPage_TestCases_Objects/User_Email'), findTestData('Invalidcredentials').getValue(2,1))
 
-WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-_90355e'),findTestData('Invalidcredentials').getValue(3,1))
+WebUI.setText(findTestObject('Object Repository/LoginPage_TestCases_Objects/PasswordTextfiled'),findTestData('Invalidcredentials').getValue(3,1))
 
-WebUI.click(findTestObject('Page_IMIassist - Virtual Assistance/button_LOGIN'))
+WebUI.click(findTestObject('Object Repository/LoginPage_TestCases_Objects/Login_button'))
 WebUI.delay(3)
 
-WebUI.click(findTestObject('Object Repository/Page_IMIassist - Virtual Assistance/span_Invalid user email or password'))
-WebUI.delay(2)
-WebUI.takeScreenshot('D:\\IMIAssist- Automation\\IMIAssist_Screenshots\\LoginAndprofile_screens\\ATC_LP_1002_Login with Invalid username.png')
-invalidmessage=WebUI.getText(findTestObject('Object Repository/Page_IMIassist - Virtual Assistance/span_Invalid user email or password'))
-println('Invalid error message :'+invalidmessage)
-if(invalidmessage.equals(expectedinvalidloginmessage))
+invalidmessage=WebUI.getText(findTestObject('Object Repository/LoginPage_TestCases_Objects/InvalidcredentialsErrorMessage'))
+ExpectedInvaliderrormessage=findTestData('Invalidcredentials').getValue(5, 1)
+if(invalidmessage.equals(ExpectedInvaliderrormessage))
 {
 	KeywordUtil.markPassed('SUCCESS:User unabel to login with invalid username :'+invalidmessage)
 }

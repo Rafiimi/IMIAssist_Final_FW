@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//button[@ng-click='save_details()']</value>
+         <value>//button[normalize-space(text())='SAVE']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

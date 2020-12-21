@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//select[@ng-model='profile_data.timeformat']</value>
+         <value>//div[@ng-model='profileData.timeformat']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -26,7 +26,7 @@ try {
 
     WebUI.navigateToUrl(findTestData('IMiAsssist_dashbord').getValue(1, 1))
 
-    WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-email'), 
+    WebUI.setText(findTestObject('null'), 
         findTestData('IMiAsssist_dashbord').getValue(2, 1))
 
     WebUI.setText(findTestObject('Page_eClinic - Video Consultations/input_Please enter your details below_user-_90355e'), 
@@ -130,10 +130,10 @@ KeywordUtil.markPassed('SUCCESS:Agent able to select schedule an appointment on 
 WebUI.click(findTestObject('Object Repository/TestRecord/Page_eClinic - Video Consultations/i_close'))
 	
 WebUI.delay(4)
-/*WebUI.click(findTestObject('Page_eClinic - Video Consultations/a_Testing_navProfileDropdown (3)'))
+/*WebUI.click(findTestObject('null'))
 
 
-WebUI.click(findTestObject('Page_eClinic - Video Consultations/li_Logout (8)'))*/
+WebUI.click(findTestObject('null'))*/
 //WebUI.closeBrowser()
 KeywordUtil.markPassed('SUCCESS: Agent able to click on ok button on confirmation popup')
 

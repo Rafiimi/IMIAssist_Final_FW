@@ -46,24 +46,29 @@ public class Reusable {
 			WebUI.setText(findTestObject('Object Repository/LoginPage_TestCases_Objects/PasswordTextfiled'), loginPassword)
 
 			WebUI.click(findTestObject('Object Repository/LoginPage_TestCases_Objects/Login_button'))
-			WebUI.delay(5)
+			WebUI.delay(2)
+			/*boolean status=WebUI.verifyElementPresent(findTestObject('Object Repository/LoginPage_TestCases_Objects/Activeloginpopup'), 2)
+			 if(status==true)
+			 //			if(WebUI.verifyElementPresent(findTestObject('Object Repository/LoginPage_TestCases_Objects/Activeloginpopup'), 2))
+			 {
+			 String Existinglogintext=WebUI.getText(findTestObject('Object Repository/LoginPage_TestCases_Objects/Exstinglogintextobject'))
+			 String	Expectedexistinglogingpopuptext=findTestData('Login_testdata').getValue(6, 1)
+			 if(Existinglogintext.equals(Expectedexistinglogingpopuptext))
+			 {
+			 KeywordUtil.markPassed('SUCCESS:User login some where popup is displayed successfully')
+			 WebUI.click(findTestObject('Object Repository/LoginPage_TestCases_Objects/Proceedbutton'))
+			 }
+			 else
+			 {
+			 println("No active login")	
+			 }
+			 }*/
 		}
-		/*		try {
-		 boolean AlreadyLoggedIn = WebUI.verifyElementPresent(findTestObject('Admin_Settings/Dept/UserCreation/button_Login_PROCEED'), 2, FailureHandling.OPTIONAL)
-		 if (AlreadyLoggedIn==true) {
-		 WebUI.click(findTestObject('Admin_Settings/Dept/UserCreation/button_Login_PROCEED'))
-		 }
-		 }
-		 catch (Exception e) {
-		 KeywordUtil.markFailed('MESSAGE: Proceed button not displayed')
-		 }
-		 WebUI.delay(5)
-		 } catch (Exception e) {
-		 WebUI.delay(5)
-		 } */
-		catch (Exception e) {
+		catch(Exception e)
+		{
+			KeywordUtil.markFailed("Unable to login:"+e.getMessage())
 
-			KeywordUtil.markFailed("Unable to login")
+
 		}
 	}
 
@@ -231,11 +236,11 @@ public class Reusable {
 		try
 		{
 			//			WebUI.delay(3)
-			WebUI.mouseOver(findTestObject('Cases_Module_objects/Reports_Tab_icon'))
-			WebUI.click(findTestObject('Cases_Module_objects/Reports_Tab_icon'))
+			WebUI.mouseOver(findTestObject('Object Repository/Cases_Module_objects/Reports_Tab_icon'))
+			WebUI.click(findTestObject('Object Repository/Cases_Module_objects/Reports_Tab_icon'))
 			WebUI.delay(3)
 			WebUI.click(findTestObject('Object Repository/Cases_Module_objects/ReportsTab'))
-			WebUI.delay(3)
+			//			WebUI.delay(3)
 			WebUI.click(findTestObject('Object Repository/Cases_Module_objects/Cases_subTab_icon'))
 			WebUI.delay(3)
 			WebUI.click(findTestObject('Object Repository/Cases_Module_objects/CasesDropdown'))
@@ -289,8 +294,6 @@ public class Reusable {
 			WebUI.delay(3)
 			WebUI.click(findTestObject('Object Repository/IMIA_Custome_Reports_objects/CustomReporttab'))
 			WebUI.delay(3)
-<<<<<<< HEAD
-			WebUI.click(findTestObject('IMIA_Custome_Reports_objects/Create_custom_r'))
 			/*WebUI.delay(3)
 			 WebUI.click(findTestObject('Object Repository/Cases_Module_objects/Appointmentidoption'))
 			 //WebUI.selectOptionByValue(findTestObject('Object Repository/Cases_Module_objects/CasesDropdown'), 'Appointment ID', false)
@@ -298,10 +301,9 @@ public class Reusable {
 			 WebUI.setText(findTestObject('Object Repository/Cases_Module_objects/Searchtextfieldincases'), findTestData('IMIA_cases_testData').getValue(1, 1))
 			 WebUI.delay(3)
 			 WebUI.click(findTestObject('Object Repository/Cases_Module_objects/Caseselectiononfirstrow'))*/
-=======
+
 			WebUI.click(findTestObject('Object Repository/IMIA_Custome_Reports_objects/Create_custom_r'))
 
->>>>>>> branch 'master' of https://github.com/Rafiimi/IMIAssist_Final_FW
 		}
 		catch(Exception e)
 		{

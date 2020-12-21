@@ -37,7 +37,7 @@ WebUI.click(findTestObject('Page_eClinic - Video Consultations/a_Assigned (0) (1
 
 WebUI.click(findTestObject('Object Repository/Page_eClinic - Video Consultations/div_dashboard Dashboard     insert_invitati_a1df89'))
 
-WebUI.click(findTestObject('Page_eClinic - Video Consultations/a_Support_navProfileDropdown (1)'))
+WebUI.click(findTestObject('null'))
 
 WebUI.click(findTestObject('Page_eClinic - Video Consultations/div_Specialty (1)'))
 
@@ -69,9 +69,9 @@ KeywordUtil.markPassed('SUCCESS:Agent able to see on his own appointment under a
 	}
 
 WebUI.delay(3)
-/*WebUI.click(findTestObject('Page_eClinic - Video Consultations/a_Testing_navProfileDropdown'))
+/*WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Page_eClinic - Video Consultations/li_Logout'))*/
+WebUI.click(findTestObject('null'))*/
 KeywordUtil.markPassed('SUCCESS:appointments are displaying correctly according to the Department selected')
 
 }

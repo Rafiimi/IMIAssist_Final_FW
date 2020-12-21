@@ -22,10 +22,8 @@ WebUI.delay(3)
  WebUI.maximizeWindow()
  
  
- WebUI.setText(findTestObject('Page_IMIassist - Virtual Assistance/input_Please enter your details below_user-email'),
-		findTestData('IMiAsssist_dashbord').getValue(2, 1))
- WebUI.setText(findTestObject('Page_eClinic - Video Consultations/input_Please enter your details below_user-_90355e'),
-		findTestData('IMiAsssist_dashbord').getValue(3, 1))
+ WebUI.setText(findTestObject('Object Repository/LoginPage_TestCases_Objects/User_Email'),findTestData('IMiAsssist_dashbord').getValue(2, 1))
+ WebUI.setText(findTestObject('Object Repository/LoginPage_TestCases_Objects/PasswordTextfiled'),findTestData('IMiAsssist_dashbord').getValue(3, 1))
 
  WebUI.click(findTestObject('Page_eClinic - Video Consultations/button_LOGIN'))
  
