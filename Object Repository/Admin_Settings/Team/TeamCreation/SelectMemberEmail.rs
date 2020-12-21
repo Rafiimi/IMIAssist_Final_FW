@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='selectedUser']</value>
+         <value>//*[@id='selectTeamMemberInput']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

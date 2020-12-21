@@ -18,8 +18,6 @@ import com.kms.katalon.core.logging.KeywordLogger as KeywordLogger
 import org.openqa.selenium.WebDriver as WebDriver
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 
-not_run: CustomKeywords.'reusableKeywords.Reusable.Login'()
-
 CustomKeywords.'reusableKeywords.Reusable.UserNavigation_Dept'()
 
 KeywordLogger logger = new KeywordLogger()
@@ -39,7 +37,7 @@ try {
 
     for (int i = 1; i <= 2; i++) {
         WebUI.uploadFile(findTestObject('Admin_Settings/Dept/UserCreation/BrandLogo_Upload'), findTestData('Team_Theme_Settings').getValue(
-                'BrandLogo', 3), FailureHandling.OPTIONAL)
+                'BrandLogo', i), FailureHandling.OPTIONAL)
 
         WebUI.delay(1)
 

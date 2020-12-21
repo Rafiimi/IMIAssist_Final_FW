@@ -7,7 +7,11 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='question-container']/div/div[4]/span/div/div/div[2]/input</value>
+         <value>//*[contains(label,'Input 1')]//following::input[1]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//input[@class = 'form-control form-control-sm ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required ng-valid-maxlength' and @ng-model = 'feedbackQuestions[$parent.$index + 1].answer[$index]']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -20,7 +24,7 @@
       <value>input</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
@@ -34,7 +38,7 @@
       <value>feedbackQuestions[$parent.$index +1].is_active</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>ng-model</name>
       <type>Main</type>
@@ -55,7 +59,7 @@
       <value>true</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>

@@ -47,11 +47,11 @@ try {
     //*** Need to check exact team name is exists once the current issue is resolved
     String TeamValList = WebUI.getText(findTestObject('Admin_Settings/Dept/UserCreation/DeptList_Teams'))
 
-    String[] parseList2 = DeptValList.split('\n')
+    String[] parseList2 = TeamValList.split('\n')
 
-    int DeptCount = parseList2.size()
+    int TeamCount = parseList2.size()
 
-    if (DeptCount >= 1) {
+    if (TeamCount >= 1) {
         KeywordUtil.markPassed('Agent is successfully able to see members belongs to his team')
     } else {
         KeywordUtil.markFailed('Agent is NOT able to see only members belongs to his team')

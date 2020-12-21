@@ -15,7 +15,8 @@ import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 import com.kms.katalon.core.logging.KeywordLogger as KeywordLogger
 
-try {
+CustomKeywords.'reusableKeywords.Reusable.LoginDiffUser'(10)
+//try {
     TCname = findTestData('Team_PageDesign_AppLanding').getValue('Description', 1)
 
     KeywordLogger logger = new KeywordLogger()
@@ -23,21 +24,20 @@ try {
     logger.logInfo('***START Of TEST CASE: ' + TCname)
 
     WebUI.click(findTestObject('Admin_Settings/Team/TeamCreation/Team_PageDesign'))
+	WebUI.delay(2)
 
-    WebUI.click(findTestObject('Admin_Settings/Team/TeamCreation/Tab_AppLanding'))
+   //WebUI.click(findTestObject('Admin_Settings/Team/TeamCreation/Tab_AppLanding'))
 
     WebUI.setText(findTestObject('Admin_Settings/Team/TeamCreation/Landing_BrandColour'), findTestData('Team_PageDesign_AppLanding').getValue(
             'BrandColor', 1), FailureHandling.OPTIONAL)
 
-    if (findTestData('Team_PageDesign_AppLanding').getValue('FontColor', 1) == 'Black') {
-        WebUI.click(findTestObject('Admin_Settings/Team/TeamCreation/FontColor_Black'))
-    } else {
-        WebUI.click(findTestObject('Admin_Settings/Team/TeamCreation/FontColor_White'))
-    }
+    if (findTestData('Team_PageDesign_AppLanding').getValue('FontColor', 1) == 'White') {
+		WebUI.click(findTestObject('Admin_Settings/Team/TeamCreation/FontColor_White'))
+    } 
     
     WebUI.click(findTestObject('Admin_Settings/Team/TeamCreation/Landing_SelectFont'))
-
-    CustomKeywords.'reusableKeywords.Reusable.SelectDynamicText'(findTestData('Team_PageDesign_AppLanding').getValue('Font', 
+	WebUI.delay(1)
+    CustomKeywords.'reusableKeywords.Reusable.ClickDynamicTextObj'(findTestData('Team_PageDesign_AppLanding').getValue('Font', 
             1))
 
     WebUI.delay(2)
@@ -66,8 +66,8 @@ try {
     }
 	WebUI.delay(2)
     logger.logInfo('***END Of TEST CASE: ' + TCname)
-}
+/*}
 catch (Exception e) {
     KeywordUtil.markFailed('ERROR: ' + e.getMessage())
-} 
+}*/ 
 

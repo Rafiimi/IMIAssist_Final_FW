@@ -7,10 +7,14 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='left-view']/form/div[2]/div/div[2]/div/label</value>
+         <value>//label[@for = 'fontColourBlack' and (text() = ' Black ')]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//label[@for = 'fontColourBlack' and (text() = ' Black (#4a4a4a) ' or . = ' Black (#4a4a4a) ')]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

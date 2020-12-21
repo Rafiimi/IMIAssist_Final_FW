@@ -16,7 +16,6 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 import com.kms.katalon.core.logging.KeywordLogger as KeywordLogger
 
 try {
-not_run: CustomKeywords.'reusableKeywords.Reusable.Login'()
 
 TCname = findTestData('Team_PageDesign_LinkExpiry').getValue('Description', 1)
 

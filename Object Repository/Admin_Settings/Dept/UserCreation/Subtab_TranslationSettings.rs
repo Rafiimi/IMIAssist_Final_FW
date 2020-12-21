@@ -7,7 +7,11 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//ul[@id='sub-tabs']/li[5]/a</value>
+         <value>//a[contains(@class, 'nav-link sub-tab-headers') and contains(text(), 'Translation Settings')]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//a[(text() = ' Translation Settings ' or . = ' Translation Settings ')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

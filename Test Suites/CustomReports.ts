@@ -14,13 +14,13 @@
       <guid>2316b681-58ad-4fba-b9ab-c2b3732f1ae9</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/IMIA_Custom_Reports_Testcases/TC_Custom Reports_Custom_Reports_tab_option_availability</testCaseId>
+      <testCaseId>Test Cases/IMIA_Custom_Reports_Testcases/ATC_1_Custom Reports_Custom_Reports_tab_option_availability</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>6df524ed-1588-4bbc-aa6a-6f2c47ddbadd</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/IMIA_Custom_Reports_Testcases/TC_Custom Reports_CreateCustomReports_Filters_validations</testCaseId>
+      <testCaseId>Test Cases/IMIA_Custom_Reports_Testcases/ATC_2_Custom Reports_CreateCustomReports_Filters_validations</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>

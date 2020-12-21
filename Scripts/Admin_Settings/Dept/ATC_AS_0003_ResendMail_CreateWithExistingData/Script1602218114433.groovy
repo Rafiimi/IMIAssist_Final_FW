@@ -16,8 +16,6 @@ import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 import com.kms.katalon.core.logging.KeywordLogger as KeywordLogger
 
-not_run: CustomKeywords.'reusableKeywords.Reusable.Login'()
-
 KeywordLogger logger = new KeywordLogger()
 
 try {
@@ -25,16 +23,9 @@ try {
 
     logger.logInfo('***START Of TEST CASE: ' + TCname)
 
-    WebUI.mouseOver(findTestObject('Admin_Settings/Dept/UserCreation/navigation_Dashboard'))
-
-    WebUI.mouseOver(findTestObject('Admin_Settings/Dept/UserCreation/navigation_Settings'))
-
-    WebUI.delay(2)
-
-    WebUI.click(findTestObject('Admin_Settings/Dept/UserCreation/Settings_Dept'))
-
-    WebUI.mouseOver(findTestObject('Admin_Settings/Dept/UserCreation/AStab_CompanyDetails'))
-
+	WebUI.click(findTestObject('Admin_Settings/Dept/UserCreation/Back_arrow'))
+	WebUI.delay(2)
+	
     WebUI.click(findTestObject('Admin_Settings/Dept/UserCreation/Speciality_Testing'))
 
     WebUI.delay(2)

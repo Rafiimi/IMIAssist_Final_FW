@@ -42,11 +42,12 @@ try {
 
     Thread.sleep(5000)
 
-    driver.findElement(By.xpath('//input[@id="user-email"]')).sendKeys(userId)
+	//Need to change properties if changed
+    driver.findElement(By.xpath('//input[@id="formEmail"]')).sendKeys(userId)
 
-    driver.findElement(By.xpath('//input[@id="user-password"]')).sendKeys(Password)
+    driver.findElement(By.xpath('//input[@id="formPassword"]')).sendKeys(Password)
 
-    driver.findElement(By.xpath('//button[@id="login-button"]')).click()
+    driver.findElement(By.xpath('//button[contains(text(),"LOGIN")]')).click()
 
     Thread.sleep(5000)
 
@@ -63,9 +64,9 @@ try {
     //Admin User -- need to check the flow
 	//CustomKeywords.'reusableKeywords.Reusable.LoginDiffUser'(8)
 	WebUI.delay(2)
-
-    CustomKeywords.'reusableKeywords.Reusable.UserNavigation_Dept'()
-
+	
+	//Back to department
+    WebUI.click(findTestObject('Admin_Settings/Dept/UserCreation/Back_arrow'))
     WebUI.delay(2)
 
     CustomKeywords.'reusableKeywords.Reusable.SelectDynamicValue'(findTestData('User_RoleChange_Delete').getValue('TeamObjectClass', 

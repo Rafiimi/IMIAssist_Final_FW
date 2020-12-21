@@ -15,8 +15,6 @@ import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 import com.kms.katalon.core.logging.KeywordLogger as KeywordLogger
 
-not_run: CustomKeywords.'reusableKeywords.Reusable.Login'()
-
 KeywordLogger logger = new KeywordLogger()
 
 try {
@@ -39,7 +37,8 @@ try {
 
     WebUI.mouseOver(findTestObject('Admin_Settings/Team/TeamCreation/teamsWindow_empty'))
 
-    boolean teamStatus = WebUI.verifyElementPresent(findTestObject('Admin_Settings/Team/TeamCreation/Link_CreateNewTeam'))
+    boolean teamStatus = WebUI.verifyElementPresent(findTestObject('Admin_Settings/Team/TeamCreation/Link_CreateNewTeam'), 
+        2, FailureHandling.OPTIONAL)
 
     if (teamStatus == true) {
         KeywordUtil.markPassed('New Team creation option is available only for Admins')
@@ -88,7 +87,8 @@ try {
 
     WebUI.mouseOver(findTestObject('Admin_Settings/Team/TeamCreation/teamsWindow_empty'))
 
-    boolean teamStatus2 = WebUI.verifyElementNotPresent(findTestObject('Admin_Settings/Team/TeamCreation/Link_CreateNewTeam'))
+    boolean teamStatus2 = WebUI.verifyElementNotPresent(findTestObject('Admin_Settings/Team/TeamCreation/Link_CreateNewTeam'), 
+        2, FailureHandling.OPTIONAL)
 
     if (teamStatus2 == true) {
         KeywordUtil.markPassed('New Team creation option is Not available for user')

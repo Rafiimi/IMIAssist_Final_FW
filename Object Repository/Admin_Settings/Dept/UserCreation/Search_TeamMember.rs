@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//input[@type='search'])[3]</value>
+         <value>//*[@id=&quot;example_filter&quot;]/label/input</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -7,10 +7,14 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//ul[@id='sub-tabs']/li[2]/a</value>
+         <value>//a[contains(@class, 'nav-link sub-tab-headers') and contains(text(), ' Notification ')]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//a[@class = 'nav-link sub-tab-headers' and (text() = ' Notification ' or . = ' Notification ')]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

@@ -15,18 +15,15 @@ import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 import com.kms.katalon.core.logging.KeywordLogger as KeywordLogger
 
-not_run: CustomKeywords.'reusableKeywords.Reusable.Login'()
-
+try {
 for (int i = 1; i <= 2; i++) {
-    CustomKeywords.'reusableKeywords.Reusable.UserNavigation_Team'()
 
-    try {
         TCname = findTestData('AdminSettings_Team').getValue('Description', i)
-
         KeywordLogger logger = new KeywordLogger()
-
         logger.logInfo('***START Of TEST CASE: ' + TCname)
 
+		CustomKeywords.'reusableKeywords.Reusable.UserNavigation_Team'()
+		
         WebUI.click(findTestObject('Admin_Settings/Team/TeamCreation/Link_CreateNewTeam'))
 
         WebUI.click(findTestObject('Admin_Settings/Team/TeamCreation/div_SelectSpecialty'))
@@ -51,27 +48,25 @@ for (int i = 1; i <= 2; i++) {
             KeywordUtil.markFailed('Team creation: ' + actualMsg)
         }
         
-        WebUI.delay(3)
-
-        if (findTestData('AdminSettings_Team').getValue('TestType', i) == 'Positive') {
-            //WebUI.click(findTestObject('Admin_Settings/Team/TeamCreation/team_RE_LOGIN'))
-            WebUI.delay(25)
-
-            WebUI.setText(findTestObject('Object Repository/LoginPage_TestCases_Objects/User_Email'), GlobalVariable.Username)
-
-            WebUI.setText(findTestObject('Object Repository/LoginPage_TestCases_Objects/PasswordTextfiled'), GlobalVariable.Password)
-
-            WebUI.click(findTestObject('Object Repository/LoginPage_TestCases_Objects/Login_button'))
-
-            WebUI.delay(3)
-        } else {
-            WebUI.click(findTestObject('Object Repository/Admin_Settings/Team/TeamCreation/team_CANCEL'))
+        WebUI.delay(1)
+		
+		if (findTestData('AdminSettings_Team').getValue('TestType', i) == 'Positive') {		
+		WebUI.click(findTestObject('Admin_Settings/Team/TeamCreation/team_RE_LOGIN'))
+		WebUI.delay(2)
+		WebUI.closeBrowser()
+		CustomKeywords.'reusableKeywords.Reusable.LoginDiffUser'(10)
+		}
+		
+        if (findTestData('AdminSettings_Team').getValue('TestType', i) == 'Negative') {
+                  WebUI.click(findTestObject('Object Repository/Admin_Settings/Team/TeamCreation/team_CANCEL'))
         }
         
         logger.logInfo('***END Of TEST CASE: ' + TCname)
     }
+}
     catch (Exception e) {
         KeywordUtil.markFailed('ERROR: ' + e.getMessage())
+		WebUI.click(findTestObject('Admin_Settings/Dept/UserCreation/Close_CreateTeam'))
     } 
-}
+
 

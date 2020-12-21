@@ -7,10 +7,14 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//ul[@id='sub-tabs']/li/a</value>
+         <value>//a[contains(@class, 'nav-link sub-tab-headers') and contains(text(), ' Tags')]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//a[@class = 'nav-link active sub-tab-headers' and (text() = ' Tags ' or . = ' Tags ')]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

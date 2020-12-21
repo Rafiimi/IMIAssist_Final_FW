@@ -289,8 +289,7 @@ public class Reusable {
 			WebUI.delay(3)
 			WebUI.click(findTestObject('Object Repository/IMIA_Custome_Reports_objects/CustomReporttab'))
 			WebUI.delay(3)
-<<<<<<< HEAD
-			WebUI.click(findTestObject('IMIA_Custome_Reports_objects/Create_custom_r'))
+
 			/*WebUI.delay(3)
 			 WebUI.click(findTestObject('Object Repository/Cases_Module_objects/Appointmentidoption'))
 			 //WebUI.selectOptionByValue(findTestObject('Object Repository/Cases_Module_objects/CasesDropdown'), 'Appointment ID', false)
@@ -298,10 +297,9 @@ public class Reusable {
 			 WebUI.setText(findTestObject('Object Repository/Cases_Module_objects/Searchtextfieldincases'), findTestData('IMIA_cases_testData').getValue(1, 1))
 			 WebUI.delay(3)
 			 WebUI.click(findTestObject('Object Repository/Cases_Module_objects/Caseselectiononfirstrow'))*/
-=======
+
 			WebUI.click(findTestObject('Object Repository/IMIA_Custome_Reports_objects/Create_custom_r'))
 
->>>>>>> branch 'master' of https://github.com/Rafiimi/IMIAssist_Final_FW
 		}
 		catch(Exception e)
 		{

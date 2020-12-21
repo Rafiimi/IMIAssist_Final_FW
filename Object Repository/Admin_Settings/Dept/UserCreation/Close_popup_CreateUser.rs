@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>AppSettings_Notif_Customer</name>
+   <name>Close_popup_CreateUser</name>
    <tag></tag>
-   <elementGuidId>601483b8-d812-4cad-aa6f-45313a0e28e1</elementGuidId>
+   <elementGuidId>5f933194-2d4d-428b-abfc-d090539d426e</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//ul[@id='sub-tabs']/li[2]/a)[2]</value>
+         <value>//div[@id='addUserModal']/div/div/div/i</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,96 +17,91 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>a</value>
+      <value>i</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>nav-link sub-tab-headers ng-binding</value>
+      <value>d-flex imi-close imi-icon-xxl cursor-pointer cross-modal-button</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>data-toggle</name>
+      <name>data-dismiss</name>
       <type>Main</type>
-      <value>tab</value>
+      <value>modal</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>data-target</name>
+      <name>aria-label</name>
       <type>Main</type>
-      <value>#customerNotificationTab</value>
+      <value>Close</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ng-click</name>
+      <type>Main</type>
+      <value>clearErrorMessages()</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>role</name>
       <type>Main</type>
-      <value>tab</value>
+      <value>button</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>text</name>
+      <name>tabindex</name>
       <type>Main</type>
-      <value> Customer </value>
+      <value>0</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;notificationTab&quot;)/div[@class=&quot;d-flex flex-column h-100&quot;]/ul[@id=&quot;sub-tabs&quot;]/li[@class=&quot;nav-item&quot;]/a[@class=&quot;nav-link sub-tab-headers ng-binding&quot;]</value>
+      <value>id(&quot;addUserModal&quot;)/div[@class=&quot;modal-dialog modal-default center-modal&quot;]/div[@class=&quot;modal-content&quot;]/div[@class=&quot;modal-header&quot;]/i[@class=&quot;d-flex imi-close imi-icon-xxl cursor-pointer cross-modal-button&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
-      <value>(//ul[@id='sub-tabs']/li[2]/a)[2]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:link</name>
-      <value>//a[contains(text(),'Customer')]</value>
+      <value>//div[@id='addUserModal']/div/div/div/i</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Agent'])[1]/following::a[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Create a New User'])[1]/following::i[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='By Rafitestp'])[7]/following::a[2]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='IMPORT'])[1]/following::i[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Select channels to which you want to send your Agent notification to'])[1]/preceding::a[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Please Enter First Name'])[1]/preceding::i[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Selected channels- You will be notified via the selected notification channels'])[1]/preceding::a[1]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <value>//*/text()[normalize-space(.)='Customer']/parent::*</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Select Role'])[1]/preceding::i[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
-      <value>//div[7]/div/div/div[2]/div/ul/li[2]/a</value>
+      <value>//div[3]/div/div/div/i</value>
    </webElementXpaths>
 </WebElementEntity>

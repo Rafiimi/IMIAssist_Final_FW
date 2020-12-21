@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description>Covered:
-TC_Custom Reports_26
-TC_Custom Reports_27
-TC_Custom Reports_57
-TC_Custom Reports_64</description>
-   <name>TC_Custom Reports_CustomReport_generation_Teams</name>
+TC_Custom Reports_39
+TC_Custom Reports_43
+TC_Custom Reports_46</description>
+   <name>ATC_6_Custom Reports_CustomReport_generation_csvFile_Validations</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>2b84dc92-0a16-4382-aaff-d046b1ef27bf</testCaseGuid>
+   <testCaseGuid>89ee7fff-1f0c-422c-b5d8-64d05223f2cf</testCaseGuid>
    <variable>
       <defaultValue>'return document.getElementsByName(&quot;startDate&quot;)[0].value'</defaultValue>
       <description></description>
-      <id>98bac663-0c3c-4714-9482-d6d28c8bbc5e</id>
+      <id>847adb03-6b3e-4b8b-ac47-42824d43d210</id>
       <masked>false</masked>
       <name>fromDate</name>
    </variable>
    <variable>
       <defaultValue>'return document.getElementsByName(&quot;endDate&quot;)[0].value'</defaultValue>
       <description></description>
-      <id>02b817a6-faeb-423e-9128-31b13c72c711</id>
+      <id>70986078-113a-4a43-b28e-c4e4d92c70dd</id>
       <masked>false</masked>
       <name>toDate</name>
    </variable>

@@ -14,7 +14,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
-import com.kms.katalon.core.logging.KeywordLogger
+import com.kms.katalon.core.logging.KeywordLogger as KeywordLogger
 
 CustomKeywords.'reusableKeywords.Reusable.LoginDiffUser'(10)
 
@@ -31,39 +31,30 @@ try {
 
     WebUI.click(findTestObject('Admin_Settings/Dept/UserCreation/Speciality_Testing'))
 
-    WebUI.delay(2)
-
-    WebUI.click(findTestObject('Admin_Settings/Dept/UserCreation/AddUser'))
+    WebUI.delay(2)   
 }
 catch (Exception e) {
     KeywordUtil.markFailed('ERROR: ' + e.getMessage())
 } 
 
-//for (int i = 1; i <= findTestData('AdminSettings_User').getRowNumbers(); i++) {
 for (int i = 1; i <= 5; i++) {
     try {
         TCname = findTestData('AdminSettings_User').getValue('Description', i)
-		
-		KeywordLogger logger = new KeywordLogger()
-		logger.logInfo("***START Of TEST CASE: " +TCname)
-		
- //       KeywordUtil.logInfo("***START Of TEST CASE: " +TCname)
 
-        //	if (findTestData('AdminSettings_User').getValue('FirstName', 1) != '') {
+        KeywordLogger logger = new KeywordLogger()
+
+        logger.logInfo('***START Of TEST CASE: ' + TCname)
+		WebUI.click(findTestObject('Admin_Settings/Dept/UserCreation/AddUser'))
+		
         WebUI.setText(findTestObject('Admin_Settings/Dept/UserCreation/NewUser_firstName'), findTestData('AdminSettings_User').getValue(
                 'FirstName', i))
 
-        //	}
-        //	if (findTestData('AdminSettings_User').getValue('LastName', 1) != '') {
         WebUI.setText(findTestObject('Admin_Settings/Dept/UserCreation/NewUser_lastName'), findTestData('AdminSettings_User').getValue(
                 'LastName', i))
 
-        //	}
-        //	if (findTestData('AdminSettings_User').getValue('Email', 1) != '') {
         WebUI.setText(findTestObject('Admin_Settings/Dept/UserCreation/NewUser_userEmail'), findTestData('AdminSettings_User').getValue(
                 'Email', i), FailureHandling.OPTIONAL)
 
-        //	}
         if (findTestData('AdminSettings_User').getValue('Role', i) != '') {
             WebUI.click(findTestObject('Admin_Settings/Dept/UserCreation/User_SelectRole'))
 
@@ -81,12 +72,13 @@ for (int i = 1; i <= 5; i++) {
             if (actualMsg == expectedMsg) {
                 KeywordUtil.markPassed(((((('Expected and actual error messages are matched: ' + 'Actual is: ') + actualMsg) + 
                     ' ') + ',') + 'Expected is: ') + expectedMsg)
+				
             } else {
                 KeywordUtil.markFailed(((((('Expected and actual error messages are NOT matched: ' + 'Actual is: ') + actualMsg) + 
                     ' ') + ',') + 'Expected is: ') + expectedMsg)
             }
         }
-       
+        
         if ((findTestData('AdminSettings_User').getValue('Success_or_Error?', i) == 'Error') && (findTestData('AdminSettings_User').getValue(
             'Expected_Msg_Header', i) != '')) {
             actualMsg = WebUI.getText(findTestObject('Admin_Settings/Dept/UserCreation/ErrorMsg_Header'))
@@ -102,7 +94,10 @@ for (int i = 1; i <= 5; i++) {
             }
         }
         
-      logger.logInfo("***END Of TEST CASE: " + TCname)
+			WebUI.click(findTestObject('Admin_Settings/Dept/UserCreation/Close_popup_CreateUser'))
+		
+		logger.logInfo('***END Of TEST CASE: ' + TCname)
+        
     }
     catch (Exception e) {
         KeywordUtil.markFailed('ERROR: Unable to test create user with invalid data :' + e.getMessage())

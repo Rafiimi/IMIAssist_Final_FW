@@ -18,10 +18,6 @@ import com.kms.katalon.core.logging.KeywordLogger as KeywordLogger
 import org.openqa.selenium.WebDriver as WebDriver
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 
-not_run: CustomKeywords.'reusableKeywords.Reusable.Login'()
-
-CustomKeywords.'reusableKeywords.Reusable.UserNavigation_Dept'()
-
 KeywordLogger logger = new KeywordLogger()
 
 try {
@@ -29,12 +25,11 @@ try {
 
     logger.logInfo('***START Of TEST CASE: ' + TCname)
 
+	/*CustomKeywords.'reusableKeywords.Reusable.UserNavigation_Dept'()
     WebUI.click(findTestObject('Admin_Settings/Dept/UserCreation/Speciality_Testing'))
+    WebUI.click(findTestObject('Admin_Settings/Dept/UserCreation/Tab_AppointmentManagement'))*/
 
-    WebUI.delay(2)
-
-    WebUI.click(findTestObject('Admin_Settings/Dept/UserCreation/Tab_AppointmentManagement'))
-
+	WebUI.delay(5)
     WebUI.click(findTestObject('Admin_Settings/Dept/UserCreation/Subtab_Tags'))
 
     WebUI.click(findTestObject('Admin_Settings/Dept/UserCreation/Link_CreateTag'))

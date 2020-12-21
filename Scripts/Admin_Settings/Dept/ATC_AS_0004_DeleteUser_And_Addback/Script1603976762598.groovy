@@ -16,19 +16,17 @@ import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 import com.kms.katalon.core.logging.KeywordLogger as KeywordLogger
 
-not_run: CustomKeywords.'reusableKeywords.Reusable.Login'()
-
-CustomKeywords.'reusableKeywords.Reusable.UserNavigation_Dept'()
-
 KeywordLogger logger = new KeywordLogger()
-
-WebUI.click(findTestObject('Admin_Settings/Dept/UserCreation/Speciality_Testing'))
 
 try {
     TCname = 'Delete User'
 
     logger.logInfo('***START Of TEST CASE: ' + TCname)
 
+	WebUI.click(findTestObject('Admin_Settings/Dept/UserCreation/Back_arrow'))
+	WebUI.delay(2)
+	WebUI.click(findTestObject('Admin_Settings/Dept/UserCreation/Speciality_Testing'))
+	
     WebUI.setText(findTestObject('Admin_Settings/Dept/UserCreation/Search_User'), findTestData('AdminSettings_User').getValue(
             'Email', 6), FailureHandling.OPTIONAL)
 
@@ -55,10 +53,10 @@ try {
     
     delConfirmation = WebUI.getText(findTestObject('Admin_Settings/Dept/UserCreation/DeleteConfirmation'))
 
-    if (delConfirmation == ' Users deleted successfully') {
+    if (delConfirmation == 'Users deleted successfully') {
         KeywordUtil.markPassed('User is removed successfully')
 
-        WebUI.click(findTestObject('Admin_Settings/Dept/UserCreation/Close_Window'))
+        WebUI.click(findTestObject('Admin_Settings/Dept/UserCreation/Close_RemoveUser'))
     } else {
         KeywordUtil.markFailed('User is NOT removed successfully: ' + delConfirmation)
     }
@@ -67,6 +65,7 @@ try {
 }
 catch (Exception e) {
     KeywordUtil.markFailed('ERROR: Unable to Delete user :' + e.getMessage())
+	WebUI.click(findTestObject('Admin_Settings/Dept/UserCreation/Close_RemoveUser'))
 } 
 
 //Creating user back who is already deleted
@@ -74,8 +73,6 @@ try {
     WebUI.delay(2)
 
     TCname2 = 'Check whether admin should be able to add a deleted user back to the Team'
-
-    KeywordLogger logger = new KeywordLogger()
 
     logger.logInfo('***START Of TEST CASE: ' + TCname2)
 
@@ -98,9 +95,9 @@ try {
 
     actualMsg = WebUI.getText(findTestObject('Admin_Settings/Dept/UserCreation/ToastMessage'))
 
-    expectedMsg = findTestData('AdminSettings_User').getValue('Expected_Msg_Header', 6)
+    expectedMsg = findTestData('AdminSettings_User').getValue('Expected_Msg_Header', 7)
 
-    if (actualMsg == expectedMsg) {
+    if (actualMsg.contains(expectedMsg)==true) {
         KeywordUtil.markPassed(((((('Expected and actual messages are matched: ' + 'Actual is: ') + actualMsg) + ' ') + 
             ',') + 'Expected is: ') + expectedMsg)
     } else {

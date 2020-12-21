@@ -29,9 +29,9 @@ try {
 	
 	Thread.sleep(5000)	
 	
-	driver.findElement(By.xpath('//input[@id="user-email"]')).sendKeys(userId);
-	driver.findElement(By.xpath('//input[@id="user-password"]')).sendKeys(Password);
-	driver.findElement(By.xpath('//button[@id="login-button"]')).click();
+	driver.findElement(By.xpath('//input[@id="formEmail"]')).sendKeys(userId);
+	driver.findElement(By.xpath('//input[@id="formPassword"]')).sendKeys(Password);
+	driver.findElement(By.xpath('//button[contains(text(),"LOGIN")]')).click();
 	Thread.sleep(5000);
 	
 /*    WebUI.openBrowser('')

@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='question-container']/div/div[4]/span[3]/div/div/div[2]/input</value>
+         <value>//*[contains(label,'Input 3')]//following::input[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

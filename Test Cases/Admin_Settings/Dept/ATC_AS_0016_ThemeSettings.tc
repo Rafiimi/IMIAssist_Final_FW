@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>Theme settings page validations</description>
+   <description>Theme settings page validations
+Covered:
+TC_Admin Settings_27
+TC_Admin Settings_28
+TC_Admin Settings_29
+TC_Admin Settings_30
+TC_Admin Settings_31</description>
    <name>ATC_AS_0016_ThemeSettings</name>
    <tag></tag>
    <comment></comment>

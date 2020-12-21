@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='Report Title'])[1]/following::div[2]</value>
+         <value>//*[@class='create-custom-reports-error mt-2 mb-2 ng-scope']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
